@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="dsReportes" targetNamespace="http://tempuri.org/dsReportes.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/dsReportes.xsd" xmlns:mstns="http://tempuri.org/dsReportes.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="dsReportes" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="view_cont_catalogo">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="IDg" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+							<xs:element name="CuentaNo" type="xs:string" minOccurs="0" />
+							<xs:element name="Descripciong" type="xs:string" minOccurs="0" />
+							<xs:element name="Grupo" type="xs:int" minOccurs="0" />
+							<xs:element name="Tipo" type="xs:string" minOccurs="0" />
+							<xs:element name="Debito" type="xs:double" minOccurs="0" />
+							<xs:element name="Credito" type="xs:double" minOccurs="0" />
+							<xs:element name="Balance" type="xs:double" minOccurs="0" />
+							<xs:element name="CtaControl" type="xs:string" minOccurs="0" />
+							<xs:element name="NombreMes" type="xs:string" minOccurs="0" />
+							<xs:element name="NumeroMes" type="xs:int" minOccurs="0" />
+							<xs:element name="BalanceGeneral" type="xs:string" minOccurs="0" />
+							<xs:element name="EstadoResultado" type="xs:string" minOccurs="0" />
+							<xs:element name="OrdenEstadoResultado" type="xs:string" minOccurs="0" />
+							<xs:element name="AccionEstatoResultado" type="xs:string" minOccurs="0" />
+							<xs:element name="VerEnCero" type="xs:string" minOccurs="0" />
+							<xs:element name="Fecha" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Usuario" type="xs:string" minOccurs="0" />
+							<xs:element name="ID" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+							<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+							<xs:element name="Origen" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="tbl_interfascontabletransacciones">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="TransID" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="TransFecha" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="TransFechaMovimiento" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="TransDescripcion" type="xs:string" minOccurs="0" />
+							<xs:element name="TransIDTipo" type="xs:int" minOccurs="0" />
+							<xs:element name="TransUsuario" type="xs:string" minOccurs="0" />
+							<xs:element name="TransEstado" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="tbl_interfasecontabletransaccionesdetalles">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="TransDID" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="TransDIDTrans" type="xs:int" minOccurs="0" />
+							<xs:element name="TransDCuentaNo" type="xs:string" minOccurs="0" />
+							<xs:element name="TransDDescripcionCuenta" type="xs:string" minOccurs="0" />
+							<xs:element name="TransDDebito" type="xs:double" minOccurs="0" />
+							<xs:element name="TransDCredito" type="xs:double" minOccurs="0" />
+							<xs:element name="TransDBalance" type="xs:double" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="view_cont_transacciones">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="fld_id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+							<xs:element name="fld_codigo" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_descripcion" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_modulo" type="xs:string" minOccurs="0" />
+							<xs:element name="TransID" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+							<xs:element name="TransFecha" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="TransFechaMovimiento" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="TransDescripcion" type="xs:string" minOccurs="0" />
+							<xs:element name="TransIDTipo" type="xs:int" minOccurs="0" />
+							<xs:element name="TransUsuario" type="xs:string" minOccurs="0" />
+							<xs:element name="TransEstado" type="xs:string" minOccurs="0" />
+							<xs:element name="TransDID" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+							<xs:element name="TransDIDTrans" type="xs:int" minOccurs="0" />
+							<xs:element name="TransDCuentaNo" type="xs:string" minOccurs="0" />
+							<xs:element name="TransDDescripcionCuenta" type="xs:string" minOccurs="0" />
+							<xs:element name="TransDDebito" type="xs:double" minOccurs="0" />
+							<xs:element name="TransDCredito" type="xs:double" minOccurs="0" />
+							<xs:element name="TransDBalance" type="xs:double" minOccurs="0" />
+							<xs:element name="TransIDDoc" type="xs:int" minOccurs="0" />
+							<xs:element name="TransDoc" type="xs:string" minOccurs="0" />
+							<xs:element name="TransDocDetalle" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="tbl_catalogo">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="CuentaNo" type="xs:string" minOccurs="0" />
+							<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+							<xs:element name="Grupo" type="xs:int" minOccurs="0" />
+							<xs:element name="Tipo" type="xs:string" minOccurs="0" />
+							<xs:element name="Debito" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Credito" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Balance" type="xs:decimal" minOccurs="0" />
+							<xs:element name="CtaControl" type="xs:string" minOccurs="0" />
+							<xs:element name="NombreMes" type="xs:string" minOccurs="0" />
+							<xs:element name="NumeroMes" type="xs:int" minOccurs="0" />
+							<xs:element name="BalanceGeneral" type="xs:string" minOccurs="0" />
+							<xs:element name="EstadoResultado" type="xs:string" minOccurs="0" />
+							<xs:element name="OrdenEstadoResultado" type="xs:string" minOccurs="0" />
+							<xs:element name="AccionEstatoResultado" type="xs:string" minOccurs="0" />
+							<xs:element name="VerEnCero" type="xs:string" minOccurs="0" />
+							<xs:element name="Fecha" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Usuario" type="xs:string" minOccurs="0" />
+							<xs:element name="BalanceAnterior" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Origen" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="view_cont_libro_general">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+							<xs:element name="CuentaNo" type="xs:string" minOccurs="0" />
+							<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+							<xs:element name="Grupo" type="xs:int" minOccurs="0" />
+							<xs:element name="Tipo" type="xs:string" minOccurs="0" />
+							<xs:element name="Debito" type="xs:double" minOccurs="0" />
+							<xs:element name="Credito" type="xs:double" minOccurs="0" />
+							<xs:element name="Balance" type="xs:double" minOccurs="0" />
+							<xs:element name="CtaControl" type="xs:string" minOccurs="0" />
+							<xs:element name="NombreMes" type="xs:string" minOccurs="0" />
+							<xs:element name="NumeroMes" type="xs:int" minOccurs="0" />
+							<xs:element name="BalanceGeneral" type="xs:string" minOccurs="0" />
+							<xs:element name="EstadoResultado" type="xs:string" minOccurs="0" />
+							<xs:element name="OrdenEstadoResultado" type="xs:string" minOccurs="0" />
+							<xs:element name="AccionEstatoResultado" type="xs:string" minOccurs="0" />
+							<xs:element name="VerEnCero" type="xs:string" minOccurs="0" />
+							<xs:element name="Fecha" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Usuario" type="xs:string" minOccurs="0" />
+							<xs:element name="TransID" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+							<xs:element name="TransFecha" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="TransFechaMovimiento" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="TransDescripcion" type="xs:string" minOccurs="0" />
+							<xs:element name="TransIDTipo" type="xs:int" minOccurs="0" />
+							<xs:element name="TransUsuario" type="xs:string" minOccurs="0" />
+							<xs:element name="TransEstado" type="xs:string" minOccurs="0" />
+							<xs:element name="TransDID" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+							<xs:element name="TransDIDTrans" type="xs:int" minOccurs="0" />
+							<xs:element name="TransDCuentaNo" type="xs:string" minOccurs="0" />
+							<xs:element name="TransDDescripcionCuenta" type="xs:string" minOccurs="0" />
+							<xs:element name="TransDDebito" type="xs:double" minOccurs="0" />
+							<xs:element name="TransDCredito" type="xs:double" minOccurs="0" />
+							<xs:element name="TransDBalance" type="xs:double" minOccurs="0" />
+							<xs:element name="BalanceAnterior" type="xs:decimal" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="view_ahorros_depositos">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+							<xs:element name="Fecha" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="CuentaNo" type="xs:string" minOccurs="0" />
+							<xs:element name="IDCliente" type="xs:int" minOccurs="0" />
+							<xs:element name="Monto" type="xs:double" minOccurs="0" />
+							<xs:element name="Notas" type="xs:string" minOccurs="0" />
+							<xs:element name="Usuario" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+							<xs:element name="TipoDocumento" type="xs:int" minOccurs="0" />
+							<xs:element name="fld_FullName" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_apodo" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_Identity" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_Phone" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_Phone2" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_Address" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_City_id" type="xs:int" minOccurs="0" />
+							<xs:element name="fld_City" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_Status" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_bce" type="xs:double" minOccurs="0" />
+							<xs:element name="fld_cod_zona" type="xs:int" minOccurs="0" />
+							<xs:element name="fld_zona" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_nombre_con" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_apodo_con" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_cedula_con" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_telefono_con" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_celular_con" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_ref_personales_cliente" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_ref_comerciales_cliente" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_nombre_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_apodo_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_cedula_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_telefono_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_celular_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_direccion_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_ciudad_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_ref_personales_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_ref_comerciales_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_ingresos_mesuales" type="xs:double" minOccurs="0" />
+							<xs:element name="fld_nombre_banco1" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_cuenta_banco1" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_nombre_banco2" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_cuenta_banco2" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_otra_informacion" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_nombre_con_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_apodo_con_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_cedula_con_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_telefono_con_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_celular_con_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_edad" type="xs:int" minOccurs="0" />
+							<xs:element name="fld_estado_civil" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_edad_gar" type="xs:int" minOccurs="0" />
+							<xs:element name="fld_estado_civil_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_ocupacion_cliente" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_ocupacion_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_sector_id" type="xs:int" minOccurs="0" />
+							<xs:element name="fld_sector" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_categoria" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_limite" type="xs:double" minOccurs="0" />
+							<xs:element name="Puesto" type="xs:string" minOccurs="0" />
+							<xs:element name="TimpoTrabajo" type="xs:string" minOccurs="0" />
+							<xs:element name="ReferidoPor" type="xs:string" minOccurs="0" />
+							<xs:element name="Oriundo" type="xs:string" minOccurs="0" />
+							<xs:element name="DataCredito" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="view_ahorros_retiros">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="fld_id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+							<xs:element name="TipoDocumento" type="xs:int" minOccurs="0" />
+							<xs:element name="fld_FullName" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_apodo" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_Identity" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_Phone" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_Phone2" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_Address" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_City_id" type="xs:int" minOccurs="0" />
+							<xs:element name="fld_City" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_Status" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_bce" type="xs:double" minOccurs="0" />
+							<xs:element name="fld_cod_zona" type="xs:int" minOccurs="0" />
+							<xs:element name="fld_zona" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_nombre_con" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_apodo_con" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_cedula_con" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_telefono_con" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_celular_con" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_ref_personales_cliente" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_ref_comerciales_cliente" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_nombre_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_apodo_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_cedula_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_telefono_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_celular_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_direccion_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_ciudad_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_ref_personales_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_ref_comerciales_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_ingresos_mesuales" type="xs:double" minOccurs="0" />
+							<xs:element name="fld_nombre_banco1" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_cuenta_banco1" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_nombre_banco2" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_cuenta_banco2" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_otra_informacion" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_nombre_con_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_apodo_con_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_cedula_con_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_telefono_con_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_celular_con_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_edad" type="xs:int" minOccurs="0" />
+							<xs:element name="fld_estado_civil" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_edad_gar" type="xs:int" minOccurs="0" />
+							<xs:element name="fld_estado_civil_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_ocupacion_cliente" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_ocupacion_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_sector_id" type="xs:int" minOccurs="0" />
+							<xs:element name="fld_sector" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_categoria" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_limite" type="xs:double" minOccurs="0" />
+							<xs:element name="Puesto" type="xs:string" minOccurs="0" />
+							<xs:element name="TimpoTrabajo" type="xs:string" minOccurs="0" />
+							<xs:element name="ReferidoPor" type="xs:string" minOccurs="0" />
+							<xs:element name="Oriundo" type="xs:string" minOccurs="0" />
+							<xs:element name="DataCredito" type="xs:int" minOccurs="0" />
+							<xs:element name="ID" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+							<xs:element name="IDAhorro" type="xs:int" minOccurs="0" />
+							<xs:element name="IDCliente" type="xs:int" minOccurs="0" />
+							<xs:element name="Fecha" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Tipo" type="xs:string" minOccurs="0" />
+							<xs:element name="Concepto" type="xs:string" minOccurs="0" />
+							<xs:element name="Monto" type="xs:double" minOccurs="0" />
+							<xs:element name="Usuario" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="view_ahorros">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="fld_id" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+							<xs:element name="TipoDocumento" type="xs:int" minOccurs="0" />
+							<xs:element name="fld_FullName" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_apodo" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_Identity" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_Phone" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_Phone2" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_Address" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_City_id" type="xs:int" minOccurs="0" />
+							<xs:element name="fld_City" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_Status" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_bce" type="xs:double" minOccurs="0" />
+							<xs:element name="fld_cod_zona" type="xs:int" minOccurs="0" />
+							<xs:element name="fld_zona" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_nombre_con" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_apodo_con" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_cedula_con" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_telefono_con" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_celular_con" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_ref_personales_cliente" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_ref_comerciales_cliente" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_nombre_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_apodo_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_cedula_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_telefono_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_celular_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_direccion_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_ciudad_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_ref_personales_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_ref_comerciales_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_ingresos_mesuales" type="xs:double" minOccurs="0" />
+							<xs:element name="fld_nombre_banco1" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_cuenta_banco1" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_nombre_banco2" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_cuenta_banco2" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_otra_informacion" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_nombre_con_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_apodo_con_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_cedula_con_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_telefono_con_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_celular_con_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_edad" type="xs:int" minOccurs="0" />
+							<xs:element name="fld_estado_civil" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_edad_gar" type="xs:int" minOccurs="0" />
+							<xs:element name="fld_estado_civil_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_ocupacion_cliente" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_ocupacion_gar" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_sector_id" type="xs:int" minOccurs="0" />
+							<xs:element name="fld_sector" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_categoria" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_limite" type="xs:double" minOccurs="0" />
+							<xs:element name="Puesto" type="xs:string" minOccurs="0" />
+							<xs:element name="TimpoTrabajo" type="xs:string" minOccurs="0" />
+							<xs:element name="ReferidoPor" type="xs:string" minOccurs="0" />
+							<xs:element name="Oriundo" type="xs:string" minOccurs="0" />
+							<xs:element name="DataCredito" type="xs:int" minOccurs="0" />
+							<xs:element name="tbl_ahorros_cuentas.ID" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+							<xs:element name="IDCliente" type="xs:int" minOccurs="0" />
+							<xs:element name="CuentaNo" type="xs:string" minOccurs="0" />
+							<xs:element name="FechaApertura" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="FechaCancelada" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="TasaIteres" type="xs:double" minOccurs="0" />
+							<xs:element name="SaldoCapital" type="xs:double" minOccurs="0" />
+							<xs:element name="SaldoInteres" type="xs:double" minOccurs="0" />
+							<xs:element name="SaldoRetiros" type="xs:double" minOccurs="0" />
+							<xs:element name="Usuario" type="xs:string" minOccurs="0" />
+							<xs:element name="Nota" type="xs:string" minOccurs="0" />
+							<xs:element name="Categoria" type="xs:int" minOccurs="0" />
+							<xs:element name="Estado" type="xs:string" minOccurs="0" />
+							<xs:element name="tbl_ahorros_categorias.ID" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+							<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="tbl_profiledocument">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="fldCompanyID" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="fldCompany" type="xs:string" minOccurs="0" />
+							<xs:element name="fldAddress" type="xs:string" minOccurs="0" />
+							<xs:element name="fldPhone" type="xs:string" minOccurs="0" />
+							<xs:element name="fldRnc" type="xs:string" minOccurs="0" />
+							<xs:element name="fldPassDescuento" type="xs:string" minOccurs="0" />
+							<xs:element name="fldPassConfig" type="xs:string" minOccurs="0" />
+							<xs:element name="fldPassAdmin" type="xs:string" minOccurs="0" />
+							<xs:element name="fldNotaRecepcion" type="xs:string" minOccurs="0" />
+							<xs:element name="fldDiasVenceFC" type="xs:string" minOccurs="0" />
+							<xs:element name="fldColorForm" type="xs:string" minOccurs="0" />
+							<xs:element name="foto" type="xs:base64Binary" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="cajaarqueo">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="fld_id" type="xs:int" minOccurs="0" />
+							<xs:element name="fld_fecha" type="xs:date" minOccurs="0" />
+							<xs:element name="fld_estacion" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_usuario" type="xs:string" minOccurs="0" />
+							<xs:element name="TextBox1" type="xs:double" minOccurs="0" />
+							<xs:element name="TextBox2" type="xs:double" minOccurs="0" />
+							<xs:element name="TextBox3" type="xs:double" minOccurs="0" />
+							<xs:element name="TextBox4" type="xs:double" minOccurs="0" />
+							<xs:element name="TextBox5" type="xs:double" minOccurs="0" />
+							<xs:element name="TextBox6" type="xs:double" minOccurs="0" />
+							<xs:element name="TextBox7" type="xs:double" minOccurs="0" />
+							<xs:element name="TextBox8" type="xs:double" minOccurs="0" />
+							<xs:element name="TextBox9" type="xs:double" minOccurs="0" />
+							<xs:element name="TextBox10" type="xs:double" minOccurs="0" />
+							<xs:element name="TextBox11" type="xs:double" minOccurs="0" />
+							<xs:element name="TextBox12" type="xs:double" minOccurs="0" />
+							<xs:element name="TextBox13" type="xs:double" minOccurs="0" />
+							<xs:element name="TextBox1_1" type="xs:double" minOccurs="0" />
+							<xs:element name="TextBox1_2" type="xs:double" minOccurs="0" />
+							<xs:element name="TextBox1_3" type="xs:double" minOccurs="0" />
+							<xs:element name="TextBox1_4" type="xs:double" minOccurs="0" />
+							<xs:element name="TextBox1_5" type="xs:double" minOccurs="0" />
+							<xs:element name="TextBox1_6" type="xs:double" minOccurs="0" />
+							<xs:element name="TextBox1_7" type="xs:double" minOccurs="0" />
+							<xs:element name="TextBox1_8" type="xs:double" minOccurs="0" />
+							<xs:element name="TextBox1_9" type="xs:double" minOccurs="0" />
+							<xs:element name="TextBox1_10" type="xs:double" minOccurs="0" />
+							<xs:element name="TextBox1_11" type="xs:double" minOccurs="0" />
+							<xs:element name="TextBox1_12" type="xs:double" minOccurs="0" />
+							<xs:element name="TextBox1_13" type="xs:double" minOccurs="0" />
+							<xs:element name="TextBox14" type="xs:double" minOccurs="0" />
+							<xs:element name="TextBox15" type="xs:double" minOccurs="0" />
+							<xs:element name="TextBox16" type="xs:double" minOccurs="0" />
+							<xs:element name="TextBox17" type="xs:double" minOccurs="0" />
+							<xs:element name="fld_cheques" type="xs:double" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="tbl_recibo_ingresos_cxc">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="fld_Id_RI" type="xs:int" minOccurs="0" />
+							<xs:element name="fld_date" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="fld_socio" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_concepto" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_monto" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+							<xs:element name="fld_id_cliente_ri" type="xs:int" minOccurs="0" />
+							<xs:element name="fld_interes_cobrado" type="xs:decimal" minOccurs="0" />
+							<xs:element name="fld_capital_cobrado" type="xs:decimal" minOccurs="0" />
+							<xs:element name="fld_mora_cobrada" type="xs:decimal" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="tbl_recibo_egresos">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="fldIdDoc" type="xs:int" minOccurs="0" />
+							<xs:element name="fldFecha" type="xs:date" minOccurs="0" />
+							<xs:element name="fldEntregado" type="xs:string" minOccurs="0" />
+							<xs:element name="fldConcepto" type="xs:string" minOccurs="0" />
+							<xs:element name="fldMonto" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="dsReportesKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:tbl_interfascontabletransacciones" />
+			<xs:field xpath="mstns:TransID" />
+		</xs:unique>
+		<xs:unique name="dsReportesKey2" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:tbl_interfasecontabletransaccionesdetalles" />
+			<xs:field xpath="mstns:TransDID" />
+		</xs:unique>
+		<xs:unique name="dsReportesKey4" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:tbl_catalogo" />
+			<xs:field xpath="mstns:ID" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

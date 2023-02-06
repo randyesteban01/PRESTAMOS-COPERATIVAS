@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Basic Express 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Cooperativa", "Cooperativa.vbproj", "{51660C2B-7544-42E5-A9E5-434DD86DDBCE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51660C2B-7544-42E5-A9E5-434DD86DDBCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51660C2B-7544-42E5-A9E5-434DD86DDBCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51660C2B-7544-42E5-A9E5-434DD86DDBCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51660C2B-7544-42E5-A9E5-434DD86DDBCE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
