@@ -1,0 +1,3 @@
+<data>
+<tbl_catalogo><ID>1</ID><Descripcion>ACTIVO</Descripcion><Origen>1</Origen><ID>2</ID><CuentaNo>10</CuentaNo><Descripcion>Activos Corrientes</Descripcion><Grupo>1</Grupo><Tipo>Grupo</Tipo><Debito>0.00</Debito><Credito>0.00</Credito><Balance>0.00</Balance><CtaControl>1</CtaControl><NombreMes>0</NombreMes><NumeroMes>1</NumeroMes><BalanceGeneral>0</BalanceGeneral><EstadoResultado>0</EstadoResultado><OrdenEstadoResultado>0</OrdenEstadoResultado><AccionEstatoResultado>0</AccionEstatoResultado><VerEnCero>0</VerEnCero><Fecha>2016-03-26 23:06:36</Fecha><Usuario>ADMIN</Usuario></tbl_catalogo>
+</data>

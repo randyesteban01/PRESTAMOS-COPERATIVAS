@@ -1,0 +1,1031 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Cooperativa
+</name>
+</assembly>
+<members>
+<member name="T:Cooperativa.My.Resources.Resources">
+<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member>
+<member name="P:Cooperativa.My.Resources.Resources.ResourceManager">
+<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member>
+<member name="P:Cooperativa.My.Resources.Resources.Culture">
+<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member>
+<member name="T:Cooperativa.dsAhorro">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Cooperativa.dsAhorro.tbl_profiledocumentDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsAhorro.tbl_ahorroDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsAhorro.tbl_ahorroretiroDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsAhorro.ahorroAportacionDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsAhorro.certificadosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsAhorro.solicitudcreditoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsAhorro.solicitudcreditoclienteDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsAhorro.tbl_profiledocumentRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsAhorro.tbl_ahorroRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsAhorro.tbl_ahorroretiroRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsAhorro.ahorroAportacionRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsAhorro.certificadosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsAhorro.solicitudcreditoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsAhorro.solicitudcreditoclienteRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsAhorro.tbl_profiledocumentRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.dsAhorro.tbl_ahorroRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.dsAhorro.tbl_ahorroretiroRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.dsAhorro.ahorroAportacionRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.dsAhorro.certificadosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.dsAhorro.solicitudcreditoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.dsAhorro.solicitudcreditoclienteRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.view_cont_catalogoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.tbl_interfascontabletransaccionesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.tbl_interfasecontabletransaccionesdetallesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.view_cont_transaccionesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.tbl_catalogoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.view_cont_libro_generalDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.view_ahorros_depositosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.view_ahorros_retirosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.view_ahorrosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.tbl_profiledocumentDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.cajaarqueoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.tbl_recibo_ingresos_cxcDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.tbl_recibo_egresosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.view_cont_catalogoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.tbl_interfascontabletransaccionesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.tbl_interfasecontabletransaccionesdetallesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.view_cont_transaccionesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.tbl_catalogoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.view_cont_libro_generalRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.view_ahorros_depositosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.view_ahorros_retirosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.view_ahorrosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.tbl_profiledocumentRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.cajaarqueoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.tbl_recibo_ingresos_cxcRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.tbl_recibo_egresosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.view_cont_catalogoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.tbl_interfascontabletransaccionesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.tbl_interfasecontabletransaccionesdetallesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.view_cont_transaccionesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.tbl_catalogoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.view_cont_libro_generalRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.view_ahorros_depositosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.view_ahorros_retirosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.view_ahorrosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.tbl_profiledocumentRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.cajaarqueoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.tbl_recibo_ingresos_cxcRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.dsReportes.tbl_recibo_egresosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_supplierDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_beneficiariosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_estado_clientesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_estado_proveedorDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_ingresosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_nc_cxpDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_nd_cxpDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_temp_transaccionesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_tipo_entrada_diarioDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_transaccionesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_userDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_cuadre_cajaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_nc_cxcDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_nd_cxcDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_compras_salida_cajaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_clientesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_cxc_nota_debitoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_estado_clientesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_prestamos_todosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_catalogo_ctaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_chequesDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_depositoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_profiledocumentDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_ri_cxcDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_recibo_ingresos_imprimirDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_cuotas_todasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_cxc_nota_creditoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_gastosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_generar_cuotasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_movimiento_inventarioDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_inventarioDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_recibo_egresosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_recibo_ingresos_cxcDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_cuadreDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_cuadre_detalleDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_clientes_con_prestamosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_estado_proveedorDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_nota_credito_cxpDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_nota_debito_cxpDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_ahorrosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_ahorros_categoriasDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_ahorrosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_tabla_prestamosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_retirosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_interfascontableDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_ahorros_estadosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_supplierRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_beneficiariosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_estado_clientesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_estado_proveedorRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_ingresosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_nc_cxpRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_nd_cxpRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_temp_transaccionesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_tipo_entrada_diarioRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_transaccionesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_userRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_cuadre_cajaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_nc_cxcRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_nd_cxcRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_compras_salida_cajaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_clientesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_cxc_nota_debitoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_estado_clientesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_prestamos_todosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_catalogo_ctaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_chequesRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_depositoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_profiledocumentRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_ri_cxcRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_recibo_ingresos_imprimirRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_cuotas_todasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_cxc_nota_creditoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_gastosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_generar_cuotasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_movimiento_inventarioRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_inventarioRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_recibo_egresosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_recibo_ingresos_cxcRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_cuadreRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_cuadre_detalleRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_clientes_con_prestamosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_estado_proveedorRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_nota_credito_cxpRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_nota_debito_cxpRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_ahorrosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_ahorros_categoriasRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_ahorrosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_tabla_prestamosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_retirosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_interfascontableRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_ahorros_estadosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_supplierRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_beneficiariosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_estado_clientesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_estado_proveedorRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_ingresosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_nc_cxpRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_nd_cxpRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_temp_transaccionesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_tipo_entrada_diarioRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_transaccionesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_userRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_cuadre_cajaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_nc_cxcRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_nd_cxcRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_compras_salida_cajaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_clientesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_cxc_nota_debitoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_estado_clientesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_prestamos_todosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_catalogo_ctaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_chequesRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_depositoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_profiledocumentRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_ri_cxcRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_recibo_ingresos_imprimirRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_cuotas_todasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_cxc_nota_creditoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_gastosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_generar_cuotasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_movimiento_inventarioRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_inventarioRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_recibo_egresosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_recibo_ingresos_cxcRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_cuadreRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_cuadre_detalleRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_clientes_con_prestamosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_estado_proveedorRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_nota_credito_cxpRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_nota_debito_cxpRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_ahorrosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_ahorros_categoriasRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_ahorrosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_tabla_prestamosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.view_retirosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_interfascontableRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Cooperativa.DS_REPORTES.tbl_ahorros_estadosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+</members>
+</doc>

@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Intaladores SMC", "Setup.vdproj", "{B442BF6A-0943-4E86-A843-C32D76EE8A03}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SMC_Loans", "..\SMC_Loans.vbproj", "{51660C2B-7544-42E5-A9E5-434DD86DDBCE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B442BF6A-0943-4E86-A843-C32D76EE8A03}.Debug|Default.ActiveCfg = Debug
+		{B442BF6A-0943-4E86-A843-C32D76EE8A03}.Debug|Default.Build.0 = Debug
+		{B442BF6A-0943-4E86-A843-C32D76EE8A03}.Release|Default.ActiveCfg = Release
+		{B442BF6A-0943-4E86-A843-C32D76EE8A03}.Release|Default.Build.0 = Release
+		{51660C2B-7544-42E5-A9E5-434DD86DDBCE}.Debug|Default.ActiveCfg = Debug|Any CPU
+		{51660C2B-7544-42E5-A9E5-434DD86DDBCE}.Debug|Default.Build.0 = Debug|Any CPU
+		{51660C2B-7544-42E5-A9E5-434DD86DDBCE}.Release|Default.ActiveCfg = Release|Any CPU
+		{51660C2B-7544-42E5-A9E5-434DD86DDBCE}.Release|Default.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
