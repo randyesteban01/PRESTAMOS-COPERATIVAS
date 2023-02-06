@@ -327,6 +327,7 @@ Public Class frmCuentaAhorros
         'dtpFechaInicia
         '
         Me.dtpFechaInicia.CustomFormat = "dd / MMM /yyyy"
+        Me.dtpFechaInicia.Enabled = False
         Me.dtpFechaInicia.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.dtpFechaInicia.Location = New System.Drawing.Point(104, 144)
         Me.dtpFechaInicia.Name = "dtpFechaInicia"
