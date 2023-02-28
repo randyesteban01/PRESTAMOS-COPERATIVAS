@@ -1,0 +1,242 @@
+ChangeSet@1.2234, 2006-07-27 13:59:15+04:00, kroki@moonlight.intranet +3 -0
+  BUG#21206: memory corruption when too many cursors are opened at once
+  
+  Too many cursors (more than 1024) could lead to memory corruption.
+  This affects both, stored routines and C API cursors, and the
+  threshold is per-server, not per-connection.  Similarly, the
+  corruption could happen when the server was under heavy load
+  (executing more than 1024 simultaneous complex queries), and this is
+  the reason why this bug is fixed in 4.1, which doesn't support
+  cursors.
+  
+  The corruption was caused by a bug in the temporary tables code, when
+  an attempt to create a table could lead to a write beyond allocated
+  space.  Note, that only internal tables were affected (the tables
+  created internally by the server to resolve the query), not tables
+  created with CREATE TEMPORARY TABLE.  Another pre-condition for the
+  bug is TRUE value of --temp-pool startup option, which, however, is a
+  default.
+  
+  The cause of a bug was that random memory was overwritten in
+  bitmap_set_next() due to out-of-bound memory access.
+
+  mysys/my_bitmap.c@1.31, 2006-07-27 13:59:12+04:00, kroki@moonlight.intranet +2 -2
+    Local 'bitmap_size' is measured in bytes, no need to multiply it by 8.
+
+  sql/sql_select.cc@1.427, 2006-07-27 13:59:12+04:00, kroki@moonlight.intranet +8 -4
+    Clear the temp_pool_slot bit only if we have set it previously.
+
+  tests/mysql_client_test.c@1.188, 2006-07-27 13:59:13+04:00, kroki@moonlight.intranet +48 -1
+    Add test case for bug#21206: memory corruption when too many cursors
+    are opened at once.
+
+ChangeSet@1.2233, 2006-07-25 12:56:23+02:00, joerg@trift2. +1 -0
+  "mysql-test-run.pl" must write a "Logging:" line for the evaluation of RPM build tests.
+      (Re-apply a patch from the general tree to the clone.)
+
+  mysql-test/mysql-test-run.pl@1.103, 2006-07-25 12:56:20+02:00, joerg@trift2. +5 -0
+    "mysql-test-run.pl" must write a "Logging:" line for the evaluation of RPM build tests.
+    (Re-apply a patch from the general tree to the clone.)
+
+ChangeSet@1.2232, 2006-07-25 20:00:18+09:30, grog@eucla.lemis.com +1 -0
+  slave.cc:
+        BUG#20850: Assert during slave shutdown in many rpl_* tests
+        This patch has already been applied to 5.1.
+
+  sql/slave.cc@1.274, 2006-07-25 18:59:58+09:30, grog@eucla.lemis.com +4 -4
+        BUG#20850: Assert during slave shutdown in many rpl_* tests
+        This patch has already been applied to 5.1.
+
+ChangeSet@1.2231, 2006-07-22 02:00:33+02:00, kent@mysql.com +3 -0
+  mysqlmanager.vcproj:
+    Place mysqlmanager 'pdb' file in 'client_debug' directory
+  mysys.vcproj:
+    Removed define of __NT__ from 'Debug' target
+  mysqld.vcproj:
+    Always generate 'pdb' and 'map' files
+
+  VC++Files/mysys/mysys.vcproj@1.8, 2006-07-22 01:35:13+02:00, kent@mysql.com +1 -1
+    Removed define of __NT__ from 'Debug' target
+
+  VC++Files/sql/mysqld.vcproj@1.8, 2006-07-22 01:59:48+02:00, kent@mysql.com +33 -9
+    Always generate 'pdb' and 'map' files
+
+  server-tools/instance-manager/mysqlmanager.vcproj@1.7, 2006-07-22 01:31:45+02:00, kent@mysql.com +1 -1
+    Place mysqlmanager 'pdb' file in 'client_debug' directory
+
+ChangeSet@1.2230, 2006-07-21 09:53:12+02:00, tsmith@maint1.mysql.com +7 -0
+  Merge patch for bug #15195 from 5.0 -> 5.0-release (for 5.0.24)
+
+  mysql-test/r/warnings.result@1.36, 2006-07-21 09:51:57+02:00, tsmith@maint1.mysql.com +7 -0
+
+  mysql-test/t/warnings-master.opt@1.3, 2006-07-21 09:51:57+02:00, tsmith@maint1.mysql.com +1 -1
+
+  mysql-test/t/warnings.test@1.24, 2006-07-21 09:51:57+02:00, tsmith@maint1.mysql.com +4 -0
+
+  sql/handler.cc@1.213, 2006-07-21 09:51:57+02:00, tsmith@maint1.mysql.com +3 -1
+
+  sql/mysql_priv.h@1.396, 2006-07-21 09:51:57+02:00, tsmith@maint1.mysql.com +4 -0
+
+  sql/mysqld.cc@1.560, 2006-07-21 09:51:57+02:00, tsmith@maint1.mysql.com +11 -2
+
+  sql/set_var.cc@1.158, 2006-07-21 09:51:57+02:00, tsmith@maint1.mysql.com +1 -0
+
+ChangeSet@1.2229, 2006-07-19 22:33:19+04:00, kostja@bodhi.local +9 -0
+  A fix and a test case for Bug#21002 "Derived table not selecting from a 
+  "real" table fails in JOINs".
+  
+  This is a regression caused by the fix for Bug 18444. 
+  This fix removed the assignment of empty_c_string to table->db performed 
+  in add_table_to_list, as neither me nor anyone else knew what it was 
+  there for. Now we know it and it's covered with tests: the only case 
+  when a table database name can be empty is when the table is a derived 
+  table. The fix puts the assignment back but makes it a bit more explicit.
+  
+  Additionally, finally drop sp.result.orig which was checked in by mistake. 
+
+  BitKeeper/deleted/.del-sp.result.orig@1.2, 2006-07-15 02:33:17+04:00, kostja@bodhi.local +0 -0
+    Delete: mysql-test/r/sp.result.orig
+
+  mysql-test/r/derived.result@1.57, 2006-07-19 22:33:15+04:00, kostja@bodhi.local +1 -1
+    Updated result file.
+
+  mysql-test/r/sp.result@1.203, 2006-07-19 22:33:15+04:00, kostja@bodhi.local +15 -0
+    Test results fixed (Bug#21002)
+
+  mysql-test/t/derived.test@1.52, 2006-07-19 22:33:15+04:00, kostja@bodhi.local +1 -1
+    New error return for the case when MULTI-DELETE tries to delete from
+    a derived table: now derived tables belong to their own db (""), and
+    MUTLI-DELETE can't find the correspondent table for it in the 
+    DELETE list, as it can't resolve tables in different dbs by alias
+    (See Bug#21148 for details)
+
+  mysql-test/t/sp.test@1.191, 2006-07-19 22:33:15+04:00, kostja@bodhi.local +25 -0
+    Add a test case for Bug#21002 "Derived table not selecting from a "real"
+     table fails in JOINs"
+
+  sql/sp.cc@1.114, 2006-07-19 22:33:15+04:00, kostja@bodhi.local +0 -1
+    Make empty_c_string globally accessible.
+
+  sql/sql_class.cc@1.237, 2006-07-19 22:33:16+04:00, kostja@bodhi.local +1 -0
+    Add empty_c_string definition.
+
+  sql/sql_class.h@1.293, 2006-07-19 22:33:16+04:00, kostja@bodhi.local +12 -1
+    Add a comment for the constructor of Table_ident which is
+    used for derived tables. Make sure this constructor also initializes
+    the database name, not only the table name.
+
+  sql/sql_parse.cc@1.557, 2006-07-19 22:33:16+04:00, kostja@bodhi.local +6 -2
+    Don't call check_db_name for empty database. 
+    Currently the only case when a table database name can be empty
+    is when the table is a derived table.
+    Report the right error if the database name is wrong (ER_WRONG_DB_NAME,
+    not ER_WRONG_TABLE_NAME). 
+
+ChangeSet@1.2228, 2006-07-19 11:49:07+02:00, tnurnberg@salvation.intern.azundris.com +3 -0
+  Bug#20989: View '(null).(null)' references invalid table(s)... on SQL SECURITY INVOKER
+  
+  REPLACE ... SELECT would require INSERT privileges on certain tables
+  when SELECT really suffices. Require INSERT only on target table.
+
+  mysql-test/r/insert_select.result@1.39, 2006-07-19 11:49:01+02:00, tnurnberg@salvation.intern.azundris.com +100 -0
+    Bug#20989: View '(null).(null)' references invalid table(s)... on SQL SECURITY INVOKER
+    
+    Show that REPLACE ... SELECT requires INSERT privileges only on target table.
+    (revised test with more view-fu)
+
+  mysql-test/t/insert_select.test@1.32, 2006-07-19 11:49:01+02:00, tnurnberg@salvation.intern.azundris.com +138 -0
+    Bug#20989: View '(null).(null)' references invalid table(s)... on SQL SECURITY INVOKER
+    
+    Show that REPLACE ... SELECT requires INSERT privileges only on target table.
+    (revised test with more view-fu)
+
+  sql/sql_insert.cc@1.195, 2006-07-19 11:49:01+02:00, tnurnberg@salvation.intern.azundris.com +8 -1
+    Bug#20989: View '(null).(null)' references invalid table(s)... on SQL SECURITY INVOKER
+    
+    require SELECT rather than INSERT privs on tables that constitute the views we'll read
+
+ChangeSet@1.2227, 2006-07-17 18:07:08-04:00, iggy@rolltop.ignatz42.dyndns.org +3 -0
+  Bug# 20221- Dumping of multiple databases containing view(s) yields maleformed dumps.
+
+  client/mysqldump.c@1.234, 2006-07-17 18:07:05-04:00, iggy@rolltop.ignatz42.dyndns.org +14 -3
+    When dumping more than one database, make sure that the proper database is selected before restoring that database's views.
+    Replaced hard-coded database name length with appropiate token.
+
+  mysql-test/r/mysqldump.result@1.102, 2006-07-17 18:07:05-04:00, iggy@rolltop.ignatz42.dyndns.org +39 -0
+    Added new result and corrected results for existing test cases.
+
+  mysql-test/t/mysqldump.test@1.95, 2006-07-17 18:07:05-04:00, iggy@rolltop.ignatz42.dyndns.org +38 -0
+    Added new case for dumping and restoring multiple databases each containing a view.
+
+ChangeSet@1.2226, 2006-07-14 12:50:00+02:00, tnurnberg@mysql.com +3 -0
+  Bug#21014: Segmentation fault of mysqldump on view
+  
+  mysqldump did not select the correct database before trying to dump
+  views from it. this resulted in an empty result set, which in turn
+  startled mysql-dump into a core-dump.  this only happened for views,
+  not for tables, and was only visible with multiple databases that
+  weren't by sheer luck in the order mysqldump required, anyway. this
+  fixes by selecting the correct database before dumping views; it also
+  catches the empty set-condition if it should occur for other reasons.
+
+  client/mysqldump.c@1.233, 2006-07-14 12:49:56+02:00, tnurnberg@mysql.com +9 -2
+    Bug#21014: Segmentation fault of mysqldump on view
+    
+    failsafe: if "select ... from information_schema.views" returns an
+    empty set, don't deref NULL; throw an error instead.
+    
+    fix: select the correct database not only before dumping tables, but
+    before dumping views, as well.
+
+  mysql-test/r/mysqldump.result@1.101, 2006-07-14 12:49:57+02:00, tnurnberg@mysql.com +30 -0
+    Bug#21014: Segmentation fault of mysqldump on view
+    
+    show that mysqldump selects the correct database before trying to dump
+    views from it.
+
+  mysql-test/t/mysqldump.test@1.94, 2006-07-14 12:49:57+02:00, tnurnberg@mysql.com +19 -0
+    Bug#21014: Segmentation fault of mysqldump on view
+    
+    show that mysqldump selects the correct database before trying to dump
+    views from it.
+
+ChangeSet@1.2225, 2006-07-10 22:49:44+02:00, joerg@trift2. +1 -0
+  support-files/mysql.spec.sh  :    Fix a typing error.
+
+  support-files/mysql.spec.sh@1.147, 2006-07-10 22:49:41+02:00, joerg@trift2. +6 -2
+    Fix a typing error in the "make" target for the Perl script to run the tests.
+
+ChangeSet@1.2222.1.1, 2006-07-10 22:38:13+02:00, joerg@trift2. +1 -0
+  Raise the version number.
+  TAG: clone-5.0.24-build
+
+  configure.in@1.397, 2006-07-10 22:37:32+02:00, joerg@trift2. +2 -2
+    Raise the version number.
+
+ChangeSet@1.2223, 2006-07-10 20:46:05+02:00, ingo@chilla.local +8 -0
+  Revoking patch for Bug#10952 on behalf of Brian.
+
+  mysql-test/r/blackhole.result@1.10, 2006-07-10 20:46:02+02:00, ingo@chilla.local +0 -8
+    Revoking patch for Bug#10952 on behalf of Brian.
+
+  mysql-test/r/merge.result@1.49, 2006-07-10 20:46:03+02:00, ingo@chilla.local +0 -8
+    Revoking patch for Bug#10952 on behalf of Brian.
+
+  mysql-test/t/blackhole.test@1.8, 2006-07-10 20:46:03+02:00, ingo@chilla.local +0 -12
+    Revoking patch for Bug#10952 on behalf of Brian.
+
+  mysql-test/t/merge.test@1.42, 2006-07-10 20:46:03+02:00, ingo@chilla.local +0 -10
+    Revoking patch for Bug#10952 on behalf of Brian.
+
+  sql/ha_blackhole.cc@1.23, 2006-07-10 20:46:03+02:00, ingo@chilla.local +1 -1
+    Revoking patch for Bug#10952 on behalf of Brian.
+
+  sql/ha_myisammrg.cc@1.78, 2006-07-10 20:46:03+02:00, ingo@chilla.local +1 -1
+    Revoking patch for Bug#10952 on behalf of Brian.
+
+  sql/handler.h@1.173, 2006-07-10 20:46:03+02:00, ingo@chilla.local +0 -1
+    Revoking patch for Bug#10952 on behalf of Brian.
+
+  sql/sql_table.cc@1.317, 2006-07-10 20:46:03+02:00, ingo@chilla.local +1 -3
+    Revoking patch for Bug#10952 on behalf of Brian.
+

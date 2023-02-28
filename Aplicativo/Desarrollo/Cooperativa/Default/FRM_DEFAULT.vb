@@ -1301,11 +1301,11 @@ Public Class FRM_DEFAULT
         '
         'StatusBar
         '
-        Me.StatusBar.Location = New System.Drawing.Point(0, 341)
+        Me.StatusBar.Location = New System.Drawing.Point(0, 365)
         Me.StatusBar.Name = "StatusBar"
         Me.StatusBar.Panels.AddRange(New System.Windows.Forms.StatusBarPanel() {Me.User1, Me.Puesto, Me.fecha})
         Me.StatusBar.ShowPanels = True
-        Me.StatusBar.Size = New System.Drawing.Size(914, 25)
+        Me.StatusBar.Size = New System.Drawing.Size(914, 21)
         Me.StatusBar.SizingGrip = False
         Me.StatusBar.TabIndex = 2
         Me.StatusBar.Text = "SMC-Administrativo"
@@ -1316,7 +1316,7 @@ Public Class FRM_DEFAULT
         Me.User1.Name = "User1"
         Me.User1.Text = "User1"
         Me.User1.ToolTipText = "USUARIO ACTUAL"
-        Me.User1.Width = 809
+        Me.User1.Width = 823
         '
         'Puesto
         '
@@ -1324,14 +1324,14 @@ Public Class FRM_DEFAULT
         Me.Puesto.Name = "Puesto"
         Me.Puesto.Text = "Puesto"
         Me.Puesto.ToolTipText = "PUESTO"
-        Me.Puesto.Width = 57
+        Me.Puesto.Width = 49
         '
         'fecha
         '
         Me.fecha.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Contents
         Me.fecha.Name = "fecha"
         Me.fecha.Text = "fecha"
-        Me.fecha.Width = 48
+        Me.fecha.Width = 42
         '
         'ImageList1
         '
@@ -1361,7 +1361,7 @@ Public Class FRM_DEFAULT
         Me.ToolBar.Location = New System.Drawing.Point(0, 0)
         Me.ToolBar.Name = "ToolBar"
         Me.ToolBar.ShowToolTips = True
-        Me.ToolBar.Size = New System.Drawing.Size(914, 172)
+        Me.ToolBar.Size = New System.Drawing.Size(914, 59)
         Me.ToolBar.TabIndex = 17
         '
         'b_clientes
@@ -1456,18 +1456,18 @@ Public Class FRM_DEFAULT
         Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(2, 68)
+        Me.Label1.Location = New System.Drawing.Point(2, 59)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(909, 37)
+        Me.Label1.Size = New System.Drawing.Size(909, 32)
         Me.Label1.TabIndex = 19
         Me.Label1.Text = "COMPAÑIA"
         '
         'FRM_DEFAULT
         '
-        Me.AutoScaleBaseSize = New System.Drawing.Size(6, 15)
+        Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
         Me.BackColor = System.Drawing.Color.WhiteSmoke
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(914, 366)
+        Me.ClientSize = New System.Drawing.Size(914, 386)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ToolBar)
         Me.Controls.Add(Me.StatusBar)
@@ -1842,6 +1842,7 @@ Public Class FRM_DEFAULT
         Return importe
     End Function
 
+
     Private Sub FRM_DEFAULT_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Me.Icon = appIcon
         User1.Text = "USUARIO..: " & User(2)
@@ -1856,9 +1857,6 @@ Public Class FRM_DEFAULT
 
         Me.Label1.Text = objIniFile.GetString("COMPANY", "Name", "(none)")
         aplicaInteres()
-
-
-
     End Sub
 
     Private Sub FRM_DEFAULT_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyDown

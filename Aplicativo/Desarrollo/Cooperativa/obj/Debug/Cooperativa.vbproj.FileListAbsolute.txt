@@ -436,7 +436,6 @@ C:\Users\EEscobar\Documents\GitHub\PRESTAMOS-COPERATIVAS\Aplicativo\Desarrollo\C
 C:\Users\EEscobar\Documents\GitHub\PRESTAMOS-COPERATIVAS\Aplicativo\Desarrollo\Cooperativa\bin\Cooperativa.xml
 C:\Users\EEscobar\Documents\GitHub\PRESTAMOS-COPERATIVAS\Aplicativo\Desarrollo\Cooperativa\bin\DecimalTextBoxControl.dll
 C:\Users\EEscobar\Documents\GitHub\PRESTAMOS-COPERATIVAS\Aplicativo\Desarrollo\Cooperativa\bin\stdole.dll
-C:\Users\EEscobar\Documents\GitHub\PRESTAMOS-COPERATIVAS\Aplicativo\Desarrollo\Cooperativa\obj\Debug\Cooperativa.vbprojResolveAssemblyReference.cache
 C:\Users\EEscobar\Documents\GitHub\PRESTAMOS-COPERATIVAS\Aplicativo\Desarrollo\Cooperativa\obj\Debug\Cooperativa.Concepto_anulacion.resources
 C:\Users\EEscobar\Documents\GitHub\PRESTAMOS-COPERATIVAS\Aplicativo\Desarrollo\Cooperativa\obj\Debug\Cooperativa.Crear_Anulaciones.resources
 C:\Users\EEscobar\Documents\GitHub\PRESTAMOS-COPERATIVAS\Aplicativo\Desarrollo\Cooperativa\obj\Debug\Cooperativa.FrmActualiarLibrera.resources

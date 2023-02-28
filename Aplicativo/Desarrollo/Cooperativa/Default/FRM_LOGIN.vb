@@ -177,7 +177,66 @@ Public Class FRM_LOGIN
 #End Region
     Dim count = 0
 
+
+    '' prueba de lectura y escritura de archivo .ini
+    Public Declare Function WritePrivateProfileString Lib "kernel32" Alias "WritePrivateProfileStringA" (ByVal lpApplicationName As String, ByVal lpKeyName As String, ByVal lpString As String, ByVal lpFileName As String) As Integer
+
+    Public Function saveINIkey(file As String, section As String, key As String, value As String) As Boolean
+
+        Dim lret As Long, ret As String = ""
+
+        lret = WritePrivateProfileString(section.Trim, key.Trim, value.Trim, file.Trim)
+        ret = lret.ToString().Trim().ToLower
+
+        If ret = "0" Then
+            Return False
+        Else
+            Return True
+        End If
+
+    End Function
+
+    Private Sub EjecutarBat(ByVal pathArchivoBat As String)
+        Dim proceso As Process = New Process()
+        proceso.StartInfo.FileName = pathArchivoBat
+        proceso.Start()
+        proceso.WaitForExit()
+    End Sub
+
+    Private Sub VerificarVersionSistema()
+        Try
+
+            Dim strVersionServidor As String = String.Empty
+            Dim strVersionLocal As String = String.Empty
+            Dim strUrlSistemaServidorCentral As String = String.Empty
+
+            strVersionServidor = SCALAR_STRING("SELECT VersionPublicacionSistema FROM parametrosgenerales WHERE ID=1")
+            strVersionLocal = objIniFile.GetString("VERSION", "Publicacion", "(none)")
+
+            If strVersionLocal <> strVersionServidor Then
+
+                MsgBox("Se ha detectado una nueva versión de software en el servidor central, se procederá con la actualización", MsgBoxStyle.Information)
+
+                If saveINIkey(AppPath & "\Settings.ini", "VERSION", "Publicacion", strVersionServidor) = True Then
+                    MsgBox("Versión Actualizada.", MsgBoxStyle.Information)
+                Else
+                    MsgBox("Error en Actualización.", MsgBoxStyle.Critical)
+                End If
+
+                EjecutarBat(AppPath & "\DashaCooperativa.bat")
+
+            End If
+
+        Catch ex As Exception
+            MsgBox("Error en Actualización, Se podrá trabajar con la versión actual del sistema", MsgBoxStyle.Critical)
+        End Try
+    End Sub
+
+
     Private Sub FRM_LOGIN_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+        VerificarVersionSistema()
+
         Me.Label3.Text = objIniFile.GetString("COMPANY", "Name", "(none)")
         System.Windows.Forms.Application.EnableVisualStyles()
         Me.Icon = appIcon
@@ -323,5 +382,9 @@ Public Class FRM_LOGIN
   
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         ValidatedUser()
+    End Sub
+
+    Private Sub FRM_LOGIN_Disposed(sender As Object, e As EventArgs) Handles Me.Disposed
+
     End Sub
 End Class

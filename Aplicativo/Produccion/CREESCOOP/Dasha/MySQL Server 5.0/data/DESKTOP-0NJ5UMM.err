@@ -1,0 +1,2728 @@
+InnoDB: The first specified data file .\ibdata1 did not exist:
+InnoDB: a new database to be created!
+210117  9:51:42  InnoDB: Setting file .\ibdata1 size to 10 MB
+InnoDB: Database physically writes the file full: wait...
+210117  9:51:42  InnoDB: Log file .\ib_logfile0 did not exist: new to be created
+InnoDB: Setting log file .\ib_logfile0 size to 24 MB
+InnoDB: Database physically writes the file full: wait...
+210117  9:51:42  InnoDB: Log file .\ib_logfile1 did not exist: new to be created
+InnoDB: Setting log file .\ib_logfile1 size to 24 MB
+InnoDB: Database physically writes the file full: wait...
+InnoDB: Doublewrite buffer not found: creating new
+InnoDB: Doublewrite buffer created
+InnoDB: Creating foreign key constraint system tables
+InnoDB: Foreign key constraint system tables created
+210117  9:51:43  InnoDB: Started; log sequence number 0 0
+210117  9:51:43 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210117  9:52:53 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210117  9:52:53  InnoDB: Starting shutdown...
+210117  9:52:55  InnoDB: Shutdown completed; log sequence number 0 43655
+210117  9:52:55 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210117  9:53:58  InnoDB: Started; log sequence number 0 43655
+210117  9:53:58 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210118 10:44:40 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210118 10:44:40  InnoDB: Starting shutdown...
+210118 10:44:41  InnoDB: Shutdown completed; log sequence number 0 43655
+210118 10:44:41 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210118 10:45:38  InnoDB: Started; log sequence number 0 43655
+210118 10:45:39 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210119 11:43:34 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Incorrect key file for table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles.MYI'; try to repair it
+210119 11:43:34 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Incorrect key file for table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles.MYI'; try to repair it
+210119 11:44:46 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210119 11:44:46 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210119 11:45:14 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210119 11:45:14 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210119 12:15:32 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210119 12:15:32 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210119 12:15:41 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210119 12:15:41 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210119 12:16:29 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210119 12:16:29 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210119 12:18:11 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210119 12:18:11 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210119 12:21:14 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210119 12:21:14 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210119 12:24:00 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210119 12:24:00 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210119 13:08:50 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210119 13:08:50 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210119 13:38:28 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210119 13:38:28 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210127  9:12:59 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210127  9:13:01 [Warning] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Forcing close of thread 119  user: 'randy'
+
+210127  9:13:01  InnoDB: Starting shutdown...
+210127  9:13:03  InnoDB: Shutdown completed; log sequence number 0 43655
+210127  9:13:03 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210127  9:34:52  InnoDB: Started; log sequence number 0 43655
+210127  9:34:52 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210130 11:42:12 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210130 11:42:12  InnoDB: Starting shutdown...
+210130 11:42:14  InnoDB: Shutdown completed; log sequence number 0 43655
+210130 11:42:14 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210130 11:43:54  InnoDB: Started; log sequence number 0 43655
+210130 11:43:55 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210213  8:53:14  InnoDB: Started; log sequence number 0 43655
+210213  8:53:15 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210213  8:54:22  InnoDB: Started; log sequence number 0 43655
+210213  8:54:22 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210216  9:07:49  InnoDB: Started; log sequence number 0 43655
+210216  9:07:49 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210226 16:35:22 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210226 16:35:24  InnoDB: Starting shutdown...
+210226 16:35:32  InnoDB: Shutdown completed; log sequence number 0 43655
+210226 16:35:32 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210227 12:50:01  InnoDB: Started; log sequence number 0 43655
+210227 12:50:03 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210227 12:51:40 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210227 12:51:40  InnoDB: Starting shutdown...
+210227 12:51:42  InnoDB: Shutdown completed; log sequence number 0 43655
+210227 12:51:42 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210227 12:52:36  InnoDB: Started; log sequence number 0 43655
+210227 12:52:36 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210301 13:34:32 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210301 13:34:35  InnoDB: Starting shutdown...
+210301 13:34:42  InnoDB: Shutdown completed; log sequence number 0 43655
+210301 13:34:42 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210301 13:35:34  InnoDB: Started; log sequence number 0 43655
+210301 13:35:34 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210312 16:14:00 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210312 16:14:04  InnoDB: Starting shutdown...
+210312 16:14:10  InnoDB: Shutdown completed; log sequence number 0 43655
+210312 16:14:11 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210313  9:00:21  InnoDB: Started; log sequence number 0 43655
+210313  9:00:21 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210329  9:00:03  InnoDB: Started; log sequence number 0 43655
+210329  9:00:03 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210408 14:28:01 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210408 14:28:04 [Warning] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Forcing close of thread 30  user: 'randy'
+
+210408 14:28:04  InnoDB: Starting shutdown...
+210408 14:28:07  InnoDB: Shutdown completed; log sequence number 0 43655
+210408 14:28:07 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210408 15:21:41  InnoDB: Started; log sequence number 0 43655
+210408 15:21:42 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210419 17:36:38 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210419 17:36:40  InnoDB: Starting shutdown...
+210419 17:36:41  InnoDB: Shutdown completed; log sequence number 0 43655
+210419 17:36:41 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210419 17:37:49  InnoDB: Started; log sequence number 0 43655
+210419 17:37:49 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210419 17:41:10 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210419 17:41:10  InnoDB: Starting shutdown...
+210419 17:41:11  InnoDB: Shutdown completed; log sequence number 0 43655
+210419 17:41:11 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210420  9:02:31  InnoDB: Started; log sequence number 0 43655
+210420  9:02:31 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210510 16:07:59 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210510 16:08:01  InnoDB: Starting shutdown...
+210510 16:08:05  InnoDB: Shutdown completed; log sequence number 0 45661
+210510 16:08:05 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210510 16:09:17  InnoDB: Started; log sequence number 0 45661
+210510 16:09:18 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210510 16:09:33 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210510 16:09:33  InnoDB: Starting shutdown...
+210510 16:09:35  InnoDB: Shutdown completed; log sequence number 0 45661
+210510 16:09:35 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210511  8:39:45  InnoDB: Started; log sequence number 0 45661
+210511  8:39:46 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210517 16:05:46 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210517 16:05:47  InnoDB: Starting shutdown...
+210517 16:05:49  InnoDB: Shutdown completed; log sequence number 0 45661
+210517 16:05:49 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210517 16:06:49  InnoDB: Started; log sequence number 0 45661
+210517 16:06:49 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210517 16:09:10 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210517 16:09:10  InnoDB: Starting shutdown...
+210517 16:09:12  InnoDB: Shutdown completed; log sequence number 0 45661
+210517 16:09:12 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210518  8:47:14  InnoDB: Started; log sequence number 0 45661
+210518  8:47:15 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210520 16:05:23 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210520 16:05:25  InnoDB: Starting shutdown...
+210520 16:05:39  InnoDB: Shutdown completed; log sequence number 0 45671
+210520 16:05:39 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210520 16:06:19  InnoDB: Started; log sequence number 0 45671
+210520 16:06:19 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210520 16:06:19 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210520 16:06:20  InnoDB: Starting shutdown...
+210520 16:06:21  InnoDB: Shutdown completed; log sequence number 0 45671
+210520 16:06:21 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210521  8:55:10  InnoDB: Started; log sequence number 0 45671
+210521  8:55:11 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210608  9:24:07210608  9:24:07 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+210608  9:24:07210608  9:24:07 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+210609 10:25:14210609 10:25:14 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+210609 10:25:14210609 10:25:14 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+210609 16:04:24 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210609 16:04:26  InnoDB: Starting shutdown...
+210609 16:04:29  InnoDB: Shutdown completed; log sequence number 0 45681
+210609 16:04:29 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210609 16:05:36  InnoDB: Started; log sequence number 0 45681
+210609 16:05:36 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210609 16:09:22 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210609 16:09:22  InnoDB: Starting shutdown...
+210609 16:09:24  InnoDB: Shutdown completed; log sequence number 0 45681
+210609 16:09:24 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210610  8:56:16  InnoDB: Started; log sequence number 0 45681
+210610  8:56:16 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210612 11:57:11 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210612 11:57:15  InnoDB: Starting shutdown...
+210612 11:57:20  InnoDB: Shutdown completed; log sequence number 0 45681
+210612 11:57:20 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210612 11:58:06  InnoDB: Started; log sequence number 0 45681
+210612 11:58:06 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210630 15:44:28210630 15:44:28 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+210630 15:44:28210630 15:44:28 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+210630 16:20:21 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210630 16:20:21  InnoDB: Starting shutdown...
+210630 16:20:25  InnoDB: Shutdown completed; log sequence number 0 45691
+210630 16:20:25 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210630 16:22:30  InnoDB: Started; log sequence number 0 45691
+210630 16:22:30 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210630 16:24:50 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210630 16:24:50  InnoDB: Starting shutdown...
+210630 16:24:54  InnoDB: Shutdown completed; log sequence number 0 45691
+210630 16:24:54 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210630 16:26:48  InnoDB: Started; log sequence number 0 45691
+210630 16:26:48 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210701  8:54:44  InnoDB: Started; log sequence number 0 45691
+210701  8:54:44 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210708 15:11:45 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210708 15:11:45  InnoDB: Starting shutdown...
+210708 15:11:48  InnoDB: Shutdown completed; log sequence number 0 45701
+210708 15:11:48 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210708 15:12:49  InnoDB: Started; log sequence number 0 45701
+210708 15:12:49 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210708 15:24:46 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210708 15:24:46  InnoDB: Starting shutdown...
+210708 15:24:49  InnoDB: Shutdown completed; log sequence number 0 45701
+210708 15:24:49 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210708 15:25:59  InnoDB: Started; log sequence number 0 45701
+210708 15:26:00 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210708 17:36:51  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+210708 17:36:53  InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 45711.
+InnoDB: Doing recovery: scanned up to log sequence number 0 45711
+210708 17:36:54  InnoDB: Started; log sequence number 0 45711
+210708 17:36:54 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210714 16:00:54 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210714 16:00:55  InnoDB: Starting shutdown...
+210714 16:00:59  InnoDB: Shutdown completed; log sequence number 0 45711
+210714 16:00:59 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210714 16:01:58  InnoDB: Started; log sequence number 0 45711
+210714 16:01:58 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210714 16:02:02 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210714 16:02:02  InnoDB: Starting shutdown...
+210714 16:02:05  InnoDB: Shutdown completed; log sequence number 0 45711
+210714 16:02:05 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210715  8:59:19  InnoDB: Started; log sequence number 0 45711
+210715  8:59:19 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210717  9:13:22  InnoDB: Started; log sequence number 0 45711
+210717  9:13:22 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210717  9:13:30 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210717  9:13:30  InnoDB: Starting shutdown...
+210717  9:13:33  InnoDB: Shutdown completed; log sequence number 0 45711
+210717  9:13:33 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210717  9:14:18  InnoDB: Started; log sequence number 0 45711
+210717  9:14:18 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210720 15:30:25 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210720 15:30:27 [Warning] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Forcing close of thread 8  user: 'randy'
+
+210720 15:30:27 [Warning] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Forcing close of thread 6  user: 'randy'
+
+210720 15:30:27  InnoDB: Starting shutdown...
+210720 15:30:30  InnoDB: Shutdown completed; log sequence number 0 45711
+210720 15:30:30 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210720 15:31:46  InnoDB: Started; log sequence number 0 45711
+210720 15:31:46 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210724 10:24:03 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210724 10:24:05 [Warning] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Forcing close of thread 22  user: 'randy'
+
+210724 10:24:05  InnoDB: Starting shutdown...
+210724 10:24:07  InnoDB: Shutdown completed; log sequence number 0 45721
+210724 10:24:07 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210724 11:26:34  InnoDB: Started; log sequence number 0 45721
+210724 11:26:35 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210804 15:57:34 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210804 15:57:38 [Warning] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Forcing close of thread 29  user: 'randy'
+
+210804 15:57:39  InnoDB: Starting shutdown...
+210804 15:57:57  InnoDB: Shutdown completed; log sequence number 0 45731
+210804 15:57:57 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210804 15:58:48  InnoDB: Started; log sequence number 0 45731
+210804 15:58:48 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210804 15:58:52 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210804 15:58:52  InnoDB: Starting shutdown...
+210804 15:58:54  InnoDB: Shutdown completed; log sequence number 0 45731
+210804 15:58:54 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210805  8:55:08  InnoDB: Started; log sequence number 0 45731
+210805  8:55:09 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210813 16:27:00 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210813 16:27:02  InnoDB: Starting shutdown...
+210813 16:27:06  InnoDB: Shutdown completed; log sequence number 0 45731
+210813 16:27:06 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210813 16:28:12  InnoDB: Started; log sequence number 0 45731
+210813 16:28:12 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210813 16:31:38 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210813 16:31:38  InnoDB: Starting shutdown...
+210813 16:31:39  InnoDB: Shutdown completed; log sequence number 0 45731
+210813 16:31:39 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210814  8:53:05  InnoDB: Started; log sequence number 0 45731
+210814  8:53:05 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210831  9:53:54 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210831  9:53:54  InnoDB: Starting shutdown...
+210831  9:53:56  InnoDB: Shutdown completed; log sequence number 0 45741
+210831  9:53:56 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210831  9:57:16  InnoDB: Started; log sequence number 0 45741
+210831  9:57:17 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210831 10:02:41 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210831 10:02:41  InnoDB: Starting shutdown...
+210831 10:02:43  InnoDB: Shutdown completed; log sequence number 0 45741
+210831 10:02:43 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210831 10:07:04  InnoDB: Started; log sequence number 0 45741
+210831 10:07:04 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210914 10:06:29 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210914 10:06:30  InnoDB: Starting shutdown...
+210914 10:06:33  InnoDB: Shutdown completed; log sequence number 0 45751
+210914 10:06:33 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210914 10:09:57  InnoDB: Started; log sequence number 0 45751
+210914 10:09:58 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210914 10:27:11210914 10:27:11 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+210914 10:27:11210914 10:27:11 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+210914 10:27:12210914 10:27:12 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+210914 10:27:12210914 10:27:12 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+210915 11:47:39210915 11:47:39 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+210915 11:47:39210915 11:47:39 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+210915 11:47:39210915 11:47:39 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+210915 11:47:39210915 11:47:39 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+210915 11:48:08210915 11:48:08 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+210915 11:48:08210915 11:48:08 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+210916 14:34:30 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210916 14:34:31  InnoDB: Starting shutdown...
+210916 14:34:33  InnoDB: Shutdown completed; log sequence number 0 45761
+210916 14:34:33 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210916 14:35:33  InnoDB: Started; log sequence number 0 45761
+210916 14:35:34 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210916 14:36:06210916 14:36:06 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+210916 14:36:06210916 14:36:06 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+210916 14:36:07210916 14:36:07 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+210916 14:36:07210916 14:36:07 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+210916 14:36:07210916 14:36:07 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+210916 14:36:07210916 14:36:07 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+210916 14:36:43210916 14:36:43 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+210916 14:36:43210916 14:36:43 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+210922 16:11:03 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210922 16:11:07  InnoDB: Starting shutdown...
+210922 16:11:09  InnoDB: Shutdown completed; log sequence number 0 45771
+210922 16:11:09 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210922 16:12:17  InnoDB: Started; log sequence number 0 45771
+210922 16:12:17 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210922 16:13:05 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210922 16:13:05  InnoDB: Starting shutdown...
+210922 16:13:06  InnoDB: Shutdown completed; log sequence number 0 45771
+210922 16:13:06 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210923  8:53:47  InnoDB: Started; log sequence number 0 45771
+210923  8:53:47 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+211007 16:00:38 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+211007 16:00:41  InnoDB: Starting shutdown...
+211007 16:00:43  InnoDB: Shutdown completed; log sequence number 0 45771
+211007 16:00:43 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+211007 16:01:49  InnoDB: Started; log sequence number 0 45771
+211007 16:01:49 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+211007 16:01:50 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+211007 16:01:50  InnoDB: Starting shutdown...
+211007 16:01:54  InnoDB: Shutdown completed; log sequence number 0 45771
+211007 16:01:54 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+211008  8:57:55  InnoDB: Started; log sequence number 0 45771
+211008  8:57:56 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+211013 16:00:27 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+211013 16:00:29  InnoDB: Starting shutdown...
+211013 16:00:31  InnoDB: Shutdown completed; log sequence number 0 45781
+211013 16:00:31 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+211013 16:01:35  InnoDB: Started; log sequence number 0 45781
+211013 16:01:35 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+211013 16:02:36 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+211013 16:02:36  InnoDB: Starting shutdown...
+211013 16:02:38  InnoDB: Shutdown completed; log sequence number 0 45781
+211013 16:02:38 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+211014  8:59:11  InnoDB: Started; log sequence number 0 45781
+211014  8:59:11 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+211025 16:00:56 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+211025 16:00:58  InnoDB: Starting shutdown...
+211025 16:01:01  InnoDB: Shutdown completed; log sequence number 0 45791
+211025 16:01:01 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+211025 16:02:12  InnoDB: Started; log sequence number 0 45791
+211025 16:02:12 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+211025 16:02:19 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+211025 16:02:19  InnoDB: Starting shutdown...
+211025 16:02:23  InnoDB: Shutdown completed; log sequence number 0 45791
+211025 16:02:23 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+211026  8:55:59  InnoDB: Started; log sequence number 0 45791
+211026  8:55:59 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+211105 11:29:22  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+211105 11:29:29  InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 45801.
+InnoDB: Doing recovery: scanned up to log sequence number 0 45801
+211105 11:29:31  InnoDB: Started; log sequence number 0 45801
+211105 11:29:31 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+211117 14:21:12 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+211117 14:21:13  InnoDB: Starting shutdown...
+211117 14:21:16  InnoDB: Shutdown completed; log sequence number 0 45811
+211117 14:21:16 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+211117 14:22:22  InnoDB: Started; log sequence number 0 45811
+211117 14:22:23 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+211215 16:03:12 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+211215 16:03:15  InnoDB: Starting shutdown...
+211215 16:03:19  InnoDB: Shutdown completed; log sequence number 0 45821
+211215 16:03:19 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+211216  8:58:35  InnoDB: Started; log sequence number 0 45821
+211216  8:58:35 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+211227 16:16:06 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+211227 16:16:08  InnoDB: Starting shutdown...
+211227 16:16:18  InnoDB: Shutdown completed; log sequence number 0 45831
+211227 16:16:19 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+211227 16:17:25  InnoDB: Started; log sequence number 0 45831
+211227 16:17:25 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220108  9:43:11 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220108  9:43:11  InnoDB: Starting shutdown...
+220108  9:43:14  InnoDB: Shutdown completed; log sequence number 0 45841
+220108  9:43:14 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220108  9:49:10  InnoDB: Started; log sequence number 0 45841
+220108  9:49:10 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220108 11:02:11220108 11:02:11 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220108 11:02:11220108 11:02:11 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220108 11:02:11220108 11:02:11 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220108 11:02:11220108 11:02:11 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220108 11:17:21 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220108 11:17:21  InnoDB: Starting shutdown...
+220108 11:17:23  InnoDB: Shutdown completed; log sequence number 0 45841
+220108 11:17:23 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220108 11:18:40  InnoDB: Started; log sequence number 0 45841
+220108 11:18:40 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220108 11:19:05220108 11:19:05 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220108 11:19:05220108 11:19:05 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220108 11:19:05220108 11:19:05 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220108 11:19:05220108 11:19:05 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220108 11:23:55 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220108 11:23:55  InnoDB: Starting shutdown...
+220108 11:23:58  InnoDB: Shutdown completed; log sequence number 0 45841
+220108 11:23:58 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220108 11:24:00  InnoDB: Started; log sequence number 0 45841
+220108 11:24:00 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220108 11:25:25 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220108 11:25:25  InnoDB: Starting shutdown...
+220108 11:25:26  InnoDB: Shutdown completed; log sequence number 0 45841
+220108 11:25:26 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220108 11:28:48  InnoDB: Started; log sequence number 0 45841
+220108 11:28:48 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220108 11:30:59 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220108 11:31:01 [Warning] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Forcing close of thread 1  user: 'randy'
+
+220108 11:31:01  InnoDB: Starting shutdown...
+220108 11:31:02  InnoDB: Shutdown completed; log sequence number 0 45841
+220108 11:31:02 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220108 11:37:05  InnoDB: Started; log sequence number 0 45841
+220108 11:37:05 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220108 11:42:48220108 11:42:48 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220108 11:42:48220108 11:42:48 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220108 11:42:48220108 11:42:48 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220108 11:42:48220108 11:42:48 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220108 11:52:47 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220108 11:52:47  InnoDB: Starting shutdown...
+220108 11:52:50  InnoDB: Shutdown completed; log sequence number 0 45841
+220108 11:52:50 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220108 11:56:25  InnoDB: Started; log sequence number 0 45841
+220108 11:56:25 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220111 12:15:05 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220111 12:15:05  InnoDB: Starting shutdown...
+220111 12:15:07  InnoDB: Shutdown completed; log sequence number 0 45841
+220111 12:15:07 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220111 12:16:50  InnoDB: Started; log sequence number 0 45841
+220111 12:16:50 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220111 12:17:10220111 12:17:10 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220111 12:17:10220111 12:17:10 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220111 12:17:10220111 12:17:10 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220111 12:17:10220111 12:17:10 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220115 11:51:35 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220115 11:51:38 [Warning] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Forcing close of thread 13  user: 'randy'
+
+220115 11:51:38  InnoDB: Starting shutdown...
+220115 11:51:40  InnoDB: Shutdown completed; log sequence number 0 45841
+220115 11:51:40 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220115 11:55:39  InnoDB: Started; log sequence number 0 45841
+220115 11:55:39 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220115 11:56:15220115 11:56:15 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220115 11:56:15220115 11:56:15 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220115 11:56:15220115 11:56:15 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220115 11:56:15220115 11:56:15 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220115 12:38:30 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220115 12:38:30  InnoDB: Starting shutdown...
+220115 12:38:33  InnoDB: Shutdown completed; log sequence number 0 45841
+220115 12:38:33 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220117  9:55:57  InnoDB: Started; log sequence number 0 45841
+220117  9:55:57 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220117 10:18:58 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220117 10:18:58  InnoDB: Starting shutdown...
+220117 10:19:00  InnoDB: Shutdown completed; log sequence number 0 45841
+220117 10:19:00 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220117 10:20:39  InnoDB: Started; log sequence number 0 45841
+220117 10:20:40 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220117 16:01:31 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220117 16:01:33  InnoDB: Starting shutdown...
+220117 16:01:36  InnoDB: Shutdown completed; log sequence number 0 45841
+220117 16:01:36 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220117 16:02:43  InnoDB: Started; log sequence number 0 45841
+220117 16:02:44 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220117 16:03:23 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220117 16:03:23  InnoDB: Starting shutdown...
+220117 16:03:24  InnoDB: Shutdown completed; log sequence number 0 45841
+220117 16:03:24 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220118  8:40:55  InnoDB: Started; log sequence number 0 45841
+220118  8:40:56 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220120  9:08:22 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220120  9:08:22  InnoDB: Starting shutdown...
+220120  9:08:26  InnoDB: Shutdown completed; log sequence number 0 45851
+220120  9:08:26 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220120  9:11:25  InnoDB: Started; log sequence number 0 45851
+220120  9:11:25 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220120  9:56:22220120  9:56:22 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220120  9:56:22220120  9:56:22 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220120  9:56:22220120  9:56:22 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220120  9:56:22220120  9:56:22 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220120 10:00:06220120 10:00:06 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220120 10:00:06220120 10:00:06 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220120 10:03:31 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220120 10:03:33 [Warning] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Forcing close of thread 2  user: 'randy'
+
+220120 10:03:33  InnoDB: Starting shutdown...
+220120 10:03:36  InnoDB: Shutdown completed; log sequence number 0 45861
+220120 10:03:36 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220120 10:04:40  InnoDB: Started; log sequence number 0 45861
+220120 10:04:40 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220120 10:05:05220120 10:05:05 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220120 10:05:05220120 10:05:05 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220120 10:05:05220120 10:05:05 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220120 10:05:05220120 10:05:05 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220120 10:05:08220120 10:05:08 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220120 10:05:08220120 10:05:08 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220120 10:05:55220120 10:05:55 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220120 10:05:55220120 10:05:55 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220120 10:10:15220120 10:10:15 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220120 10:10:15220120 10:10:15 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220120 10:11:47220120 10:11:47 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220120 10:11:47220120 10:11:47 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220203  8:51:19  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+220203  8:51:22  InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 59088.
+InnoDB: Doing recovery: scanned up to log sequence number 0 59088
+220203  8:51:22  InnoDB: Started; log sequence number 0 59088
+220203  8:51:22 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220214 12:06:52 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220214 12:06:55 [Warning] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Forcing close of thread 25  user: 'randy'
+
+220214 12:06:55 [Warning] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Forcing close of thread 24  user: 'randy'
+
+220214 12:06:55  InnoDB: Starting shutdown...
+220214 12:06:58  InnoDB: Shutdown completed; log sequence number 0 59098
+220214 12:06:58 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220214 12:08:46  InnoDB: Started; log sequence number 0 59098
+220214 12:08:46 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220214 12:09:08220214 12:09:08 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220214 12:09:08220214 12:09:08 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220214 12:09:08220214 12:09:08 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220214 12:09:08220214 12:09:08 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220214 15:58:56 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220214 15:58:58  InnoDB: Starting shutdown...
+220214 15:59:02  InnoDB: Shutdown completed; log sequence number 0 59108
+220214 15:59:02 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220215  8:49:22  InnoDB: Started; log sequence number 0 59108
+220215  8:49:23 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220218 11:19:18 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220218 11:19:20 [Warning] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Forcing close of thread 10  user: 'randy'
+
+220218 11:19:20  InnoDB: Starting shutdown...
+220218 11:19:23  InnoDB: Shutdown completed; log sequence number 0 74808
+220218 11:19:23 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220218 11:21:15  InnoDB: Started; log sequence number 0 74808
+220218 11:21:15 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220218 11:21:42220218 11:21:42 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220218 11:21:42220218 11:21:42 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220218 11:21:42220218 11:21:42 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220218 11:21:42220218 11:21:42 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220221 10:09:51 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220221 10:09:54 [Warning] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Forcing close of thread 20  user: 'randy'
+
+220221 10:09:54  InnoDB: Starting shutdown...
+220221 10:09:56  InnoDB: Shutdown completed; log sequence number 0 74818
+220221 10:09:56 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220221 10:10:53  InnoDB: Started; log sequence number 0 74818
+220221 10:10:54 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220222 14:56:09 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220222 14:56:12 [Warning] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Forcing close of thread 5  user: 'randy'
+
+220222 14:56:12  InnoDB: Starting shutdown...
+220222 14:56:18  InnoDB: Shutdown completed; log sequence number 0 74828
+220222 14:56:18 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220222 14:57:12  InnoDB: Started; log sequence number 0 74828
+220222 14:57:13 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220222 15:04:42 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220222 15:04:42  InnoDB: Starting shutdown...
+220222 15:04:45  InnoDB: Shutdown completed; log sequence number 0 74828
+220222 15:04:45 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220222 15:05:29  InnoDB: Started; log sequence number 0 74828
+220222 15:05:29 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220222 15:10:01 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220222 15:10:01  InnoDB: Starting shutdown...
+220222 15:10:02  InnoDB: Shutdown completed; log sequence number 0 74828
+220222 15:10:02 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220222 15:10:48  InnoDB: Started; log sequence number 0 74828
+220222 15:10:48 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220222 15:28:05 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220222 15:28:06  InnoDB: Starting shutdown...
+220222 15:28:08  InnoDB: Shutdown completed; log sequence number 0 74828
+220222 15:28:08 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220222 15:28:56  InnoDB: Started; log sequence number 0 74828
+220222 15:28:56 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220222 15:54:17 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220222 15:54:18  InnoDB: Starting shutdown...
+220222 15:54:20  InnoDB: Shutdown completed; log sequence number 0 74828
+220222 15:54:20 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220222 15:55:10  InnoDB: Started; log sequence number 0 74828
+220222 15:55:10 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220329 14:54:46 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220329 14:54:48 [Warning] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Forcing close of thread 83  user: 'randy'
+
+220329 14:54:48 [Warning] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Forcing close of thread 81  user: 'randy'
+
+220329 14:54:49  InnoDB: Starting shutdown...
+220329 14:54:51  InnoDB: Shutdown completed; log sequence number 0 82675
+220329 14:54:51 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220329 14:57:22  InnoDB: Started; log sequence number 0 82675
+220329 14:57:22 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220329 14:57:41220329 14:57:41 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220329 14:57:41220329 14:57:41 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220329 14:57:41220329 14:57:41 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220329 14:57:41220329 14:57:41 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220330  9:31:46 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220330  9:31:46  InnoDB: Starting shutdown...
+220330  9:31:49  InnoDB: Shutdown completed; log sequence number 0 82675
+220330  9:31:49 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220330  9:32:51  InnoDB: Started; log sequence number 0 82675
+220330  9:32:51 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220330  9:34:32220330  9:34:32 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220330  9:34:32220330  9:34:32 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220330  9:34:32220330  9:34:32 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220330  9:34:32220330  9:34:32 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220404 12:37:58 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220404 12:38:01 [Warning] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Forcing close of thread 19  user: 'randy'
+
+220404 12:38:01 [Warning] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Forcing close of thread 18  user: 'randy'
+
+220404 12:38:01  InnoDB: Starting shutdown...
+220404 12:38:04  InnoDB: Shutdown completed; log sequence number 0 82675
+220404 12:38:04 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220404 12:39:39  InnoDB: Started; log sequence number 0 82675
+220404 12:39:39 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220404 12:39:57220404 12:39:57 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220404 12:39:57220404 12:39:57 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220404 12:39:57220404 12:39:57 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220404 12:39:57220404 12:39:57 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220404 12:40:06220404 12:40:06 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220404 12:40:06220404 12:40:06 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220404 12:41:31220404 12:41:31 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220404 12:41:31220404 12:41:31 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220404 16:02:13 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220404 16:02:15  InnoDB: Starting shutdown...
+220404 16:02:18  InnoDB: Shutdown completed; log sequence number 0 82685
+220404 16:02:18 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220404 16:03:24  InnoDB: Started; log sequence number 0 82685
+220404 16:03:25 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220404 16:04:33 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220404 16:04:33  InnoDB: Starting shutdown...
+220404 16:04:35  InnoDB: Shutdown completed; log sequence number 0 82685
+220404 16:04:35 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220405  8:58:38  InnoDB: Started; log sequence number 0 82685
+220405  8:58:38 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220405 12:30:20  InnoDB: Started; log sequence number 0 82685
+220405 12:30:20 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220425 10:34:37 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220425 10:34:40 [Warning] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Forcing close of thread 43  user: 'randy'
+
+220425 10:34:40  InnoDB: Starting shutdown...
+220425 10:34:47  InnoDB: Shutdown completed; log sequence number 0 82695
+220425 10:34:47 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220425 10:35:55  InnoDB: Started; log sequence number 0 82695
+220425 10:35:55 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220426  9:03:44  InnoDB: Started; log sequence number 0 82695
+220426  9:03:45 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220428 11:52:15  InnoDB: Started; log sequence number 0 82695
+220428 11:52:15 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220428 11:53:34 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220428 11:53:34  InnoDB: Starting shutdown...
+220428 11:53:36  InnoDB: Shutdown completed; log sequence number 0 82695
+220428 11:53:36 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220428 11:54:28  InnoDB: Started; log sequence number 0 82695
+220428 11:54:28 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220505 12:50:46  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+220505 12:50:53  InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 82705.
+InnoDB: Doing recovery: scanned up to log sequence number 0 82705
+220505 12:50:55  InnoDB: Started; log sequence number 0 82705
+220505 12:50:55 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220506 10:12:45  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+220506 10:12:46  InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 82705.
+InnoDB: Doing recovery: scanned up to log sequence number 0 82705
+220506 10:12:47  InnoDB: Started; log sequence number 0 82705
+220506 10:12:47 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220521 12:53:01 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220521 12:53:03  InnoDB: Starting shutdown...
+220521 12:53:04  InnoDB: Shutdown completed; log sequence number 0 82715
+220521 12:53:04 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220521 12:54:13  InnoDB: Started; log sequence number 0 82715
+220521 12:54:13 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220527 11:57:23 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220527 11:57:23  InnoDB: Starting shutdown...
+220527 11:57:27  InnoDB: Shutdown completed; log sequence number 0 82725
+220527 11:57:27 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220527 12:00:41  InnoDB: Started; log sequence number 0 82725
+220527 12:00:41 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220527 12:04:35220527 12:04:35 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220527 12:04:35220527 12:04:35 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220527 12:04:35220527 12:04:35 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220527 12:04:35220527 12:04:35 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220527 12:57:27220527 12:57:27 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220527 12:57:27220527 12:57:27 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220527 12:59:19220527 12:59:19 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220527 12:59:19220527 12:59:19 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220527 15:08:54  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+220527 15:08:58  InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 88162.
+InnoDB: Doing recovery: scanned up to log sequence number 0 88162
+220527 15:08:59  InnoDB: Started; log sequence number 0 88162
+220527 15:08:59 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220528  9:09:36  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+220528  9:09:46  InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 88162.
+InnoDB: Doing recovery: scanned up to log sequence number 0 88162
+220528  9:09:46  InnoDB: Started; log sequence number 0 88162
+220528  9:09:46 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220528 11:22:56220528 11:22:56 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220528 11:22:56220528 11:22:56 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220528 11:22:57220528 11:22:57 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220528 11:22:57220528 11:22:57 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220603 11:20:06220603 11:20:06 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220603 11:20:06220603 11:20:06 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220603 11:20:07220603 11:20:07 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220603 11:20:07220603 11:20:07 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220607 10:46:06  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+220607 10:46:10  InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 96047.
+InnoDB: Doing recovery: scanned up to log sequence number 0 96047
+220607 10:46:11  InnoDB: Started; log sequence number 0 96047
+220607 10:46:11 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220607 14:51:22 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220607 14:51:24 [Warning] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Forcing close of thread 1  user: 'randy'
+
+220607 14:51:24  InnoDB: Starting shutdown...
+220607 14:51:26  InnoDB: Shutdown completed; log sequence number 0 96047
+220607 14:51:26 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220607 14:57:03  InnoDB: Started; log sequence number 0 96047
+220607 14:57:03 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220608 12:47:32220608 12:47:32 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220608 12:47:32220608 12:47:32 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220608 12:47:32220608 12:47:32 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220608 12:47:32220608 12:47:32 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220608 12:48:38 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220608 12:48:40 [Warning] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Forcing close of thread 6  user: 'randy'
+
+220608 12:48:40  InnoDB: Starting shutdown...
+220608 12:48:43  InnoDB: Shutdown completed; log sequence number 0 96057
+220608 12:48:43 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220608 12:49:54  InnoDB: Started; log sequence number 0 96057
+220608 12:49:54 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220608 12:50:17220608 12:50:17 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220608 12:50:17220608 12:50:17 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220608 12:50:17220608 12:50:17 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220608 12:50:17220608 12:50:17 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220610 10:35:29  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+220610 10:35:29  InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 96067.
+InnoDB: Doing recovery: scanned up to log sequence number 0 96067
+220610 10:35:30  InnoDB: Started; log sequence number 0 96067
+220610 10:35:30 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220611 11:28:41 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220611 11:28:42  InnoDB: Starting shutdown...
+220611 11:28:44  InnoDB: Shutdown completed; log sequence number 0 96077
+220611 11:28:44 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220611 11:29:42  InnoDB: Started; log sequence number 0 96077
+220611 11:29:42 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220625 11:31:36220625 11:31:36 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220625 11:31:36220625 11:31:36 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220625 11:31:36220625 11:31:36 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220625 11:31:36220625 11:31:36 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220625 12:13:34220625 12:13:34 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220625 12:13:34220625 12:13:34 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220625 12:13:34220625 12:13:34 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220625 12:13:34220625 12:13:34 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220627 15:57:25 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220627 15:57:28 [Warning] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Forcing close of thread 51  user: 'randy'
+
+220627 15:57:29  InnoDB: Starting shutdown...
+220627 15:57:32  InnoDB: Shutdown completed; log sequence number 0 104695
+220627 15:57:32 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220627 15:58:37  InnoDB: Started; log sequence number 0 104695
+220627 15:58:37 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220627 15:59:43 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220627 15:59:43  InnoDB: Starting shutdown...
+220627 15:59:46  InnoDB: Shutdown completed; log sequence number 0 104695
+220627 15:59:46 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220628  8:49:29  InnoDB: Started; log sequence number 0 104695
+220628  8:49:29 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220629 14:30:27  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+220629 14:30:27  InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 104705.
+InnoDB: Doing recovery: scanned up to log sequence number 0 104705
+220629 14:30:28  InnoDB: Started; log sequence number 0 104705
+220629 14:30:28 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220629 14:30:36 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220629 14:30:36  InnoDB: Starting shutdown...
+220629 14:30:38  InnoDB: Shutdown completed; log sequence number 0 104705
+220629 14:30:38 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220629 14:31:33  InnoDB: Started; log sequence number 0 104705
+220629 14:31:33 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220706  9:52:14220706  9:52:14 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220706  9:52:14220706  9:52:14 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220706  9:52:14220706  9:52:14 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220706  9:52:14220706  9:52:14 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220706  9:53:18220706  9:53:18 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220706  9:53:18220706  9:53:18 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220706  9:53:21220706  9:53:21 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220706  9:53:21220706  9:53:21 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220706  9:53:38220706  9:53:38 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220706  9:53:38220706  9:53:38 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220706  9:53:43220706  9:53:43 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220706  9:53:43220706  9:53:43 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220706  9:53:43220706  9:53:43 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220706  9:53:43220706  9:53:43 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220707 14:58:10220707 14:58:10 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220707 14:58:10220707 14:58:10 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220707 14:58:10220707 14:58:10 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220707 14:58:10220707 14:58:10 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220718 14:55:38 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220718 14:55:40 [Warning] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Forcing close of thread 94  user: 'randy'
+
+220718 14:55:40 [Warning] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Forcing close of thread 92  user: 'randy'
+
+220718 14:55:40  InnoDB: Starting shutdown...
+220718 14:55:43  InnoDB: Shutdown completed; log sequence number 0 104715
+220718 14:55:43 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220718 14:57:34  InnoDB: Started; log sequence number 0 104715
+220718 14:57:34 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220718 14:58:04220718 14:58:04 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220718 14:58:04220718 14:58:04 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220718 14:58:04220718 14:58:04 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220718 14:58:04220718 14:58:04 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220718 16:06:44 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220718 16:06:44  InnoDB: Starting shutdown...
+220718 16:06:47  InnoDB: Shutdown completed; log sequence number 0 104715
+220718 16:06:47 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220718 16:08:03  InnoDB: Started; log sequence number 0 104715
+220718 16:08:03 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220719 12:21:50 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220719 12:21:52 [Warning] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Forcing close of thread 2  user: 'randy'
+
+220719 12:21:52  InnoDB: Starting shutdown...
+220719 12:21:55  InnoDB: Shutdown completed; log sequence number 0 104725
+220719 12:21:55 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220719 12:23:19  InnoDB: Started; log sequence number 0 104725
+220719 12:23:19 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220719 12:23:56220719 12:23:56 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220719 12:23:56220719 12:23:56 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220719 12:23:57220719 12:23:57 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220719 12:23:57220719 12:23:57 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220725 17:03:33  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+220725 17:03:34  InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 104735.
+InnoDB: Doing recovery: scanned up to log sequence number 0 104735
+220725 17:03:34  InnoDB: Started; log sequence number 0 104735
+220725 17:03:34 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220725 17:03:41 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220725 17:03:41  InnoDB: Starting shutdown...
+220725 17:03:44  InnoDB: Shutdown completed; log sequence number 0 104735
+220725 17:03:44 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220725 17:04:42  InnoDB: Started; log sequence number 0 104735
+220725 17:04:42 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220730 12:04:05 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220730 12:04:07 [Warning] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Forcing close of thread 24  user: 'randy'
+
+220730 12:04:07  InnoDB: Starting shutdown...
+220730 12:04:09  InnoDB: Shutdown completed; log sequence number 0 104745
+220730 12:04:09 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220730 12:05:49  InnoDB: Started; log sequence number 0 104745
+220730 12:05:49 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220730 12:07:57220730 12:07:57 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220730 12:07:57220730 12:07:57 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220730 12:07:57220730 12:07:57 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220730 12:07:57220730 12:07:57 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+220808 13:35:54  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+220808 13:36:01  InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 300104.
+InnoDB: Doing recovery: scanned up to log sequence number 0 300104
+220808 13:36:02  InnoDB: Started; log sequence number 0 300104
+220808 13:36:02 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220810 14:29:23 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220810 14:29:26 [Warning] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Forcing close of thread 6  user: 'randy'
+
+220810 14:29:27  InnoDB: Starting shutdown...
+220810 14:29:33  InnoDB: Shutdown completed; log sequence number 0 300114
+220810 14:29:33 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220810 14:30:37  InnoDB: Started; log sequence number 0 300114
+220810 14:30:37 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220812 14:06:27  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+220812 14:06:31  InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 300124.
+InnoDB: Doing recovery: scanned up to log sequence number 0 300124
+220812 14:06:32  InnoDB: Started; log sequence number 0 300124
+220812 14:06:32 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220822  9:17:01  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+220822  9:17:04  InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 300134.
+InnoDB: Doing recovery: scanned up to log sequence number 0 300134
+220822  9:17:05  InnoDB: Started; log sequence number 0 300134
+220822  9:17:05 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220824 11:43:12  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+220824 11:43:12  InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 300144.
+InnoDB: Doing recovery: scanned up to log sequence number 0 300144
+220824 11:43:13  InnoDB: Started; log sequence number 0 300144
+220824 11:43:13 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220908 16:04:27 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220908 16:04:30 [Warning] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Forcing close of thread 46  user: 'randy'
+
+220908 16:04:32  InnoDB: Starting shutdown...
+220908 16:04:53  InnoDB: Shutdown completed; log sequence number 0 300154
+220908 16:04:53 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220909  9:09:47  InnoDB: Started; log sequence number 0 300154
+220909  9:09:47 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220909 15:41:58  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+220909 15:41:58  InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 300164.
+InnoDB: Doing recovery: scanned up to log sequence number 0 300164
+220909 15:41:59  InnoDB: Started; log sequence number 0 300164
+220909 15:41:59 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220920  9:11:55  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+220920  9:11:55  InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 300174.
+InnoDB: Doing recovery: scanned up to log sequence number 0 300174
+220920  9:11:55  InnoDB: Started; log sequence number 0 300174
+220920  9:11:55 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220920  9:12:03 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+220920  9:12:03  InnoDB: Starting shutdown...
+220920  9:12:06  InnoDB: Shutdown completed; log sequence number 0 300174
+220920  9:12:06 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+220920  9:12:58  InnoDB: Started; log sequence number 0 300174
+220920  9:12:58 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220922  9:12:07  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+220922  9:12:07  InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 300184.
+InnoDB: Doing recovery: scanned up to log sequence number 0 300184
+220922  9:12:08  InnoDB: Started; log sequence number 0 300184
+220922  9:12:08 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+220926 15:44:36  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+220926 15:44:36  InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 300194.
+InnoDB: Doing recovery: scanned up to log sequence number 0 300194
+220926 15:44:37  InnoDB: Started; log sequence number 0 300194
+220926 15:44:37 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+221005 16:01:05  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+221005 16:01:05  InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 300204.
+InnoDB: Doing recovery: scanned up to log sequence number 0 300204
+221005 16:01:05  InnoDB: Started; log sequence number 0 300204
+221005 16:01:05 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+221006 11:20:03  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+221006 11:20:03  InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 300204.
+InnoDB: Doing recovery: scanned up to log sequence number 0 300204
+221006 11:20:04  InnoDB: Started; log sequence number 0 300204
+221006 11:20:04 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+221015 13:03:23  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+221015 13:03:25  InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 300214.
+InnoDB: Doing recovery: scanned up to log sequence number 0 300214
+221015 13:03:26  InnoDB: Started; log sequence number 0 300214
+221015 13:03:28 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+221015 13:03:29 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+221015 13:03:29  InnoDB: Starting shutdown...
+221015 13:03:32  InnoDB: Shutdown completed; log sequence number 0 300214
+221015 13:03:32 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+221015 13:04:28  InnoDB: Started; log sequence number 0 300214
+221015 13:04:28 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+221017  9:36:46  InnoDB: Started; log sequence number 0 300214
+221017  9:36:46 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+221019  9:12:16  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+221019  9:12:19  InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 300224.
+InnoDB: Doing recovery: scanned up to log sequence number 0 300224
+221019  9:12:20  InnoDB: Started; log sequence number 0 300224
+221019  9:12:20 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+221026 16:01:20 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+221026 16:01:22  InnoDB: Starting shutdown...
+221026 16:01:26  InnoDB: Shutdown completed; log sequence number 0 323765
+221026 16:01:26 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+221026 16:02:51  InnoDB: Started; log sequence number 0 323765
+221026 16:02:51 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+221026 16:08:33 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+221026 16:08:35  InnoDB: Starting shutdown...
+221026 16:08:37  InnoDB: Shutdown completed; log sequence number 0 323765
+221026 16:08:37 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+221026 16:09:35  InnoDB: Started; log sequence number 0 323765
+221026 16:09:35 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+221027  9:03:56  InnoDB: Started; log sequence number 0 323765
+221027  9:03:56 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+221102 12:19:49  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+221102 12:19:57  InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 323775.
+InnoDB: Doing recovery: scanned up to log sequence number 0 323775
+221102 12:19:57  InnoDB: Started; log sequence number 0 323775
+221102 12:19:57 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+221105  9:10:55  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+221105  9:10:58  InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 323785.
+InnoDB: Doing recovery: scanned up to log sequence number 0 323785
+221105  9:10:58  InnoDB: Started; log sequence number 0 323785
+221105  9:10:58 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+221107  9:01:13  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+221107  9:01:22  InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 323785.
+InnoDB: Doing recovery: scanned up to log sequence number 0 323785
+221107  9:01:22  InnoDB: Started; log sequence number 0 323785
+221107  9:01:22 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+221116 15:25:20  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+221116 15:25:22  InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 323795.
+InnoDB: Doing recovery: scanned up to log sequence number 0 323795
+221116 15:25:22  InnoDB: Started; log sequence number 0 323795
+221116 15:25:22 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+221116 15:25:29 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+221116 15:25:29  InnoDB: Starting shutdown...
+221116 15:25:31  InnoDB: Shutdown completed; log sequence number 0 323795
+221116 15:25:31 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+221116 15:26:26  InnoDB: Started; log sequence number 0 323795
+221116 15:26:26 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+221116 16:07:40  InnoDB: Started; log sequence number 0 323795
+221116 16:07:40 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+221202 14:37:02  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+221202 14:37:04  InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 323805.
+InnoDB: Doing recovery: scanned up to log sequence number 0 323805
+221202 14:37:05  InnoDB: Started; log sequence number 0 323805
+221202 14:37:05 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+221202 15:35:41  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+221202 15:35:43  InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 323805.
+InnoDB: Doing recovery: scanned up to log sequence number 0 323805
+221202 15:35:43  InnoDB: Started; log sequence number 0 323805
+221202 15:35:43 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+221206  9:28:47  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+221206  9:28:50  InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 323815.
+InnoDB: Doing recovery: scanned up to log sequence number 0 323815
+221206  9:28:51  InnoDB: Started; log sequence number 0 323815
+221206  9:28:51 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+221213  9:34:32  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+221213  9:34:36  InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 323825.
+InnoDB: Doing recovery: scanned up to log sequence number 0 323825
+221213  9:34:36  InnoDB: Started; log sequence number 0 323825
+221213  9:34:36 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+221215  9:47:30  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+221215  9:47:32  InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 323835.
+InnoDB: Doing recovery: scanned up to log sequence number 0 323835
+221215  9:47:32  InnoDB: Started; log sequence number 0 323835
+221215  9:47:32 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+221215  9:47:40 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+221215  9:47:40  InnoDB: Starting shutdown...
+221215  9:47:43  InnoDB: Shutdown completed; log sequence number 0 323835
+221215  9:47:43 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+221215  9:48:38  InnoDB: Started; log sequence number 0 323835
+221215  9:48:38 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+221215  9:50:31 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+221215  9:50:31  InnoDB: Starting shutdown...
+221215  9:50:33  InnoDB: Shutdown completed; log sequence number 0 323835
+221215  9:50:33 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+221215  9:51:27  InnoDB: Started; log sequence number 0 323835
+221215  9:51:27 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+221217 12:43:31  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+221217 12:43:33  InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 323845.
+InnoDB: Doing recovery: scanned up to log sequence number 0 323845
+221217 12:43:33  InnoDB: Started; log sequence number 0 323845
+221217 12:43:33 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+221220 10:01:53  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+221220 10:01:53  InnoDB: Starting log scan based on checkpoint at
+InnoDB: log sequence number 0 323855.
+InnoDB: Doing recovery: scanned up to log sequence number 0 323855
+221220 10:01:53  InnoDB: Started; log sequence number 0 323855
+221220 10:01:54 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+230111 16:02:41 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+230111 16:02:42  InnoDB: Starting shutdown...
+230111 16:02:47  InnoDB: Shutdown completed; log sequence number 0 332473
+230111 16:02:47 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+230111 16:03:54  InnoDB: Started; log sequence number 0 332473
+230111 16:03:54 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+230111 16:04:41 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+230111 16:04:41  InnoDB: Starting shutdown...
+230111 16:04:43  InnoDB: Shutdown completed; log sequence number 0 332473
+230111 16:04:43 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+230112  9:05:53  InnoDB: Started; log sequence number 0 332473
+230112  9:05:53 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+230126 10:43:26230126 10:43:26 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+230126 10:43:26230126 10:43:26 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+230126 10:43:26230126 10:43:26 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+230126 10:43:26230126 10:43:26 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+230202 11:56:50230202 11:56:50 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+230202 11:56:50230202 11:56:50 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+230202 11:56:50230202 11:56:50 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+230202 11:56:50230202 11:56:50 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+230202 12:12:22230202 12:12:22 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+230202 12:12:22230202 12:12:22 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+230202 12:18:35230202 12:18:35 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+230202 12:18:35230202 12:18:35 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+230213  9:15:52 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+230213  9:15:54  InnoDB: Starting shutdown...
+230213  9:16:12  InnoDB: Shutdown completed; log sequence number 0 332483
+230213  9:16:12 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+230213  9:17:10  InnoDB: Started; log sequence number 0 332483
+230213  9:17:10 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+230216 10:39:40230216 10:39:40 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+
+230216 10:39:40230216 10:39:40 [ERROR] Cannot find table dbdataprestamos/webprestamo from the internal data dictionary
+of InnoDB though the .frm file for the table exists. Maybe you
+have deleted and recreated InnoDB data files but have forgotten
+to delete the corresponding .frm files of InnoDB tables, or you
+have moved .frm files to another database?
+Look from section 15.1 of http://www.innodb.com/ibman.html
+how you can resolve the problem.
+

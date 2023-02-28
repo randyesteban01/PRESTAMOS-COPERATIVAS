@@ -1,0 +1,154 @@
+InnoDB: The first specified data file .\ibdata1 did not exist:
+InnoDB: a new database to be created!
+210117  9:51:42  InnoDB: Setting file .\ibdata1 size to 10 MB
+InnoDB: Database physically writes the file full: wait...
+210117  9:51:42  InnoDB: Log file .\ib_logfile0 did not exist: new to be created
+InnoDB: Setting log file .\ib_logfile0 size to 24 MB
+InnoDB: Database physically writes the file full: wait...
+210117  9:51:42  InnoDB: Log file .\ib_logfile1 did not exist: new to be created
+InnoDB: Setting log file .\ib_logfile1 size to 24 MB
+InnoDB: Database physically writes the file full: wait...
+InnoDB: Doublewrite buffer not found: creating new
+InnoDB: Doublewrite buffer created
+InnoDB: Creating foreign key constraint system tables
+InnoDB: Foreign key constraint system tables created
+210117  9:51:43  InnoDB: Started; log sequence number 0 0
+210117  9:51:43 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210117  9:52:53 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210117  9:52:53  InnoDB: Starting shutdown...
+210117  9:52:55  InnoDB: Shutdown completed; log sequence number 0 43655
+210117  9:52:55 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210117  9:53:58  InnoDB: Started; log sequence number 0 43655
+210117  9:53:58 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210118 10:44:40 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210118 10:44:40  InnoDB: Starting shutdown...
+210118 10:44:41  InnoDB: Shutdown completed; log sequence number 0 43655
+210118 10:44:41 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210118 10:45:38  InnoDB: Started; log sequence number 0 43655
+210118 10:45:39 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210119 11:43:34 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Incorrect key file for table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles.MYI'; try to repair it
+210119 11:43:34 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Incorrect key file for table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles.MYI'; try to repair it
+210119 11:44:46 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210119 11:44:46 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210119 11:45:14 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210119 11:45:14 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210119 12:15:32 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210119 12:15:32 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210119 12:15:41 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210119 12:15:41 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210119 12:16:29 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210119 12:16:29 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210119 12:18:11 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210119 12:18:11 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210119 12:21:14 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210119 12:21:14 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210119 12:24:00 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210119 12:24:00 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210119 13:08:50 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210119 13:08:50 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210119 13:38:28 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210119 13:38:28 [ERROR] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Table '.\dbdataprestamos\tbl_interfasecontabletransaccionesdetalles' is marked as crashed and should be repaired
+210127  9:12:59 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210127  9:13:01 [Warning] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Forcing close of thread 119  user: 'randy'
+
+210127  9:13:01  InnoDB: Starting shutdown...
+210127  9:13:03  InnoDB: Shutdown completed; log sequence number 0 43655
+210127  9:13:03 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210127  9:34:52  InnoDB: Started; log sequence number 0 43655
+210127  9:34:52 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210130 11:42:12 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210130 11:42:12  InnoDB: Starting shutdown...
+210130 11:42:14  InnoDB: Shutdown completed; log sequence number 0 43655
+210130 11:42:14 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210130 11:43:54  InnoDB: Started; log sequence number 0 43655
+210130 11:43:55 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210213  8:53:14  InnoDB: Started; log sequence number 0 43655
+210213  8:53:15 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210213  8:54:22  InnoDB: Started; log sequence number 0 43655
+210213  8:54:22 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210216  9:07:49  InnoDB: Started; log sequence number 0 43655
+210216  9:07:49 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210226 16:35:22 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210226 16:35:24  InnoDB: Starting shutdown...
+210226 16:35:32  InnoDB: Shutdown completed; log sequence number 0 43655
+210226 16:35:32 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210227 12:50:01  InnoDB: Started; log sequence number 0 43655
+210227 12:50:03 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210227 12:51:40 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210227 12:51:40  InnoDB: Starting shutdown...
+210227 12:51:42  InnoDB: Shutdown completed; log sequence number 0 43655
+210227 12:51:42 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210227 12:52:36  InnoDB: Started; log sequence number 0 43655
+210227 12:52:36 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210301 13:34:32 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210301 13:34:35  InnoDB: Starting shutdown...
+210301 13:34:42  InnoDB: Shutdown completed; log sequence number 0 43655
+210301 13:34:42 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210301 13:35:34  InnoDB: Started; log sequence number 0 43655
+210301 13:35:34 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210312 16:14:00 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210312 16:14:04  InnoDB: Starting shutdown...
+210312 16:14:10  InnoDB: Shutdown completed; log sequence number 0 43655
+210312 16:14:11 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210313  9:00:21  InnoDB: Started; log sequence number 0 43655
+210313  9:00:21 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210329  9:00:03  InnoDB: Started; log sequence number 0 43655
+210329  9:00:03 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210408 14:28:01 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210408 14:28:04 [Warning] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Forcing close of thread 30  user: 'randy'
+
+210408 14:28:04  InnoDB: Starting shutdown...
+210408 14:28:07  InnoDB: Shutdown completed; log sequence number 0 43655
+210408 14:28:07 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210408 15:21:41  InnoDB: Started; log sequence number 0 43655
+210408 15:21:42 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210419 17:36:38 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210419 17:36:40  InnoDB: Starting shutdown...
+210419 17:36:41  InnoDB: Shutdown completed; log sequence number 0 43655
+210419 17:36:41 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210419 17:37:49  InnoDB: Started; log sequence number 0 43655
+210419 17:37:49 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)
+210419 17:41:10 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Normal shutdown
+
+210419 17:41:10  InnoDB: Starting shutdown...
+210419 17:41:11  InnoDB: Shutdown completed; log sequence number 0 43655
+210419 17:41:11 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: Shutdown complete
+
+210420  9:02:31  InnoDB: Started; log sequence number 0 43655
+210420  9:02:31 [Note] C:\Dasha\MySQL Server 5.0\bin\mysqld-nt: ready for connections.
+Version: '5.0.24-community-nt'  socket: ''  port: 3306  MySQL Community Edition (GPL)

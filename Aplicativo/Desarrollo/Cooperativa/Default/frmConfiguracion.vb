@@ -45,6 +45,8 @@ Public Class frmConfiguracion
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label8 As Label
     Friend WithEvents fld_Pignorar As TextBox
+    Friend WithEvents lblVersionSistema As Label
+    Friend WithEvents mtxtVersionSistema As MaskedTextBox
     Friend WithEvents moraTxt As System.Windows.Forms.TextBox
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmConfiguracion))
@@ -65,6 +67,8 @@ Public Class frmConfiguracion
         Me.moraTxt = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.fld_Pignorar = New System.Windows.Forms.TextBox()
+        Me.lblVersionSistema = New System.Windows.Forms.Label()
+        Me.mtxtVersionSistema = New System.Windows.Forms.MaskedTextBox()
         Me.SuspendLayout()
         '
         'disponibilidadTxt
@@ -79,7 +83,7 @@ Public Class frmConfiguracion
         '
         'cbVistaPrevia
         '
-        Me.cbVistaPrevia.Location = New System.Drawing.Point(12, 140)
+        Me.cbVistaPrevia.Location = New System.Drawing.Point(16, 128)
         Me.cbVistaPrevia.Name = "cbVistaPrevia"
         Me.cbVistaPrevia.Size = New System.Drawing.Size(152, 24)
         Me.cbVistaPrevia.TabIndex = 108
@@ -229,10 +233,30 @@ Public Class frmConfiguracion
         Me.fld_Pignorar.Text = "0.00"
         Me.fld_Pignorar.Visible = False
         '
+        'lblVersionSistema
+        '
+        Me.lblVersionSistema.AutoSize = True
+        Me.lblVersionSistema.Location = New System.Drawing.Point(13, 164)
+        Me.lblVersionSistema.Name = "lblVersionSistema"
+        Me.lblVersionSistema.Size = New System.Drawing.Size(82, 13)
+        Me.lblVersionSistema.TabIndex = 119
+        Me.lblVersionSistema.Text = "Version Sistema"
+        Me.lblVersionSistema.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'mtxtVersionSistema
+        '
+        Me.mtxtVersionSistema.Location = New System.Drawing.Point(100, 161)
+        Me.mtxtVersionSistema.Mask = "00.00.00.000"
+        Me.mtxtVersionSistema.Name = "mtxtVersionSistema"
+        Me.mtxtVersionSistema.Size = New System.Drawing.Size(100, 20)
+        Me.mtxtVersionSistema.TabIndex = 120
+        '
         'frmConfiguracion
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
         Me.ClientSize = New System.Drawing.Size(495, 196)
+        Me.Controls.Add(Me.mtxtVersionSistema)
+        Me.Controls.Add(Me.lblVersionSistema)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.fld_Pignorar)
         Me.Controls.Add(Me.Label5)
@@ -284,6 +308,9 @@ Public Class frmConfiguracion
 
         cmbTipoImpresoraRI.Text = SCALAR_STRING("SELECT TipoImpresoraRI FROM parametrosgenerales WHERE ID=1")
 
+        mtxtVersionSistema.Text = SCALAR_STRING("SELECT VersionPublicacionSistema FROM parametrosgenerales WHERE ID=1")
+
+
     End Sub
 
     Private Sub guardarDatos()
@@ -296,7 +323,7 @@ Public Class frmConfiguracion
             tasaTxt.Text = 0
         End If
 
-        NON_QUERY("UPDATE parametrosgenerales SET DispPignorada=" & CDec(disponibilidadTxt.Text) & ", VistaPreviaImpresion=" & CInt(cbVistaPrevia.Checked) * -1 & ", DiasGracias=" & txtDiasGracias.Text & ", TasaInteres=" & CDbl(tasaTxt.Text) & ", TipoImpresoraRI='" & cmbTipoImpresoraRI.Text & "', Mora=" & CDec(moraTxt.Text) & " WHERE ID=1")
+        NON_QUERY("UPDATE parametrosgenerales SET DispPignorada=" & CDec(disponibilidadTxt.Text) & ", VistaPreviaImpresion=" & CInt(cbVistaPrevia.Checked) * -1 & ", DiasGracias=" & txtDiasGracias.Text & ", TasaInteres=" & CDbl(tasaTxt.Text) & ", TipoImpresoraRI='" & cmbTipoImpresoraRI.Text & "', Mora=" & CDec(moraTxt.Text) & ", VersionPublicacionSistema='" & mtxtVersionSistema.Text & "' WHERE ID=1")
 
     End Sub
 
@@ -308,4 +335,5 @@ Public Class frmConfiguracion
     Private Sub btnCerrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCerrar.Click
         Me.Close()
     End Sub
+
 End Class
