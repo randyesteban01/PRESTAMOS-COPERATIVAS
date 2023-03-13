@@ -53,10 +53,27 @@ Public Class Concepto_anulacion
 
             'Ingresar_concepto()
 
+            RevertirAsientoContable()
+
             Alerta("El documento ha sido anulado")
 
             Me.Close()
         End If
+
+    End Sub
+
+    Private Sub RevertirAsientoContable()
+        READER("SELECT TransID FROM tbl_interfascontabletransacciones WHERE TransIDDoc=" & CInt(ID_RI) & " AND TransIDTipo=3 LIMIT 1")
+
+        Dim intTransID As Integer = 0
+        If reader_values.Length > 0 Then
+            intTransID = reader_values(0)
+
+
+            NON_QUERY("UPDATE tbl_interfasecontabletransaccionesdetalles SET TransDDebito=0,TransDCredito=0,TransDBalance=0 WHERE TransDIDTrans=" & intTransID & "")
+
+        End If
+
 
     End Sub
 
