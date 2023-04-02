@@ -522,6 +522,8 @@ Public Class FRM_PROFILE_CONTABILIDAD
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
 
+    Dim intUltimoPC As Integer = 0
+
     Private Sub FRM_PROFILE_CONTABILIDAD_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Me.Icon = appIcon
         FillListView()
@@ -751,15 +753,21 @@ Public Class FRM_PROFILE_CONTABILIDAD
         CREAR_MESES_CONTABLES()
     End Sub
     Private Sub ACTIVAR_PERIODO(ByVal id_pc As String)
+
+        If ESTADO_PERIODO(intUltimoPC) <> "CERRADO" Then
+            NON_QUERY("UPDATE tbl_periodos_contables_meses SET fld_estado_mes_pc='ACTIVO' WHERE fld_id_del_periodo_contable=" & id_pc & "")
+            FillListView_MESES(id_pc)
+        End If
+
         NON_QUERY("UPDATE tbl_periodos_contables SET fld_estado_pc='ACTIVO' WHERE fld_id_pc=" & id_pc & "")
-        NON_QUERY("UPDATE tbl_periodos_contables_meses SET fld_estado_mes_pc='ACTIVO' WHERE fld_id_del_periodo_contable=" & id_pc & "")
         FillListView()
-        FillListView_MESES(id_pc)
 
     End Sub
     Private Sub CERRAR_PERIODO(ByVal id_pc As Integer)
 
         NON_QUERY("UPDATE tbl_periodos_contables SET fld_estado_pc='CERRADO' WHERE fld_id_pc=" & id_pc & "")
+        NON_QUERY("UPDATE tbl_periodos_contables_meses SET fld_estado_mes_pc='CERRADO' WHERE fld_id_del_periodo_contable=" & id_pc & "")
+
 
         Dim desde As String = SCALAR_STRING("SELECT  DATE_FORMAT(fld_fecha_inicia_pc, '%Y-%m-%d') FROM tbl_periodos_contables  WHERE fld_id_pc=" & id_pc & "")
         Dim hasta As String = SCALAR_STRING("SELECT  DATE_FORMAT(fld_fecha_termina_pc, '%Y-%m-%d') FROM tbl_periodos_contables  WHERE fld_id_pc=" & id_pc & "")
@@ -774,7 +782,7 @@ Public Class FRM_PROFILE_CONTABILIDAD
     Private Sub CERRAR_MES(ByVal id_pc As String, ByVal estado As String)
         NON_QUERY("UPDATE tbl_periodos_contables_meses SET fld_estado_mes_pc='" & estado & "' WHERE fld_id_mes_pc=" & id_pc & "")
         Dim mesCerrado As Date = CDate(SCALAR_STRING("SELECT fld_fecha_mes_pc FROM tbl_periodos_contables_meses  WHERE fld_id_mes_pc=" & id_pc & ""))
-        NON_QUERY("CALL cont_cierre_mes('" & formatDate(PrimerDiaDelMes(mesCerrado)) & "','" & formatDate(UltimoDiaDelMes(mesCerrado)) & "')")
+        ''NON_QUERY("CALL cont_cierre_mes('" & formatDate(PrimerDiaDelMes(mesCerrado)) & "','" & formatDate(UltimoDiaDelMes(mesCerrado)) & "')")
         FillListView()
     End Sub
     Private Sub CREAR_MESES_CONTABLES()
@@ -1026,9 +1034,9 @@ Public Class FRM_PROFILE_CONTABILIDAD
         ElseIf SCALAR_NUM("SELECT COUNT(*) FROM tbl_periodos_contables WHERE fld_estado_pc='ACTIVO'") > 0 Then
             Alerta("Solo se permite un périodo ACTIVO")
             Exit Sub
-        ElseIf ESTADO_PERIODO(LV_PERIODO.FocusedItem.Text) = "CERRADO" Then
-            Alerta("Este périodo ha sido CERRADO")
-            Exit Sub
+            'ElseIf ESTADO_PERIODO(LV_PERIODO.FocusedItem.Text) = "CERRADO" Then
+            '    Alerta("Este périodo ha sido CERRADO")
+            '    Exit Sub
         End If
         ACTIVAR_PERIODO(LV_PERIODO.FocusedItem.Text)
     End Sub
@@ -1040,10 +1048,12 @@ Public Class FRM_PROFILE_CONTABILIDAD
         If Alerta("Está a punto de cerrar el período contable que está activo ¿Seguro que desea continuar?") = False Then Exit Sub
         CERRAR_PERIODO(LV_PERIODO.FocusedItem.Text)
         FillListView()
+        FillListView_MESES(intUltimoPC)
         Alerta("Cierre realizado con exito, consulte transacción de tipo (CIERRE) para confirmar")
     End Sub
     Private Sub MenuItem4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuItem4.Click
         CERRAR_MES(LV_PERIODO_MESES.FocusedItem.Text, "CERRADO")
+        FillListView_MESES(intUltimoPC)
     End Sub
  
     Private Sub Button2_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
@@ -1053,7 +1063,12 @@ Public Class FRM_PROFILE_CONTABILIDAD
     End Sub
 
     Private Sub MenuItem6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MenuItem6.Click
-        CERRAR_MES(LV_PERIODO_MESES.FocusedItem.Text, "ACTIVO")
+        If ESTADO_PERIODO(intUltimoPC) = "ACTIVO" Then
+            CERRAR_MES(LV_PERIODO_MESES.FocusedItem.Text, "ACTIVO")
+            FillListView_MESES(intUltimoPC)
+        Else
+            Alerta("No se puede activar un mes si el periodo esta cerrado o inactivo.")
+        End If
     End Sub
 
     Private Sub cmbModulo_SelectedValueChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles cmbModulo.SelectedValueChanged
@@ -1134,7 +1149,10 @@ Public Class FRM_PROFILE_CONTABILIDAD
     End Sub
 
     Private Sub LV_PERIODO_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LV_PERIODO.SelectedIndexChanged
-        FillListView_MESES(LV_PERIODO.FocusedItem.Text)
+        If Not IsNothing(LV_PERIODO.FocusedItem) Then
+            FillListView_MESES(LV_PERIODO.FocusedItem.Text)
+            intUltimoPC = CInt(LV_PERIODO.FocusedItem.Text)
+        End If
     End Sub
 
     Private Sub txtDR_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtDR.TextChanged

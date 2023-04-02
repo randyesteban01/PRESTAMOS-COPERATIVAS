@@ -66,73 +66,79 @@ Public Class frmCertificadoRetiro
     Friend WithEvents dtpFecha As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents txtIdAhorro As System.Windows.Forms.TextBox
+    Friend WithEvents cmbTipo As ComboBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents cmbCajas As ComboBox
+    Friend WithEvents Label12 As Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
-        Dim resources As System.Resources.ResourceManager = New System.Resources.ResourceManager(GetType(frmCertificadoRetiro))
-        Me.txtCedula = New System.Windows.Forms.TextBox
-        Me.txtCliente = New System.Windows.Forms.TextBox
-        Me.txtCuentaNo = New System.Windows.Forms.TextBox
-        Me.lblNombre = New System.Windows.Forms.Label
-        Me.lblId = New System.Windows.Forms.Label
-        Me.lblCedula = New System.Windows.Forms.Label
-        Me.txtConcepto = New System.Windows.Forms.TextBox
-        Me.txtSaldoCapital = New System.Windows.Forms.TextBox
-        Me.dtpUltimoRetiro = New System.Windows.Forms.DateTimePicker
-        Me.txtDiasAcumulados = New System.Windows.Forms.TextBox
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.Label4 = New System.Windows.Forms.Label
-        Me.Label6 = New System.Windows.Forms.Label
-        Me.txtSaldoInteres = New System.Windows.Forms.TextBox
-        Me.Label5 = New System.Windows.Forms.Label
-        Me.txtMonto = New System.Windows.Forms.TextBox
-        Me.Label7 = New System.Windows.Forms.Label
-        Me.txtIdAhorro = New System.Windows.Forms.TextBox
-        Me.txtIDCliente = New System.Windows.Forms.TextBox
-        Me.Button1 = New System.Windows.Forms.Button
-        Me.btnConsultar = New System.Windows.Forms.Button
-        Me.btnCerrar = New System.Windows.Forms.Button
-        Me.btnGuardar = New System.Windows.Forms.Button
-        Me.btnNuevo = New System.Windows.Forms.Button
-        Me.lv = New System.Windows.Forms.ListView
-        Me.Label8 = New System.Windows.Forms.Label
-        Me.txtInteresRetirado = New System.Windows.Forms.TextBox
-        Me.txtCapitalRetirado = New System.Windows.Forms.TextBox
-        Me.Label9 = New System.Windows.Forms.Label
-        Me.Label10 = New System.Windows.Forms.Label
-        Me.txtTotalRetirado = New System.Windows.Forms.TextBox
-        Me.ContextMenu1 = New System.Windows.Forms.ContextMenu
-        Me.MenuItem1 = New System.Windows.Forms.MenuItem
-        Me.MenuItem2 = New System.Windows.Forms.MenuItem
-        Me.dtpFecha = New System.Windows.Forms.DateTimePicker
-        Me.Label11 = New System.Windows.Forms.Label
-        Me.Label3 = New System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmCertificadoRetiro))
+        Me.txtCedula = New System.Windows.Forms.TextBox()
+        Me.txtCliente = New System.Windows.Forms.TextBox()
+        Me.txtCuentaNo = New System.Windows.Forms.TextBox()
+        Me.lblNombre = New System.Windows.Forms.Label()
+        Me.lblId = New System.Windows.Forms.Label()
+        Me.lblCedula = New System.Windows.Forms.Label()
+        Me.txtConcepto = New System.Windows.Forms.TextBox()
+        Me.txtSaldoCapital = New System.Windows.Forms.TextBox()
+        Me.dtpUltimoRetiro = New System.Windows.Forms.DateTimePicker()
+        Me.txtDiasAcumulados = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.txtSaldoInteres = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txtMonto = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.txtIdAhorro = New System.Windows.Forms.TextBox()
+        Me.txtIDCliente = New System.Windows.Forms.TextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnConsultar = New System.Windows.Forms.Button()
+        Me.btnCerrar = New System.Windows.Forms.Button()
+        Me.btnGuardar = New System.Windows.Forms.Button()
+        Me.btnNuevo = New System.Windows.Forms.Button()
+        Me.lv = New System.Windows.Forms.ListView()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.txtInteresRetirado = New System.Windows.Forms.TextBox()
+        Me.txtCapitalRetirado = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.txtTotalRetirado = New System.Windows.Forms.TextBox()
+        Me.ContextMenu1 = New System.Windows.Forms.ContextMenu()
+        Me.MenuItem1 = New System.Windows.Forms.MenuItem()
+        Me.MenuItem2 = New System.Windows.Forms.MenuItem()
+        Me.dtpFecha = New System.Windows.Forms.DateTimePicker()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.cmbTipo = New System.Windows.Forms.ComboBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.cmbCajas = New System.Windows.Forms.ComboBox()
+        Me.Label12 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'txtCedula
         '
         Me.txtCedula.BackColor = System.Drawing.Color.White
         Me.txtCedula.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtCedula.Location = New System.Drawing.Point(96, 54)
+        Me.txtCedula.Location = New System.Drawing.Point(96, 80)
         Me.txtCedula.Name = "txtCedula"
         Me.txtCedula.Size = New System.Drawing.Size(304, 20)
         Me.txtCedula.TabIndex = 6
-        Me.txtCedula.Text = ""
         '
         'txtCliente
         '
-        Me.txtCliente.BackColor = System.Drawing.Color.FromArgb(CType(255, Byte), CType(251, Byte), CType(145, Byte))
+        Me.txtCliente.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(251, Byte), Integer), CType(CType(145, Byte), Integer))
         Me.txtCliente.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtCliente.Location = New System.Drawing.Point(96, 31)
+        Me.txtCliente.Location = New System.Drawing.Point(96, 57)
         Me.txtCliente.Name = "txtCliente"
         Me.txtCliente.ReadOnly = True
         Me.txtCliente.Size = New System.Drawing.Size(304, 20)
         Me.txtCliente.TabIndex = 4
-        Me.txtCliente.Text = ""
         '
         'txtCuentaNo
         '
         Me.txtCuentaNo.BackColor = System.Drawing.Color.White
-        Me.txtCuentaNo.Location = New System.Drawing.Point(96, 8)
+        Me.txtCuentaNo.Location = New System.Drawing.Point(96, 34)
         Me.txtCuentaNo.Name = "txtCuentaNo"
         Me.txtCuentaNo.Size = New System.Drawing.Size(200, 20)
         Me.txtCuentaNo.TabIndex = 1
@@ -141,7 +147,7 @@ Public Class frmCertificadoRetiro
         'lblNombre
         '
         Me.lblNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.lblNombre.Location = New System.Drawing.Point(24, 33)
+        Me.lblNombre.Location = New System.Drawing.Point(24, 59)
         Me.lblNombre.Name = "lblNombre"
         Me.lblNombre.Size = New System.Drawing.Size(64, 16)
         Me.lblNombre.TabIndex = 3
@@ -151,7 +157,7 @@ Public Class frmCertificadoRetiro
         'lblId
         '
         Me.lblId.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.lblId.Location = New System.Drawing.Point(24, 10)
+        Me.lblId.Location = New System.Drawing.Point(24, 36)
         Me.lblId.Name = "lblId"
         Me.lblId.Size = New System.Drawing.Size(64, 16)
         Me.lblId.TabIndex = 0
@@ -161,7 +167,7 @@ Public Class frmCertificadoRetiro
         'lblCedula
         '
         Me.lblCedula.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.lblCedula.Location = New System.Drawing.Point(24, 56)
+        Me.lblCedula.Location = New System.Drawing.Point(24, 82)
         Me.lblCedula.Name = "lblCedula"
         Me.lblCedula.Size = New System.Drawing.Size(64, 16)
         Me.lblCedula.TabIndex = 5
@@ -170,19 +176,18 @@ Public Class frmCertificadoRetiro
         '
         'txtConcepto
         '
-        Me.txtConcepto.Location = New System.Drawing.Point(96, 160)
+        Me.txtConcepto.Location = New System.Drawing.Point(96, 212)
         Me.txtConcepto.MaxLength = 150
         Me.txtConcepto.Multiline = True
         Me.txtConcepto.Name = "txtConcepto"
         Me.txtConcepto.Size = New System.Drawing.Size(304, 72)
         Me.txtConcepto.TabIndex = 18
-        Me.txtConcepto.Text = ""
         '
         'txtSaldoCapital
         '
         Me.txtSaldoCapital.Enabled = False
         Me.txtSaldoCapital.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSaldoCapital.Location = New System.Drawing.Point(96, 100)
+        Me.txtSaldoCapital.Location = New System.Drawing.Point(96, 126)
         Me.txtSaldoCapital.Name = "txtSaldoCapital"
         Me.txtSaldoCapital.Size = New System.Drawing.Size(304, 26)
         Me.txtSaldoCapital.TabIndex = 12
@@ -193,7 +198,7 @@ Public Class frmCertificadoRetiro
         '
         Me.dtpUltimoRetiro.CustomFormat = "dd/MMM/yyyy"
         Me.dtpUltimoRetiro.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpUltimoRetiro.Location = New System.Drawing.Point(280, 272)
+        Me.dtpUltimoRetiro.Location = New System.Drawing.Point(280, 323)
         Me.dtpUltimoRetiro.Name = "dtpUltimoRetiro"
         Me.dtpUltimoRetiro.Size = New System.Drawing.Size(100, 20)
         Me.dtpUltimoRetiro.TabIndex = 8
@@ -201,17 +206,17 @@ Public Class frmCertificadoRetiro
         '
         'txtDiasAcumulados
         '
-        Me.txtDiasAcumulados.Location = New System.Drawing.Point(300, 77)
+        Me.txtDiasAcumulados.Location = New System.Drawing.Point(300, 103)
         Me.txtDiasAcumulados.Name = "txtDiasAcumulados"
         Me.txtDiasAcumulados.ReadOnly = True
+        Me.txtDiasAcumulados.Size = New System.Drawing.Size(100, 20)
         Me.txtDiasAcumulados.TabIndex = 10
-        Me.txtDiasAcumulados.Text = ""
         Me.txtDiasAcumulados.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label2
         '
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label2.Location = New System.Drawing.Point(-16, 105)
+        Me.Label2.Location = New System.Drawing.Point(-16, 131)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(104, 16)
         Me.Label2.TabIndex = 11
@@ -221,7 +226,7 @@ Public Class frmCertificadoRetiro
         'Label4
         '
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label4.Location = New System.Drawing.Point(200, 79)
+        Me.Label4.Location = New System.Drawing.Point(200, 105)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(96, 16)
         Me.Label4.TabIndex = 9
@@ -231,7 +236,7 @@ Public Class frmCertificadoRetiro
         'Label6
         '
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label6.Location = New System.Drawing.Point(0, 134)
+        Me.Label6.Location = New System.Drawing.Point(0, 160)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(88, 16)
         Me.Label6.TabIndex = 13
@@ -242,7 +247,7 @@ Public Class frmCertificadoRetiro
         '
         Me.txtSaldoInteres.Enabled = False
         Me.txtSaldoInteres.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSaldoInteres.Location = New System.Drawing.Point(96, 129)
+        Me.txtSaldoInteres.Location = New System.Drawing.Point(96, 155)
         Me.txtSaldoInteres.Name = "txtSaldoInteres"
         Me.txtSaldoInteres.Size = New System.Drawing.Size(304, 26)
         Me.txtSaldoInteres.TabIndex = 14
@@ -252,7 +257,7 @@ Public Class frmCertificadoRetiro
         'Label5
         '
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label5.Location = New System.Drawing.Point(24, 160)
+        Me.Label5.Location = New System.Drawing.Point(24, 212)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(64, 16)
         Me.Label5.TabIndex = 17
@@ -263,7 +268,7 @@ Public Class frmCertificadoRetiro
         '
         Me.txtMonto.Enabled = False
         Me.txtMonto.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtMonto.Location = New System.Drawing.Point(96, 239)
+        Me.txtMonto.Location = New System.Drawing.Point(96, 291)
         Me.txtMonto.Name = "txtMonto"
         Me.txtMonto.Size = New System.Drawing.Size(304, 26)
         Me.txtMonto.TabIndex = 20
@@ -273,7 +278,7 @@ Public Class frmCertificadoRetiro
         'Label7
         '
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label7.Location = New System.Drawing.Point(0, 244)
+        Me.Label7.Location = New System.Drawing.Point(0, 296)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(88, 16)
         Me.Label7.TabIndex = 19
@@ -283,7 +288,7 @@ Public Class frmCertificadoRetiro
         'txtIdAhorro
         '
         Me.txtIdAhorro.Enabled = False
-        Me.txtIdAhorro.Location = New System.Drawing.Point(24, 312)
+        Me.txtIdAhorro.Location = New System.Drawing.Point(24, 363)
         Me.txtIdAhorro.Name = "txtIdAhorro"
         Me.txtIdAhorro.ReadOnly = True
         Me.txtIdAhorro.Size = New System.Drawing.Size(32, 20)
@@ -293,7 +298,7 @@ Public Class frmCertificadoRetiro
         'txtIDCliente
         '
         Me.txtIDCliente.Enabled = False
-        Me.txtIDCliente.Location = New System.Drawing.Point(24, 336)
+        Me.txtIDCliente.Location = New System.Drawing.Point(24, 387)
         Me.txtIDCliente.Name = "txtIDCliente"
         Me.txtIDCliente.Size = New System.Drawing.Size(56, 20)
         Me.txtIDCliente.TabIndex = 160
@@ -301,7 +306,7 @@ Public Class frmCertificadoRetiro
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(296, 7)
+        Me.Button1.Location = New System.Drawing.Point(296, 33)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(104, 23)
         Me.Button1.TabIndex = 2
@@ -314,12 +319,13 @@ Public Class frmCertificadoRetiro
         Me.btnConsultar.ForeColor = System.Drawing.Color.Black
         Me.btnConsultar.Image = CType(resources.GetObject("btnConsultar.Image"), System.Drawing.Image)
         Me.btnConsultar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnConsultar.Location = New System.Drawing.Point(240, 304)
+        Me.btnConsultar.Location = New System.Drawing.Point(240, 355)
         Me.btnConsultar.Name = "btnConsultar"
         Me.btnConsultar.Size = New System.Drawing.Size(72, 56)
         Me.btnConsultar.TabIndex = 163
         Me.btnConsultar.Text = "&Consultar"
         Me.btnConsultar.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnConsultar.UseVisualStyleBackColor = False
         '
         'btnCerrar
         '
@@ -328,12 +334,13 @@ Public Class frmCertificadoRetiro
         Me.btnCerrar.ForeColor = System.Drawing.Color.Black
         Me.btnCerrar.Image = CType(resources.GetObject("btnCerrar.Image"), System.Drawing.Image)
         Me.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnCerrar.Location = New System.Drawing.Point(312, 304)
+        Me.btnCerrar.Location = New System.Drawing.Point(312, 355)
         Me.btnCerrar.Name = "btnCerrar"
         Me.btnCerrar.Size = New System.Drawing.Size(72, 56)
         Me.btnCerrar.TabIndex = 166
         Me.btnCerrar.Text = "&Cerrar"
         Me.btnCerrar.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnCerrar.UseVisualStyleBackColor = False
         '
         'btnGuardar
         '
@@ -342,12 +349,13 @@ Public Class frmCertificadoRetiro
         Me.btnGuardar.ForeColor = System.Drawing.Color.Black
         Me.btnGuardar.Image = CType(resources.GetObject("btnGuardar.Image"), System.Drawing.Image)
         Me.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnGuardar.Location = New System.Drawing.Point(168, 304)
+        Me.btnGuardar.Location = New System.Drawing.Point(168, 355)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(72, 56)
         Me.btnGuardar.TabIndex = 162
         Me.btnGuardar.Text = "&Guardar"
         Me.btnGuardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnGuardar.UseVisualStyleBackColor = False
         '
         'btnNuevo
         '
@@ -356,24 +364,26 @@ Public Class frmCertificadoRetiro
         Me.btnNuevo.ForeColor = System.Drawing.Color.Black
         Me.btnNuevo.Image = CType(resources.GetObject("btnNuevo.Image"), System.Drawing.Image)
         Me.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnNuevo.Location = New System.Drawing.Point(96, 304)
+        Me.btnNuevo.Location = New System.Drawing.Point(96, 355)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(72, 56)
         Me.btnNuevo.TabIndex = 161
         Me.btnNuevo.Text = "&Nuevo"
         Me.btnNuevo.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnNuevo.UseVisualStyleBackColor = False
         '
         'lv
         '
-        Me.lv.Location = New System.Drawing.Point(408, 8)
+        Me.lv.Location = New System.Drawing.Point(408, 7)
         Me.lv.Name = "lv"
-        Me.lv.Size = New System.Drawing.Size(424, 256)
+        Me.lv.Size = New System.Drawing.Size(424, 310)
         Me.lv.TabIndex = 167
+        Me.lv.UseCompatibleStateImageBehavior = False
         '
         'Label8
         '
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label8.Location = New System.Drawing.Point(416, 269)
+        Me.Label8.Location = New System.Drawing.Point(416, 327)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(208, 16)
         Me.Label8.TabIndex = 168
@@ -384,7 +394,7 @@ Public Class frmCertificadoRetiro
         '
         Me.txtInteresRetirado.Enabled = False
         Me.txtInteresRetirado.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtInteresRetirado.Location = New System.Drawing.Point(632, 264)
+        Me.txtInteresRetirado.Location = New System.Drawing.Point(632, 322)
         Me.txtInteresRetirado.Name = "txtInteresRetirado"
         Me.txtInteresRetirado.Size = New System.Drawing.Size(200, 26)
         Me.txtInteresRetirado.TabIndex = 169
@@ -395,7 +405,7 @@ Public Class frmCertificadoRetiro
         '
         Me.txtCapitalRetirado.Enabled = False
         Me.txtCapitalRetirado.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCapitalRetirado.Location = New System.Drawing.Point(632, 290)
+        Me.txtCapitalRetirado.Location = New System.Drawing.Point(632, 350)
         Me.txtCapitalRetirado.Name = "txtCapitalRetirado"
         Me.txtCapitalRetirado.Size = New System.Drawing.Size(200, 26)
         Me.txtCapitalRetirado.TabIndex = 170
@@ -405,7 +415,7 @@ Public Class frmCertificadoRetiro
         'Label9
         '
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label9.Location = New System.Drawing.Point(416, 295)
+        Me.Label9.Location = New System.Drawing.Point(416, 355)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(208, 16)
         Me.Label9.TabIndex = 171
@@ -415,7 +425,7 @@ Public Class frmCertificadoRetiro
         'Label10
         '
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label10.Location = New System.Drawing.Point(416, 325)
+        Me.Label10.Location = New System.Drawing.Point(416, 383)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(208, 16)
         Me.Label10.TabIndex = 172
@@ -426,7 +436,7 @@ Public Class frmCertificadoRetiro
         '
         Me.txtTotalRetirado.Enabled = False
         Me.txtTotalRetirado.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTotalRetirado.Location = New System.Drawing.Point(632, 320)
+        Me.txtTotalRetirado.Location = New System.Drawing.Point(632, 378)
         Me.txtTotalRetirado.Name = "txtTotalRetirado"
         Me.txtTotalRetirado.Size = New System.Drawing.Size(200, 26)
         Me.txtTotalRetirado.TabIndex = 173
@@ -451,7 +461,7 @@ Public Class frmCertificadoRetiro
         '
         Me.dtpFecha.CustomFormat = "dd/MM/yyyy"
         Me.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpFecha.Location = New System.Drawing.Point(96, 80)
+        Me.dtpFecha.Location = New System.Drawing.Point(96, 106)
         Me.dtpFecha.Name = "dtpFecha"
         Me.dtpFecha.Size = New System.Drawing.Size(100, 20)
         Me.dtpFecha.TabIndex = 174
@@ -459,7 +469,7 @@ Public Class frmCertificadoRetiro
         'Label11
         '
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label11.Location = New System.Drawing.Point(16, 80)
+        Me.Label11.Location = New System.Drawing.Point(16, 106)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(72, 16)
         Me.Label11.TabIndex = 175
@@ -471,17 +481,60 @@ Public Class frmCertificadoRetiro
         Me.Label3.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.OliveDrab
-        Me.Label3.Location = New System.Drawing.Point(0, 380)
+        Me.Label3.Location = New System.Drawing.Point(0, 435)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(842, 32)
         Me.Label3.TabIndex = 176
-        Me.Label3.Text = "CANCELACION DE CERTIFICADO"
+        Me.Label3.Text = "RETIROS/CANCELACION DE CERTIFICADO"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'cmbTipo
+        '
+        Me.cmbTipo.Items.AddRange(New Object() {"Interes", "Capital e Interes"})
+        Me.cmbTipo.Location = New System.Drawing.Point(96, 186)
+        Me.cmbTipo.Name = "cmbTipo"
+        Me.cmbTipo.Size = New System.Drawing.Size(121, 21)
+        Me.cmbTipo.TabIndex = 177
+        Me.cmbTipo.Text = "Interes"
+        '
+        'Label1
+        '
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.Label1.Location = New System.Drawing.Point(8, 186)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(80, 16)
+        Me.Label1.TabIndex = 178
+        Me.Label1.Text = "Tipo Retiro"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'cmbCajas
+        '
+        Me.cmbCajas.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(116, Byte), Integer), CType(CType(179, Byte), Integer))
+        Me.cmbCajas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbCajas.ForeColor = System.Drawing.Color.White
+        Me.cmbCajas.Location = New System.Drawing.Point(96, 7)
+        Me.cmbCajas.Name = "cmbCajas"
+        Me.cmbCajas.Size = New System.Drawing.Size(304, 21)
+        Me.cmbCajas.TabIndex = 179
+        '
+        'Label12
+        '
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.Label12.Location = New System.Drawing.Point(16, 7)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(72, 16)
+        Me.Label12.TabIndex = 180
+        Me.Label12.Text = "Caja :"
+        Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'frmCertificadoRetiro
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
-        Me.ClientSize = New System.Drawing.Size(842, 412)
+        Me.ClientSize = New System.Drawing.Size(842, 467)
+        Me.Controls.Add(Me.cmbCajas)
+        Me.Controls.Add(Me.Label12)
+        Me.Controls.Add(Me.cmbTipo)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.dtpFecha)
@@ -526,6 +579,7 @@ Public Class frmCertificadoRetiro
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Cancelación de Certificado"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -557,7 +611,7 @@ Public Class frmCertificadoRetiro
         da.Fill(ds)
         Dim dr As DataRow
         For Each dr In ds.Tables(0).Rows
-            If dr("Tipo") = "Retiro de Interes" Then
+            If dr("Tipo") = "Interes" Then
                 txtInteresRetirado.Text = Format(CDec(txtInteresRetirado.Text) + dr("Monto"), "C2")
             Else
                 txtCapitalRetirado.Text = Format(CDec(txtCapitalRetirado.Text) + dr("Monto"), "C2")
@@ -710,9 +764,116 @@ Public Class frmCertificadoRetiro
         Return True
     End Function
 
-    Private Sub Guardar()
-        NON_QUERY("INSERT INTO tbl_ahorros_certificado_retiros (IDAhorro, Fecha, Tipo, Concepto, Monto, Usuario, IDCliente) VALUES(" & CInt(txtIdAhorro.Text) & ",'" & formatDate(dtpFecha.Value.Date) & "','Total','" & txtConcepto.Text & "'," & CDbl(txtMonto.Text) & ",'" & User(0) & "'," & CInt(txtIDCliente.Text) & ")")
+    Private Sub LlenarCajas()
 
+        Dim dt As New DataTable
+        Dim da As New MySqlDataAdapter("SELECT Id, Descripcion FROM cajamantenimiento ORDER BY Orden, Descripcion", conn)
+        da.Fill(dt)
+
+        cmbCajas.DataSource = dt
+        cmbCajas.DisplayMember = "Descripcion"
+        cmbCajas.ValueMember = "Id"
+        da.Dispose()
+
+    End Sub
+
+    Private Sub Guardar()
+
+        If cmbTipo.Text = "Interes" Then
+            NON_QUERY("INSERT INTO tbl_ahorros_certificado_retiros (IDAhorro, Fecha, Tipo, Concepto, Monto, Usuario, IDCliente) VALUES(" & CInt(txtIdAhorro.Text) & ",'" & formatDate(dtpFecha.Value.Date) & "','" & cmbTipo.Text & "','" & txtConcepto.Text & "'," & CDbl(txtSaldoInteres.Text) & ",'" & User(0) & "'," & CInt(txtIDCliente.Text) & ")")
+
+        Else
+            '' INTERES 
+            NON_QUERY("INSERT INTO tbl_ahorros_certificado_retiros (IDAhorro, Fecha, Tipo, Concepto, Monto, Usuario, IDCliente) VALUES(" & CInt(txtIdAhorro.Text) & ",'" & formatDate(dtpFecha.Value.Date) & "','Interes','" & txtConcepto.Text & "'," & CDbl(txtSaldoInteres.Text) & ",'" & User(0) & "'," & CInt(txtIDCliente.Text) & ")")
+
+            '' CAPITAL
+            NON_QUERY("INSERT INTO tbl_ahorros_certificado_retiros (IDAhorro, Fecha, Tipo, Concepto, Monto, Usuario, IDCliente) VALUES(" & CInt(txtIdAhorro.Text) & ",'" & formatDate(dtpFecha.Value.Date) & "','" & cmbTipo.Text & "','" & txtConcepto.Text & "'," & CDbl(txtSaldoCapital.Text) & ",'" & User(0) & "'," & CInt(txtIDCliente.Text) & ")")
+
+        End If
+
+
+        Idretiro = UltimoID("tbl_ahorros_certificado_retiros", "id")
+
+        guardarTransaccionContable(Idretiro)
+
+    End Sub
+
+
+    Private Sub guardarTransaccionContable(ByVal idDocAfectado As Integer)
+
+        Dim idTipoTrans = SCALAR_NUM("SELECT IdTipo FROM  tbl_interfascontabletipotrans_conf WHERE Frm='" & Me.Text & "'")
+
+        If cmbTipo.Text = "Interes" Then
+            NON_QUERY("CALL cont_insert_trans(Now(),'" & txtConcepto.Text & "'," & idTipoTrans & ",'" & User(0) & "'," & idDocAfectado & ",'RETIRO DE INTERES CERTIFICADO','" & " Retiro de interes a cta. no. " & txtCuentaNo.Text & "')")
+        Else
+            NON_QUERY("CALL cont_insert_trans(Now(),'" & txtConcepto.Text & "'," & idTipoTrans & ",'" & User(0) & "'," & idDocAfectado & ",'RETIRO DE CAPITAL E INTERES CERTIFICADO','" & " Retiro de ahorro a cta. no. " & txtCuentaNo.Text & "')")
+        End If
+
+        Dim idTras = UltimoID("tbl_interfascontabletransacciones", "TransID")
+
+        Dim ctaContableCaja = SCALAR_STRING("SELECT CtaContable  FROM cajamantenimiento WHERE ID=" & cmbCajas.SelectedValue & "") '' Caja General
+        Dim ctaContableIntCert = SCALAR_STRING("SELECT CertificadoInteresGenerado  FROM tbl_interfascontableotras WHERE ID=1") ''Interees Certificado Generado
+        Dim ctaContableRetIntCert = SCALAR_STRING("SELECT CertificadoInteres  FROM tbl_interfascontableotras WHERE ID=1") ''Interees Certificado
+        Dim ctaContableCertificado = SCALAR_STRING("SELECT Certificados  FROM tbl_interfascontableotras WHERE ID=1") '' Certificados
+
+        Dim DescripcionCuenta = String.Empty
+
+
+        Dim dblSaldoCapital As Double = txtSaldoCapital.Text
+        Dim dblSaldoInteres As Double = txtSaldoInteres.Text
+
+
+        If cmbTipo.Text = "Interes" Then
+
+            If dblSaldoInteres > 0 Then
+                '' Un crédito a Intereses Depósitos a Plazos (201-02-01)
+                DescripcionCuenta = ReturnDescripcion(ctaContableIntCert)
+                GuardarTransaccionDetalle(idTras, ctaContableIntCert, DescripcionCuenta, 0, CDbl(txtSaldoInteres.Text))
+
+                '' Un debito a Intereses Depósitos a Plazos (201-02-01)
+                DescripcionCuenta = ReturnDescripcion(ctaContableIntCert)
+                GuardarTransaccionDetalle(idTras, ctaContableIntCert, DescripcionCuenta, CDbl(txtSaldoInteres.Text), 0)
+
+                '' Un crédito la caja general.
+                DescripcionCuenta = ReturnDescripcion(ctaContableCaja)
+                GuardarTransaccionDetalle(idTras, ctaContableCaja, DescripcionCuenta, 0, CDbl(txtSaldoInteres.Text))
+
+                '' Débito intereses pagados a socios (500-03)
+                DescripcionCuenta = ReturnDescripcion(ctaContableRetIntCert)
+                GuardarTransaccionDetalle(idTras, ctaContableRetIntCert, DescripcionCuenta, CDbl(txtSaldoInteres.Text), 0)
+            End If
+
+        Else
+
+            If dblSaldoInteres > 0 Then
+                '' Un crédito a Intereses Depósitos a Plazos
+                DescripcionCuenta = ReturnDescripcion(ctaContableIntCert)
+                GuardarTransaccionDetalle(idTras, ctaContableIntCert, DescripcionCuenta, 0, CDbl(txtSaldoInteres.Text))
+
+                '' Un debito a Intereses Depósitos a Plazos
+                DescripcionCuenta = ReturnDescripcion(ctaContableIntCert)
+                GuardarTransaccionDetalle(idTras, ctaContableIntCert, DescripcionCuenta, CDbl(txtSaldoInteres.Text), 0)
+
+                '' Un crédito la caja general.
+                DescripcionCuenta = ReturnDescripcion(ctaContableCaja)
+                GuardarTransaccionDetalle(idTras, ctaContableCaja, DescripcionCuenta, 0, CDbl(txtSaldoInteres.Text))
+
+                '' Débito 500-03 intereses pagados a socios
+                DescripcionCuenta = ReturnDescripcion(ctaContableRetIntCert)
+                GuardarTransaccionDetalle(idTras, ctaContableRetIntCert, DescripcionCuenta, CDbl(txtSaldoInteres.Text), 0)
+            End If
+
+            If dblSaldoCapital > 0 Then
+                '' Un crédito la caja general.
+                DescripcionCuenta = ReturnDescripcion(ctaContableCaja)
+                GuardarTransaccionDetalle(idTras, ctaContableCaja, DescripcionCuenta, 0, CDbl(txtSaldoCapital.Text))
+
+                '' Débito a la cuenta 200-01-01 certificado asociados 
+                DescripcionCuenta = ReturnDescripcion(ctaContableCertificado)
+                GuardarTransaccionDetalle(idTras, ctaContableCertificado, DescripcionCuenta, CDbl(txtSaldoCapital.Text), 0)
+            End If
+
+        End If
 
     End Sub
 
@@ -745,7 +906,7 @@ Public Class frmCertificadoRetiro
         tasa = SCALAR_NUM("SELECT IFNULL(TasaIteres,0) FROM tbl_ahorros_certificado WHERE ID=" & CInt(txtIdAhorro.Text) & "") / 30
 
         Dim capitalAhorrado As Decimal = SCALAR_NUM("SELECT IFNULL(SUM(SaldoCapital),0) FROM tbl_ahorros_certificado WHERE ID=" & CtaAhorro & " GROUP BY IDCliente")
-        Dim capitalRetirado As Decimal = SCALAR_STRING("SELECT IFNULL(SUM(Monto),0) FROM tbl_ahorros_certificado_retiros WHERE IDAhorro=" & CInt(txtIdAhorro.Text) & " AND Tipo <> 'Retiro de Interes'")
+        Dim capitalRetirado As Decimal = SCALAR_STRING("SELECT IFNULL(SUM(Monto),0) FROM tbl_ahorros_certificado_retiros WHERE IDAhorro=" & CInt(txtIdAhorro.Text) & " AND Tipo <> 'Interes'")
 
 
 
@@ -791,6 +952,7 @@ Public Class frmCertificadoRetiro
 
     Private Sub frmCertificadoRetiro_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Me.Icon = appIcon
+        LlenarCajas()
         Nuevo()
     End Sub
 

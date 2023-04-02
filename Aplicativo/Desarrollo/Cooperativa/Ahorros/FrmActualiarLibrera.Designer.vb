@@ -25,6 +25,7 @@ Partial Class FrmActualiarLibrera
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmActualiarLibrera))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.TxtSocio = New System.Windows.Forms.TextBox()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
@@ -51,7 +52,6 @@ Partial Class FrmActualiarLibrera
         Me.btnImprime = New System.Windows.Forms.Button()
         Me.btnGuardar = New System.Windows.Forms.Button()
         Me.btnCerrar = New System.Windows.Forms.Button()
-        Me.TxtSocio = New System.Windows.Forms.TextBox()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         CType(Me.DgvLibreta, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -93,6 +93,15 @@ Partial Class FrmActualiarLibrera
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(755, 193)
         Me.Panel3.TabIndex = 1
+        '
+        'TxtSocio
+        '
+        Me.TxtSocio.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtSocio.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.TxtSocio.Location = New System.Drawing.Point(181, 167)
+        Me.TxtSocio.Name = "TxtSocio"
+        Me.TxtSocio.Size = New System.Drawing.Size(571, 22)
+        Me.TxtSocio.TabIndex = 16
         '
         'DateTimePicker1
         '
@@ -327,7 +336,6 @@ Partial Class FrmActualiarLibrera
         Me.btnImprime.Text = "&Imprimir"
         Me.btnImprime.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnImprime.UseVisualStyleBackColor = False
-        Me.btnImprime.Visible = False
         '
         'btnGuardar
         '
@@ -344,7 +352,6 @@ Partial Class FrmActualiarLibrera
         Me.btnGuardar.Text = "&Guardar"
         Me.btnGuardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnGuardar.UseVisualStyleBackColor = False
-        Me.btnGuardar.Visible = False
         '
         'btnCerrar
         '
@@ -361,15 +368,6 @@ Partial Class FrmActualiarLibrera
         Me.btnCerrar.Text = "&Cerrar"
         Me.btnCerrar.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.btnCerrar.UseVisualStyleBackColor = False
-        '
-        'TxtSocio
-        '
-        Me.TxtSocio.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtSocio.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.TxtSocio.Location = New System.Drawing.Point(181, 167)
-        Me.TxtSocio.Name = "TxtSocio"
-        Me.TxtSocio.Size = New System.Drawing.Size(571, 22)
-        Me.TxtSocio.TabIndex = 16
         '
         'FrmActualiarLibrera
         '

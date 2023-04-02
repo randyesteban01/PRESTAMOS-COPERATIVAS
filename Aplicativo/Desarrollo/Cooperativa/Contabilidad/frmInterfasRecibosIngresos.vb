@@ -85,6 +85,12 @@ Public Class frmInterfasRecibosIngresos
     Friend WithEvents BtnBuscarCtasRetiros As Button
     Friend WithEvents BtnBuscarCtas_Depositos As Button
     Friend WithEvents buscaCtaContableBtn As Button
+    Friend WithEvents ctaRetIntCertificadosLbl As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents txtRetiroInteresesCert As TextBox
+    Friend WithEvents ctaIntCertificadosLbl As Label
+    Friend WithEvents lblCtaIntCertificados As Label
+    Friend WithEvents txtInteresCertificados As TextBox
     Friend WithEvents ctaCertificadosTxt As System.Windows.Forms.TextBox
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmInterfasRecibosIngresos))
@@ -116,6 +122,9 @@ Public Class frmInterfasRecibosIngresos
         Me.Label2 = New System.Windows.Forms.Label()
         Me.ctaCertificadosTxt = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.ctaRetIntCertificadosLbl = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txtRetiroInteresesCert = New System.Windows.Forms.TextBox()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
@@ -144,6 +153,9 @@ Public Class frmInterfasRecibosIngresos
         Me.FldCta_Aportaciones = New System.Windows.Forms.TextBox()
         Me.FldCtas_Depositos = New System.Windows.Forms.TextBox()
         Me.FldCta_Retiros = New System.Windows.Forms.TextBox()
+        Me.ctaIntCertificadosLbl = New System.Windows.Forms.Label()
+        Me.lblCtaIntCertificados = New System.Windows.Forms.Label()
+        Me.txtInteresCertificados = New System.Windows.Forms.TextBox()
         Me.Panel1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -155,7 +167,7 @@ Public Class frmInterfasRecibosIngresos
         '
         Me.lblDebitoIngreso.Font = New System.Drawing.Font("Arial", 6.5!)
         Me.lblDebitoIngreso.ForeColor = System.Drawing.Color.Red
-        Me.lblDebitoIngreso.Location = New System.Drawing.Point(320, 296)
+        Me.lblDebitoIngreso.Location = New System.Drawing.Point(320, 311)
         Me.lblDebitoIngreso.Name = "lblDebitoIngreso"
         Me.lblDebitoIngreso.Size = New System.Drawing.Size(248, 20)
         Me.lblDebitoIngreso.TabIndex = 14
@@ -165,7 +177,7 @@ Public Class frmInterfasRecibosIngresos
         '
         'Label17
         '
-        Me.Label17.Location = New System.Drawing.Point(216, 280)
+        Me.Label17.Location = New System.Drawing.Point(216, 295)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(216, 16)
         Me.Label17.TabIndex = 12
@@ -175,7 +187,7 @@ Public Class frmInterfasRecibosIngresos
         '
         'txt_cta_db_ingresos
         '
-        Me.txt_cta_db_ingresos.Location = New System.Drawing.Point(216, 296)
+        Me.txt_cta_db_ingresos.Location = New System.Drawing.Point(216, 311)
         Me.txt_cta_db_ingresos.Name = "txt_cta_db_ingresos"
         Me.txt_cta_db_ingresos.Size = New System.Drawing.Size(100, 20)
         Me.txt_cta_db_ingresos.TabIndex = 13
@@ -265,7 +277,7 @@ Public Class frmInterfasRecibosIngresos
         '
         'txtConcepto
         '
-        Me.txtConcepto.Location = New System.Drawing.Point(216, 336)
+        Me.txtConcepto.Location = New System.Drawing.Point(216, 351)
         Me.txtConcepto.MaxLength = 145
         Me.txtConcepto.Name = "txtConcepto"
         Me.txtConcepto.Size = New System.Drawing.Size(312, 20)
@@ -275,7 +287,7 @@ Public Class frmInterfasRecibosIngresos
         '
         'Label8
         '
-        Me.Label8.Location = New System.Drawing.Point(216, 320)
+        Me.Label8.Location = New System.Drawing.Point(216, 335)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(64, 16)
         Me.Label8.TabIndex = 15
@@ -289,7 +301,7 @@ Public Class frmInterfasRecibosIngresos
         Me.btnCerrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCerrar.Image = CType(resources.GetObject("btnCerrar.Image"), System.Drawing.Image)
         Me.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnCerrar.Location = New System.Drawing.Point(744, 221)
+        Me.btnCerrar.Location = New System.Drawing.Point(763, 239)
         Me.btnCerrar.Name = "btnCerrar"
         Me.btnCerrar.Size = New System.Drawing.Size(72, 56)
         Me.btnCerrar.TabIndex = 26
@@ -303,7 +315,7 @@ Public Class frmInterfasRecibosIngresos
         Me.btn_procesar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_procesar.Image = CType(resources.GetObject("btn_procesar.Image"), System.Drawing.Image)
         Me.btn_procesar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btn_procesar.Location = New System.Drawing.Point(666, 221)
+        Me.btn_procesar.Location = New System.Drawing.Point(685, 239)
         Me.btn_procesar.Name = "btn_procesar"
         Me.btn_procesar.Size = New System.Drawing.Size(72, 56)
         Me.btn_procesar.TabIndex = 25
@@ -411,6 +423,12 @@ Public Class frmInterfasRecibosIngresos
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.ctaIntCertificadosLbl)
+        Me.Panel1.Controls.Add(Me.lblCtaIntCertificados)
+        Me.Panel1.Controls.Add(Me.txtInteresCertificados)
+        Me.Panel1.Controls.Add(Me.ctaRetIntCertificadosLbl)
+        Me.Panel1.Controls.Add(Me.Label4)
+        Me.Panel1.Controls.Add(Me.txtRetiroInteresesCert)
         Me.Panel1.Controls.Add(Me.Label6)
         Me.Panel1.Controls.Add(Me.ctaCertificadosLbl)
         Me.Panel1.Controls.Add(Me.lblInteres)
@@ -434,8 +452,35 @@ Public Class frmInterfasRecibosIngresos
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(3, 3)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(827, 186)
+        Me.Panel1.Size = New System.Drawing.Size(827, 205)
         Me.Panel1.TabIndex = 30
+        '
+        'ctaRetIntCertificadosLbl
+        '
+        Me.ctaRetIntCertificadosLbl.Font = New System.Drawing.Font("Arial", 6.5!)
+        Me.ctaRetIntCertificadosLbl.ForeColor = System.Drawing.Color.Red
+        Me.ctaRetIntCertificadosLbl.Location = New System.Drawing.Point(507, 143)
+        Me.ctaRetIntCertificadosLbl.Name = "ctaRetIntCertificadosLbl"
+        Me.ctaRetIntCertificadosLbl.Size = New System.Drawing.Size(272, 20)
+        Me.ctaRetIntCertificadosLbl.TabIndex = 32
+        Me.ctaRetIntCertificadosLbl.Text = "Label21"
+        Me.ctaRetIntCertificadosLbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label4
+        '
+        Me.Label4.Location = New System.Drawing.Point(403, 127)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(256, 16)
+        Me.Label4.TabIndex = 30
+        Me.Label4.Text = "Cta. Interes Pagado Certificados"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'txtRetiroInteresesCert
+        '
+        Me.txtRetiroInteresesCert.Location = New System.Drawing.Point(403, 143)
+        Me.txtRetiroInteresesCert.Name = "txtRetiroInteresesCert"
+        Me.txtRetiroInteresesCert.Size = New System.Drawing.Size(100, 20)
+        Me.txtRetiroInteresesCert.TabIndex = 31
         '
         'TabControl1
         '
@@ -444,7 +489,7 @@ Public Class frmInterfasRecibosIngresos
         Me.TabControl1.Location = New System.Drawing.Point(-2, 2)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(841, 218)
+        Me.TabControl1.Size = New System.Drawing.Size(841, 237)
         Me.TabControl1.TabIndex = 31
         '
         'TabPage1
@@ -453,7 +498,7 @@ Public Class frmInterfasRecibosIngresos
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(833, 192)
+        Me.TabPage1.Size = New System.Drawing.Size(833, 211)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Ctas Recibos de Ingresos"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -722,10 +767,37 @@ Public Class frmInterfasRecibosIngresos
         Me.FldCta_Retiros.Size = New System.Drawing.Size(100, 20)
         Me.FldCta_Retiros.TabIndex = 37
         '
+        'ctaIntCertificadosLbl
+        '
+        Me.ctaIntCertificadosLbl.Font = New System.Drawing.Font("Arial", 6.5!)
+        Me.ctaIntCertificadosLbl.ForeColor = System.Drawing.Color.Red
+        Me.ctaIntCertificadosLbl.Location = New System.Drawing.Point(507, 182)
+        Me.ctaIntCertificadosLbl.Name = "ctaIntCertificadosLbl"
+        Me.ctaIntCertificadosLbl.Size = New System.Drawing.Size(272, 20)
+        Me.ctaIntCertificadosLbl.TabIndex = 35
+        Me.ctaIntCertificadosLbl.Text = "Label21"
+        Me.ctaIntCertificadosLbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblCtaIntCertificados
+        '
+        Me.lblCtaIntCertificados.Location = New System.Drawing.Point(403, 166)
+        Me.lblCtaIntCertificados.Name = "lblCtaIntCertificados"
+        Me.lblCtaIntCertificados.Size = New System.Drawing.Size(256, 16)
+        Me.lblCtaIntCertificados.TabIndex = 33
+        Me.lblCtaIntCertificados.Text = "Cta.Interes Generado Certificados"
+        Me.lblCtaIntCertificados.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'txtInteresCertificados
+        '
+        Me.txtInteresCertificados.Location = New System.Drawing.Point(403, 182)
+        Me.txtInteresCertificados.Name = "txtInteresCertificados"
+        Me.txtInteresCertificados.Size = New System.Drawing.Size(100, 20)
+        Me.txtInteresCertificados.TabIndex = 34
+        '
         'frmInterfasRecibosIngresos
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
-        Me.ClientSize = New System.Drawing.Size(841, 280)
+        Me.ClientSize = New System.Drawing.Size(841, 299)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.btn_procesar)
         Me.Controls.Add(Me.txtConcepto)
@@ -775,11 +847,11 @@ Public Class frmInterfasRecibosIngresos
     End Sub
 
     Private Sub Guardar()
-        NON_QUERY("INSERT INTO tbl_interfascontableingresos (Debito, Capital, Interes, Mora, Otros, Cliente, Proveedor, IdTipo, DescripcionTipo) VALUES('" & txt_cta_db_ingresos.Text & "','', '" & txt_cta_ing_interes.Text & "','" & txt_cta_ing_mora.Text & "','" & txt_cta_ing_otros.Text & "','',''," & cmbTipo.SelectedValue & ",'" & txtConcepto.Text & "'); INSERT INTO tbl_interfascontableotras(Utilidad,Cierre,Certificados) VALUES('" & txt_cta_utilidad.Text & "','" & txt_cta_cierre.Text & "','" & ctaCertificadosTxt.Text & "')")
+        NON_QUERY("INSERT INTO tbl_interfascontableingresos (Debito, Capital, Interes, Mora, Otros, Cliente, Proveedor, IdTipo, DescripcionTipo) VALUES('" & txt_cta_db_ingresos.Text & "','', '" & txt_cta_ing_interes.Text & "','" & txt_cta_ing_mora.Text & "','" & txt_cta_ing_otros.Text & "','',''," & cmbTipo.SelectedValue & ",'" & txtConcepto.Text & "'); INSERT INTO tbl_interfascontableotras(Utilidad,Cierre,Certificados,CertificadoInteres,CertificadoInteresGenerado) VALUES('" & txt_cta_utilidad.Text & "','" & txt_cta_cierre.Text & "','" & ctaCertificadosTxt.Text & "','" & txtRetiroInteresesCert.Text & "','" & txtInteresCertificados.Text & "')")
     End Sub
 
     Private Sub Modificar()
-        NON_QUERY("UPDATE tbl_interfascontableingresos SET Debito='" & txt_cta_db_ingresos.Text & "', Capital='', Interes='" & txt_cta_ing_interes.Text & "', Mora='" & txt_cta_ing_mora.Text & "', Otros='" & txt_cta_ing_otros.Text & "', IdTipo=" & cmbTipo.SelectedValue & ", DescripcionTipo='" & txtConcepto.Text & "' WHERE ID=1; UPDATE tbl_interfascontableotras SET Utilidad='" & txt_cta_utilidad.Text & "',Cierre='" & txt_cta_cierre.Text & "',Certificados='" & ctaCertificadosTxt.Text & "' WHERE ID=1")
+        NON_QUERY("UPDATE tbl_interfascontableingresos SET Debito='" & txt_cta_db_ingresos.Text & "', Capital='', Interes='" & txt_cta_ing_interes.Text & "', Mora='" & txt_cta_ing_mora.Text & "', Otros='" & txt_cta_ing_otros.Text & "', IdTipo=" & cmbTipo.SelectedValue & ", DescripcionTipo='" & txtConcepto.Text & "' WHERE ID=1; UPDATE tbl_interfascontableotras SET Utilidad='" & txt_cta_utilidad.Text & "',Cierre='" & txt_cta_cierre.Text & "',Certificados='" & ctaCertificadosTxt.Text & "',CertificadoInteres='" & txtRetiroInteresesCert.Text & "', CertificadoInteresGenerado='" & txtInteresCertificados.Text & "'  WHERE ID=1")
     End Sub
 
     Private Sub Buscar()
@@ -808,7 +880,7 @@ Public Class frmInterfasRecibosIngresos
 
 
         Dim ds1 As New DataSet
-        Dim da1 As New MySqlDataAdapter("SELECT Utilidad, Cierre, Certificados FROM tbl_interfascontableotras WHERE ID=1", conn)
+        Dim da1 As New MySqlDataAdapter("SELECT Utilidad, Cierre, Certificados,CertificadoInteres,CertificadoInteresGenerado FROM tbl_interfascontableotras WHERE ID=1", conn)
         da1.Fill(ds1, "tbl_interfascontableotras")
 
         Dim dr1 As DataRow
@@ -816,6 +888,8 @@ Public Class frmInterfasRecibosIngresos
             txt_cta_utilidad.Text = dr1("Utilidad")
             txt_cta_cierre.Text = dr1("Cierre")
             ctaCertificadosTxt.Text = dr1("Certificados")
+            txtRetiroInteresesCert.Text = dr1("CertificadoInteres")
+            txtInteresCertificados.Text = dr1("CertificadoInteresGenerado")
 
         Next
         da1.Dispose()
@@ -823,6 +897,9 @@ Public Class frmInterfasRecibosIngresos
         lblUtilidades.Text = ReturnDescripcion(txt_cta_utilidad.Text)
         lblCierre.Text = ReturnDescripcion(txt_cta_cierre.Text)
         ctaCertificadosLbl.Text = ReturnDescripcion(ctaCertificadosTxt.Text)
+        ctaRetIntCertificadosLbl.Text = ReturnDescripcion(txtRetiroInteresesCert.Text)
+        ctaIntCertificadosLbl.Text = ReturnDescripcion(txtInteresCertificados.Text)
+
 
     End Sub
 
@@ -946,4 +1023,23 @@ Public Class frmInterfasRecibosIngresos
             lblctaCertificados.Text = ReturnDescripcion(Id)
         End If
     End Sub
+
+    Private Sub txtRetiroInteresesCert_KeyDown(sender As Object, e As KeyEventArgs) Handles txtRetiroInteresesCert.KeyDown
+        If e.KeyCode = Keys.F5 Then
+            If frmsListaCatalogoCuentaContable() = True Then
+                txtRetiroInteresesCert.Text = Id
+                ctaRetIntCertificadosLbl.Text = ReturnDescripcion(Id)
+            End If
+        End If
+    End Sub
+
+    Private Sub txtInteresCertificados_KeyDown(sender As Object, e As KeyEventArgs) Handles txtInteresCertificados.KeyDown
+        If e.KeyCode = Keys.F5 Then
+            If frmsListaCatalogoCuentaContable() = True Then
+                txtInteresCertificados.Text = Id
+                ctaIntCertificadosLbl.Text = ReturnDescripcion(Id)
+            End If
+        End If
+    End Sub
+
 End Class

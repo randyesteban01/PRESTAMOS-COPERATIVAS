@@ -562,3 +562,4 @@ C:\Users\EEscobar\Documents\GitHub\PRESTAMOS-COPERATIVAS\Aplicativo\Desarrollo\C
 C:\Users\EEscobar\Documents\GitHub\PRESTAMOS-COPERATIVAS\Aplicativo\Desarrollo\Cooperativa\obj\Debug\Cooperativa.exe
 C:\Users\EEscobar\Documents\GitHub\PRESTAMOS-COPERATIVAS\Aplicativo\Desarrollo\Cooperativa\obj\Debug\Cooperativa.xml
 C:\Users\EEscobar\Documents\GitHub\PRESTAMOS-COPERATIVAS\Aplicativo\Desarrollo\Cooperativa\obj\Debug\Cooperativa.pdb
+C:\Users\EEscobar\Documents\GitHub\PRESTAMOS-COPERATIVAS\Aplicativo\Desarrollo\Cooperativa\obj\Debug\Cooperativa.vbprojResolveAssemblyReference.cache

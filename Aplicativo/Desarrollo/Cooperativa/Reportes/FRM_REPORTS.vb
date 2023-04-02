@@ -1534,7 +1534,8 @@ Public Class FRM_REPORTS
             Dim daP As New MySqlDataAdapter("SELECT * FROM tbl_profiledocument", conn)
             daP.Fill(ds, "tbl_profiledocument")
 
-            Dim daP1 As New MySqlDataAdapter("SELECT c.*, cg.Origen AS origen FROM tbl_catalogo AS c INNER JOIN tbl_catalogo_grupo AS cg ON c.Grupo=cg.ID WHERE  Balance > 0  AND Grupo IN(1,2,3)", conn)
+            ''Dim daP1 As New MySqlDataAdapter("SELECT c.*, cg.Origen AS origen FROM tbl_catalogo AS c INNER JOIN tbl_catalogo_grupo AS cg ON c.Grupo=cg.ID WHERE  Balance > 0  AND Grupo IN(1,2,3)", conn)
+            Dim daP1 As New MySqlDataAdapter("SELECT c.*, cg.Origen AS origen FROM tbl_catalogo AS c INNER JOIN tbl_catalogo_grupo AS cg ON c.Grupo=cg.ID WHERE Balance <> 0 AND  Grupo IN(1,2,3)", conn)
             daP1.Fill(ds, "tbl_catalogo")
 
             For Each dr In ds.Tables(0).Rows

@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\MySQL\MySQL Server 5.0\bin\mysqldump.exe" -e -urandy -pdayelcris -hlocalhost dbdataprestamos >bkDbDataPrestamo.sql

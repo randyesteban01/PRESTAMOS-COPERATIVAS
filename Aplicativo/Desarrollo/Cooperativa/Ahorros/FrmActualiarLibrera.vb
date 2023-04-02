@@ -64,8 +64,11 @@ WHERE d.idCliente='" & TxtCodSocio.Text & "' AND a.CuentaNo='" & TxtNroCuenta.Te
 
         If FRMS_POPUP_CLIENTES("TODOS") = True Then
             LoadData(Id)
-            DgvLibreta.Columns(4).Visible = False
-            DgvLibreta.Columns(6).Visible = False
+            If DgvLibreta.RowCount > 0 Then
+                DgvLibreta.Columns(4).Visible = False
+                DgvLibreta.Columns(6).Visible = False
+            End If
+
         End If
 
     End Sub
@@ -82,6 +85,7 @@ WHERE d.idCliente='" & TxtCodSocio.Text & "' AND a.CuentaNo='" & TxtNroCuenta.Te
             With lector.Read
                 TxtCodSocio.Text = lector("idcliente").ToString
                 TxtSocio.Text = lector("fld_fullname").ToString
+                TxtNroCuenta.Text = lector("CuentaNo").ToString
             End With
             conn.Close()
             conn.Open()

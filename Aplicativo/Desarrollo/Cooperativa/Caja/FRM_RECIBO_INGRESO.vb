@@ -1636,7 +1636,7 @@ Public Class FRM_RECIBO_INGRESO
         For Each nr In ds.Tables(0).Rows
             txtCustomerID.Text = nr("fld_id")
             txtFirstName.Text = nr("fld_FullName")
-            ctaContableTxt.Text = nr("ctaContable")
+            'ctaContableTxt.Text = nr("ctaContable")
         Next
         conn.Close()
 
@@ -2460,9 +2460,23 @@ Salta:
 
     Private Sub btnBusca_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBusca.Click
         If FRMS_LIST_PRESTAMOS() = True Then
+
+
+            '' Author: Enrique Escobar Maradiaga
+            '' Fecha: 10/03/2023
+            '' Descripcion: Consultar la cuenta de ingreso utilizando el numero de prestamo, para ser utilizada al momento de registrar asiento contable
+
+            ctaContableTxt.Text = SCALAR_STRING("SELECT  IFNULL(CtaIngreso, '') FROM tbl_prestamos WHERE fld_id_prestamos=" & Id & "")
+
+            If ctaContableTxt.Text = String.Empty Then
+                Alerta("El prestamo No: " & Id & ", no tiene configurada cuenta de ingreso, favor registrarlo")
+                Me.Close()
+            End If
+
             fld_id_prestamo.Text = Id
             'aplicaInteres(Id)
             txtClasificacion.Text = SCALAR_STRING("SELECT fld_clasificacion FROM tbl_prestamos WHERE fld_id_prestamos=" & Id & "")
+
             Dim idCliente = SCALAR_NUM("SELECT fld_id_del_cliente FROM tbl_prestamos WHERE fld_id_prestamos=" & Id & "")
             cargarCliente(idCliente)
             cargarCuotas(Id, idCliente)

@@ -330,6 +330,8 @@ Public Class FRM_CLIENTES
     Friend WithEvents txtPuesto As ComboBox
     Friend WithEvents fld_ocupacion_gar As ComboBox
     Friend WithEvents fld_ocupacion_cliente As ComboBox
+    Friend WithEvents txtRetiroInteresCert As TextBox
+    Friend WithEvents lblRetiroInteres As Label
     Friend WithEvents fldtiempoempresa As System.Windows.Forms.TextBox
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
@@ -634,6 +636,8 @@ Public Class FRM_CLIENTES
         Me.Label17 = New System.Windows.Forms.Label()
         Me.fotoBtn = New System.Windows.Forms.Button()
         Me.lblCuentaContable = New System.Windows.Forms.Label()
+        Me.txtRetiroInteresCert = New System.Windows.Forms.TextBox()
+        Me.lblRetiroInteres = New System.Windows.Forms.Label()
         Me.TabControl.SuspendLayout()
         Me.TP_FICHA_GRAL1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -3480,7 +3484,7 @@ Public Class FRM_CLIENTES
         'Label50
         '
         Me.Label50.AutoSize = True
-        Me.Label50.Location = New System.Drawing.Point(3, 295)
+        Me.Label50.Location = New System.Drawing.Point(3, 304)
         Me.Label50.Name = "Label50"
         Me.Label50.Size = New System.Drawing.Size(96, 13)
         Me.Label50.TabIndex = 32
@@ -3490,7 +3494,7 @@ Public Class FRM_CLIENTES
         'balancePrestamosTxt
         '
         Me.balancePrestamosTxt.Enabled = False
-        Me.balancePrestamosTxt.Location = New System.Drawing.Point(118, 290)
+        Me.balancePrestamosTxt.Location = New System.Drawing.Point(118, 299)
         Me.balancePrestamosTxt.Name = "balancePrestamosTxt"
         Me.balancePrestamosTxt.Size = New System.Drawing.Size(144, 20)
         Me.balancePrestamosTxt.TabIndex = 31
@@ -3500,7 +3504,7 @@ Public Class FRM_CLIENTES
         'Label49
         '
         Me.Label49.AutoSize = True
-        Me.Label49.Location = New System.Drawing.Point(301, 295)
+        Me.Label49.Location = New System.Drawing.Point(301, 304)
         Me.Label49.Name = "Label49"
         Me.Label49.Size = New System.Drawing.Size(67, 13)
         Me.Label49.TabIndex = 30
@@ -3510,7 +3514,7 @@ Public Class FRM_CLIENTES
         'disponibilidadTxt
         '
         Me.disponibilidadTxt.Enabled = False
-        Me.disponibilidadTxt.Location = New System.Drawing.Point(374, 290)
+        Me.disponibilidadTxt.Location = New System.Drawing.Point(374, 299)
         Me.disponibilidadTxt.Name = "disponibilidadTxt"
         Me.disponibilidadTxt.Size = New System.Drawing.Size(144, 20)
         Me.disponibilidadTxt.TabIndex = 29
@@ -3520,7 +3524,7 @@ Public Class FRM_CLIENTES
         'Label48
         '
         Me.Label48.AutoSize = True
-        Me.Label48.Location = New System.Drawing.Point(320, 261)
+        Me.Label48.Location = New System.Drawing.Point(320, 270)
         Me.Label48.Name = "Label48"
         Me.Label48.Size = New System.Drawing.Size(46, 13)
         Me.Label48.TabIndex = 28
@@ -3541,7 +3545,7 @@ Public Class FRM_CLIENTES
         'balanceGralTxt
         '
         Me.balanceGralTxt.Enabled = False
-        Me.balanceGralTxt.Location = New System.Drawing.Point(374, 258)
+        Me.balanceGralTxt.Location = New System.Drawing.Point(374, 267)
         Me.balanceGralTxt.Name = "balanceGralTxt"
         Me.balanceGralTxt.Size = New System.Drawing.Size(144, 20)
         Me.balanceGralTxt.TabIndex = 27
@@ -3551,7 +3555,7 @@ Public Class FRM_CLIENTES
         'Label47
         '
         Me.Label47.AutoSize = True
-        Me.Label47.Location = New System.Drawing.Point(30, 257)
+        Me.Label47.Location = New System.Drawing.Point(30, 266)
         Me.Label47.Name = "Label47"
         Me.Label47.Size = New System.Drawing.Size(69, 13)
         Me.Label47.TabIndex = 26
@@ -3561,7 +3565,7 @@ Public Class FRM_CLIENTES
         'aportacionMontoTxt
         '
         Me.aportacionMontoTxt.Enabled = False
-        Me.aportacionMontoTxt.Location = New System.Drawing.Point(118, 258)
+        Me.aportacionMontoTxt.Location = New System.Drawing.Point(118, 267)
         Me.aportacionMontoTxt.Name = "aportacionMontoTxt"
         Me.aportacionMontoTxt.Size = New System.Drawing.Size(144, 20)
         Me.aportacionMontoTxt.TabIndex = 25
@@ -3578,7 +3582,7 @@ Public Class FRM_CLIENTES
         Me.GroupBox1.Controls.Add(Me.Label41)
         Me.GroupBox1.Location = New System.Drawing.Point(11, 146)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(248, 100)
+        Me.GroupBox1.Size = New System.Drawing.Size(248, 115)
         Me.GroupBox1.TabIndex = 23
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Cuenta de ahorro"
@@ -3586,7 +3590,7 @@ Public Class FRM_CLIENTES
         'ahorroBalanceTxt
         '
         Me.ahorroBalanceTxt.Enabled = False
-        Me.ahorroBalanceTxt.Location = New System.Drawing.Point(96, 73)
+        Me.ahorroBalanceTxt.Location = New System.Drawing.Point(96, 67)
         Me.ahorroBalanceTxt.Name = "ahorroBalanceTxt"
         Me.ahorroBalanceTxt.Size = New System.Drawing.Size(144, 20)
         Me.ahorroBalanceTxt.TabIndex = 5
@@ -3624,7 +3628,7 @@ Public Class FRM_CLIENTES
         '
         'Label42
         '
-        Me.Label42.Location = New System.Drawing.Point(8, 72)
+        Me.Label42.Location = New System.Drawing.Point(8, 66)
         Me.Label42.Name = "Label42"
         Me.Label42.Size = New System.Drawing.Size(80, 23)
         Me.Label42.TabIndex = 1
@@ -3651,7 +3655,7 @@ Public Class FRM_CLIENTES
         '
         'ListView3
         '
-        Me.ListView3.Location = New System.Drawing.Point(680, 328)
+        Me.ListView3.Location = New System.Drawing.Point(680, 337)
         Me.ListView3.Name = "ListView3"
         Me.ListView3.Size = New System.Drawing.Size(120, 56)
         Me.ListView3.TabIndex = 21
@@ -3660,7 +3664,7 @@ Public Class FRM_CLIENTES
         '
         'ListView2
         '
-        Me.ListView2.Location = New System.Drawing.Point(568, 328)
+        Me.ListView2.Location = New System.Drawing.Point(568, 337)
         Me.ListView2.Name = "ListView2"
         Me.ListView2.Size = New System.Drawing.Size(108, 56)
         Me.ListView2.TabIndex = 19
@@ -3669,7 +3673,7 @@ Public Class FRM_CLIENTES
         '
         'ListView1
         '
-        Me.ListView1.Location = New System.Drawing.Point(480, 328)
+        Me.ListView1.Location = New System.Drawing.Point(480, 337)
         Me.ListView1.Name = "ListView1"
         Me.ListView1.Size = New System.Drawing.Size(88, 56)
         Me.ListView1.TabIndex = 17
@@ -3678,7 +3682,7 @@ Public Class FRM_CLIENTES
         '
         'btnOtrasObligaciones
         '
-        Me.btnOtrasObligaciones.Location = New System.Drawing.Point(680, 304)
+        Me.btnOtrasObligaciones.Location = New System.Drawing.Point(680, 313)
         Me.btnOtrasObligaciones.Name = "btnOtrasObligaciones"
         Me.btnOtrasObligaciones.Size = New System.Drawing.Size(48, 23)
         Me.btnOtrasObligaciones.TabIndex = 20
@@ -3687,7 +3691,7 @@ Public Class FRM_CLIENTES
         '
         'btnEstadoIngresoEgresos
         '
-        Me.btnEstadoIngresoEgresos.Location = New System.Drawing.Point(568, 304)
+        Me.btnEstadoIngresoEgresos.Location = New System.Drawing.Point(568, 313)
         Me.btnEstadoIngresoEgresos.Name = "btnEstadoIngresoEgresos"
         Me.btnEstadoIngresoEgresos.Size = New System.Drawing.Size(100, 23)
         Me.btnEstadoIngresoEgresos.TabIndex = 18
@@ -3696,7 +3700,7 @@ Public Class FRM_CLIENTES
         '
         'btnCuentasBanco
         '
-        Me.btnCuentasBanco.Location = New System.Drawing.Point(396, 306)
+        Me.btnCuentasBanco.Location = New System.Drawing.Point(396, 315)
         Me.btnCuentasBanco.Name = "btnCuentasBanco"
         Me.btnCuentasBanco.Size = New System.Drawing.Size(88, 23)
         Me.btnCuentasBanco.TabIndex = 16
@@ -3826,6 +3830,8 @@ Public Class FRM_CLIENTES
         '
         'GroupBox4
         '
+        Me.GroupBox4.Controls.Add(Me.txtRetiroInteresCert)
+        Me.GroupBox4.Controls.Add(Me.lblRetiroInteres)
         Me.GroupBox4.Controls.Add(Me.certificadoBalanceTxt)
         Me.GroupBox4.Controls.Add(Me.certificadoSalidaTxt)
         Me.GroupBox4.Controls.Add(Me.certificadoEntradaTxt)
@@ -3834,7 +3840,7 @@ Public Class FRM_CLIENTES
         Me.GroupBox4.Controls.Add(Me.Label46)
         Me.GroupBox4.Location = New System.Drawing.Point(265, 146)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(248, 100)
+        Me.GroupBox4.Size = New System.Drawing.Size(248, 115)
         Me.GroupBox4.TabIndex = 24
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Cuenta de certificado"
@@ -3842,7 +3848,7 @@ Public Class FRM_CLIENTES
         'certificadoBalanceTxt
         '
         Me.certificadoBalanceTxt.Enabled = False
-        Me.certificadoBalanceTxt.Location = New System.Drawing.Point(96, 73)
+        Me.certificadoBalanceTxt.Location = New System.Drawing.Point(96, 92)
         Me.certificadoBalanceTxt.Name = "certificadoBalanceTxt"
         Me.certificadoBalanceTxt.Size = New System.Drawing.Size(144, 20)
         Me.certificadoBalanceTxt.TabIndex = 5
@@ -3880,11 +3886,11 @@ Public Class FRM_CLIENTES
         '
         'Label45
         '
-        Me.Label45.Location = New System.Drawing.Point(8, 72)
+        Me.Label45.Location = New System.Drawing.Point(2, 91)
         Me.Label45.Name = "Label45"
-        Me.Label45.Size = New System.Drawing.Size(80, 23)
+        Me.Label45.Size = New System.Drawing.Size(88, 23)
         Me.Label45.TabIndex = 1
-        Me.Label45.Text = "Balance"
+        Me.Label45.Text = "Balance Capital"
         Me.Label45.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Label46
@@ -3893,7 +3899,7 @@ Public Class FRM_CLIENTES
         Me.Label46.Name = "Label46"
         Me.Label46.Size = New System.Drawing.Size(80, 23)
         Me.Label46.TabIndex = 0
-        Me.Label46.Text = "Retiros"
+        Me.Label46.Text = "Retiros Capital"
         Me.Label46.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'fld_ocupacion_cliente1
@@ -3973,6 +3979,25 @@ Public Class FRM_CLIENTES
         Me.lblCuentaContable.Size = New System.Drawing.Size(272, 16)
         Me.lblCuentaContable.TabIndex = 8
         Me.lblCuentaContable.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'txtRetiroInteresCert
+        '
+        Me.txtRetiroInteresCert.Enabled = False
+        Me.txtRetiroInteresCert.Location = New System.Drawing.Point(96, 67)
+        Me.txtRetiroInteresCert.Name = "txtRetiroInteresCert"
+        Me.txtRetiroInteresCert.Size = New System.Drawing.Size(144, 20)
+        Me.txtRetiroInteresCert.TabIndex = 7
+        Me.txtRetiroInteresCert.Text = "0.00"
+        Me.txtRetiroInteresCert.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'lblRetiroInteres
+        '
+        Me.lblRetiroInteres.Location = New System.Drawing.Point(8, 66)
+        Me.lblRetiroInteres.Name = "lblRetiroInteres"
+        Me.lblRetiroInteres.Size = New System.Drawing.Size(80, 23)
+        Me.lblRetiroInteres.TabIndex = 6
+        Me.lblRetiroInteres.Text = "Retiros Interes"
+        Me.lblRetiroInteres.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'FRM_CLIENTES
         '
@@ -4069,9 +4094,13 @@ Public Class FRM_CLIENTES
         Dim depositoCertificado As Decimal = SCALAR_NUM("SELECT IFNULL(SUM(SaldoCapital),0) AS monto FROM tbl_ahorros_certificado WHERE IDCliente=" & idCliente & " AND Estado = 'Activa';")
         certificadoEntradaTxt.Text = Format(depositoCertificado, "N2")
 
-        Dim retiroCertificado As Decimal = SCALAR_NUM("SELECT IFNULL(SUM(Monto),0) AS monto FROM tbl_ahorros_certificado_retiros WHERE IDCliente=" & idCliente & ";")
+        Dim retiroCertificado As Decimal = SCALAR_NUM("SELECT IFNULL(SUM(Monto),0) AS monto FROM tbl_ahorros_certificado_retiros WHERE IDCliente=" & idCliente & " AND Tipo<>'Interes';")
         certificadoSalidaTxt.Text = Format(retiroCertificado, "N2")
         certificadoBalanceTxt.Text = Format(depositoCertificado - retiroCertificado, "N2")
+
+        Dim retiroInteresCertificado As Decimal = SCALAR_NUM("SELECT IFNULL(SUM(Monto),0) AS monto FROM tbl_ahorros_certificado_retiros WHERE IDCliente=" & idCliente & " AND Tipo='Interes';")
+        txtRetiroInteresCert.Text = Format(retiroInteresCertificado, "N2")
+
 
         '//// AHORROS
         Dim ahorroDeposito As Decimal = SCALAR_NUM("SELECT IFNULL(SUM(Monto),0) AS monto FROM tbl_ahorros_depositos WHERE IDCliente=" & idCliente & ";")
@@ -5153,4 +5182,6 @@ Public Class FRM_CLIENTES
     Private Sub fld_nombre_banco2_TextChanged(sender As Object, e As EventArgs) Handles fld_nombre_banco2.TextChanged
 
     End Sub
+
+
 End Class

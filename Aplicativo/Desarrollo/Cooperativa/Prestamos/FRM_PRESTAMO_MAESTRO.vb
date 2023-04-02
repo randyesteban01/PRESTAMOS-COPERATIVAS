@@ -94,6 +94,11 @@ Public Class FRM_PRESTAMO_MAESTRO
     Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents Label10 As Label
     Friend WithEvents Label11 As Label
+    Friend WithEvents lblCtaIngresos As Label
+    Friend WithEvents cmbTipoPrestamos As ComboBox
+    Friend WithEvents lblTipoPrestamo As Label
+    Friend WithEvents lblNoCtaIngresos As Label
+    Friend WithEvents btnCambiarTipoPrestamo As Button
     Friend WithEvents MontoSolicitadoTxt As System.Windows.Forms.TextBox
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
@@ -118,6 +123,11 @@ Public Class FRM_PRESTAMO_MAESTRO
         Me.fldTazaMora = New System.Windows.Forms.TextBox()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.btnCambiarTipoPrestamo = New System.Windows.Forms.Button()
+        Me.lblNoCtaIngresos = New System.Windows.Forms.Label()
+        Me.lblCtaIngresos = New System.Windows.Forms.Label()
+        Me.cmbTipoPrestamos = New System.Windows.Forms.ComboBox()
+        Me.lblTipoPrestamo = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -187,14 +197,14 @@ Public Class FRM_PRESTAMO_MAESTRO
         Me.GroupBox1.Controls.Add(Me.Label26)
         Me.GroupBox1.Location = New System.Drawing.Point(3, -1)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(885, 105)
+        Me.GroupBox1.Size = New System.Drawing.Size(885, 91)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos del Socio"
         '
         'txtMontoAdelanto
         '
-        Me.txtMontoAdelanto.Location = New System.Drawing.Point(400, 64)
+        Me.txtMontoAdelanto.Location = New System.Drawing.Point(400, 57)
         Me.txtMontoAdelanto.Name = "txtMontoAdelanto"
         Me.txtMontoAdelanto.Size = New System.Drawing.Size(40, 20)
         Me.txtMontoAdelanto.TabIndex = 10
@@ -226,7 +236,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         Me.btn_nuevo_cliente.BackColor = System.Drawing.SystemColors.Control
         Me.btn_nuevo_cliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!)
         Me.btn_nuevo_cliente.ForeColor = System.Drawing.Color.Black
-        Me.btn_nuevo_cliente.Location = New System.Drawing.Point(452, 64)
+        Me.btn_nuevo_cliente.Location = New System.Drawing.Point(452, 57)
         Me.btn_nuevo_cliente.Name = "btn_nuevo_cliente"
         Me.btn_nuevo_cliente.Size = New System.Drawing.Size(16, 20)
         Me.btn_nuevo_cliente.TabIndex = 11
@@ -239,7 +249,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         Me.cmdZona.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(116, Byte), Integer), CType(CType(179, Byte), Integer))
         Me.cmdZona.ForeColor = System.Drawing.Color.White
         Me.cmdZona.Items.AddRange(New Object() {"N/A"})
-        Me.cmdZona.Location = New System.Drawing.Point(656, 72)
+        Me.cmdZona.Location = New System.Drawing.Point(656, 65)
         Me.cmdZona.Name = "cmdZona"
         Me.cmdZona.Size = New System.Drawing.Size(200, 21)
         Me.cmdZona.TabIndex = 14
@@ -260,7 +270,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         '
         Me.fld_phone2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(251, Byte), Integer), CType(CType(145, Byte), Integer))
         Me.fld_phone2.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.fld_phone2.Location = New System.Drawing.Point(240, 72)
+        Me.fld_phone2.Location = New System.Drawing.Point(240, 65)
         Me.fld_phone2.Name = "fld_phone2"
         Me.fld_phone2.ReadOnly = True
         Me.fld_phone2.Size = New System.Drawing.Size(144, 20)
@@ -270,7 +280,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         '
         Me.txtNombre.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(251, Byte), Integer), CType(CType(145, Byte), Integer))
         Me.txtNombre.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtNombre.Location = New System.Drawing.Point(144, 24)
+        Me.txtNombre.Location = New System.Drawing.Point(144, 17)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.ReadOnly = True
         Me.txtNombre.Size = New System.Drawing.Size(240, 20)
@@ -281,7 +291,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         Me.btnBuscar.BackColor = System.Drawing.SystemColors.Control
         Me.btnBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!)
         Me.btnBuscar.ForeColor = System.Drawing.Color.Black
-        Me.btnBuscar.Location = New System.Drawing.Point(384, 24)
+        Me.btnBuscar.Location = New System.Drawing.Point(384, 17)
         Me.btnBuscar.Name = "btnBuscar"
         Me.btnBuscar.Size = New System.Drawing.Size(56, 22)
         Me.btnBuscar.TabIndex = 8
@@ -291,7 +301,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         'txtId
         '
         Me.txtId.BackColor = System.Drawing.Color.White
-        Me.txtId.Location = New System.Drawing.Point(80, 24)
+        Me.txtId.Location = New System.Drawing.Point(80, 17)
         Me.txtId.Name = "txtId"
         Me.txtId.Size = New System.Drawing.Size(56, 20)
         Me.txtId.TabIndex = 1
@@ -301,7 +311,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         '
         Me.txtCedula.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(251, Byte), Integer), CType(CType(145, Byte), Integer))
         Me.txtCedula.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtCedula.Location = New System.Drawing.Point(80, 48)
+        Me.txtCedula.Location = New System.Drawing.Point(80, 41)
         Me.txtCedula.Name = "txtCedula"
         Me.txtCedula.ReadOnly = True
         Me.txtCedula.Size = New System.Drawing.Size(304, 20)
@@ -310,7 +320,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         'lblCedula
         '
         Me.lblCedula.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.lblCedula.Location = New System.Drawing.Point(8, 48)
+        Me.lblCedula.Location = New System.Drawing.Point(8, 41)
         Me.lblCedula.Name = "lblCedula"
         Me.lblCedula.Size = New System.Drawing.Size(64, 16)
         Me.lblCedula.TabIndex = 3
@@ -320,7 +330,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         'lblNombre
         '
         Me.lblNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.lblNombre.Location = New System.Drawing.Point(8, 24)
+        Me.lblNombre.Location = New System.Drawing.Point(8, 17)
         Me.lblNombre.Name = "lblNombre"
         Me.lblNombre.Size = New System.Drawing.Size(64, 16)
         Me.lblNombre.TabIndex = 0
@@ -331,7 +341,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         '
         Me.fld_phone.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(251, Byte), Integer), CType(CType(145, Byte), Integer))
         Me.fld_phone.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.fld_phone.Location = New System.Drawing.Point(80, 72)
+        Me.fld_phone.Location = New System.Drawing.Point(80, 65)
         Me.fld_phone.Name = "fld_phone"
         Me.fld_phone.ReadOnly = True
         Me.fld_phone.Size = New System.Drawing.Size(144, 20)
@@ -340,7 +350,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         'lblApellidos
         '
         Me.lblApellidos.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.lblApellidos.Location = New System.Drawing.Point(8, 72)
+        Me.lblApellidos.Location = New System.Drawing.Point(8, 65)
         Me.lblApellidos.Name = "lblApellidos"
         Me.lblApellidos.Size = New System.Drawing.Size(64, 16)
         Me.lblApellidos.TabIndex = 5
@@ -361,7 +371,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         'fldTazaMora
         '
         Me.fldTazaMora.BackColor = System.Drawing.Color.White
-        Me.fldTazaMora.Location = New System.Drawing.Point(128, 120)
+        Me.fldTazaMora.Location = New System.Drawing.Point(128, 131)
         Me.fldTazaMora.Name = "fldTazaMora"
         Me.fldTazaMora.Size = New System.Drawing.Size(56, 20)
         Me.fldTazaMora.TabIndex = 9
@@ -371,7 +381,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         'Label15
         '
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label15.Location = New System.Drawing.Point(16, 122)
+        Me.Label15.Location = New System.Drawing.Point(16, 133)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(104, 16)
         Me.Label15.TabIndex = 8
@@ -380,6 +390,11 @@ Public Class FRM_PRESTAMO_MAESTRO
         '
         'GroupBox3
         '
+        Me.GroupBox3.Controls.Add(Me.btnCambiarTipoPrestamo)
+        Me.GroupBox3.Controls.Add(Me.lblNoCtaIngresos)
+        Me.GroupBox3.Controls.Add(Me.lblCtaIngresos)
+        Me.GroupBox3.Controls.Add(Me.cmbTipoPrestamos)
+        Me.GroupBox3.Controls.Add(Me.lblTipoPrestamo)
         Me.GroupBox3.Controls.Add(Me.ComboBox1)
         Me.GroupBox3.Controls.Add(Me.ComboBox2)
         Me.GroupBox3.Controls.Add(Me.Label10)
@@ -420,18 +435,73 @@ Public Class FRM_PRESTAMO_MAESTRO
         Me.GroupBox3.Controls.Add(Me.fldTazaMora)
         Me.GroupBox3.Controls.Add(Me.Label15)
         Me.GroupBox3.Controls.Add(Me.Label9)
-        Me.GroupBox3.Location = New System.Drawing.Point(3, 96)
+        Me.GroupBox3.Location = New System.Drawing.Point(3, 87)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(885, 456)
+        Me.GroupBox3.Size = New System.Drawing.Size(885, 465)
         Me.GroupBox3.TabIndex = 0
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Préstamo"
+        '
+        'btnCambiarTipoPrestamo
+        '
+        Me.btnCambiarTipoPrestamo.BackColor = System.Drawing.SystemColors.Control
+        Me.btnCambiarTipoPrestamo.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!)
+        Me.btnCambiarTipoPrestamo.ForeColor = System.Drawing.Color.Black
+        Me.btnCambiarTipoPrestamo.Image = CType(resources.GetObject("btnCambiarTipoPrestamo.Image"), System.Drawing.Image)
+        Me.btnCambiarTipoPrestamo.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnCambiarTipoPrestamo.Location = New System.Drawing.Point(271, 9)
+        Me.btnCambiarTipoPrestamo.Name = "btnCambiarTipoPrestamo"
+        Me.btnCambiarTipoPrestamo.Size = New System.Drawing.Size(24, 22)
+        Me.btnCambiarTipoPrestamo.TabIndex = 44
+        Me.btnCambiarTipoPrestamo.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnCambiarTipoPrestamo.UseVisualStyleBackColor = False
+        Me.btnCambiarTipoPrestamo.Visible = False
+        '
+        'lblNoCtaIngresos
+        '
+        Me.lblNoCtaIngresos.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.lblNoCtaIngresos.Location = New System.Drawing.Point(375, 13)
+        Me.lblNoCtaIngresos.Name = "lblNoCtaIngresos"
+        Me.lblNoCtaIngresos.Size = New System.Drawing.Size(147, 16)
+        Me.lblNoCtaIngresos.TabIndex = 43
+        Me.lblNoCtaIngresos.Text = "NoCtaIngresos"
+        Me.lblNoCtaIngresos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblCtaIngresos
+        '
+        Me.lblCtaIngresos.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.lblCtaIngresos.Location = New System.Drawing.Point(296, 12)
+        Me.lblCtaIngresos.Name = "lblCtaIngresos"
+        Me.lblCtaIngresos.Size = New System.Drawing.Size(82, 16)
+        Me.lblCtaIngresos.TabIndex = 42
+        Me.lblCtaIngresos.Text = " Ctas. Ingresos"
+        Me.lblCtaIngresos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'cmbTipoPrestamos
+        '
+        Me.cmbTipoPrestamos.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(116, Byte), Integer), CType(CType(179, Byte), Integer))
+        Me.cmbTipoPrestamos.ForeColor = System.Drawing.Color.White
+        Me.cmbTipoPrestamos.Location = New System.Drawing.Point(127, 11)
+        Me.cmbTipoPrestamos.Name = "cmbTipoPrestamos"
+        Me.cmbTipoPrestamos.Size = New System.Drawing.Size(144, 21)
+        Me.cmbTipoPrestamos.TabIndex = 41
+        Me.cmbTipoPrestamos.Text = "Elegir una Cuenta"
+        '
+        'lblTipoPrestamo
+        '
+        Me.lblTipoPrestamo.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.lblTipoPrestamo.Location = New System.Drawing.Point(5, 14)
+        Me.lblTipoPrestamo.Name = "lblTipoPrestamo"
+        Me.lblTipoPrestamo.Size = New System.Drawing.Size(111, 16)
+        Me.lblTipoPrestamo.TabIndex = 40
+        Me.lblTipoPrestamo.Text = "Tipo de Prestamos"
+        Me.lblTipoPrestamo.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'ComboBox1
         '
         Me.ComboBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(116, Byte), Integer), CType(CType(179, Byte), Integer))
         Me.ComboBox1.ForeColor = System.Drawing.Color.White
-        Me.ComboBox1.Location = New System.Drawing.Point(378, 50)
+        Me.ComboBox1.Location = New System.Drawing.Point(378, 61)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(144, 21)
         Me.ComboBox1.TabIndex = 39
@@ -441,7 +511,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         '
         Me.ComboBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(116, Byte), Integer), CType(CType(179, Byte), Integer))
         Me.ComboBox2.ForeColor = System.Drawing.Color.White
-        Me.ComboBox2.Location = New System.Drawing.Point(378, 25)
+        Me.ComboBox2.Location = New System.Drawing.Point(378, 36)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(144, 21)
         Me.ComboBox2.TabIndex = 37
@@ -451,7 +521,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         '
         Me.Label10.AutoEllipsis = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label10.Location = New System.Drawing.Point(278, 51)
+        Me.Label10.Location = New System.Drawing.Point(278, 62)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(95, 16)
         Me.Label10.TabIndex = 38
@@ -461,7 +531,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         'Label11
         '
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label11.Location = New System.Drawing.Point(263, 27)
+        Me.Label11.Location = New System.Drawing.Point(263, 38)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(111, 16)
         Me.Label11.TabIndex = 36
@@ -472,7 +542,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         '
         Me.MontoSolicitadoTxt.BackColor = System.Drawing.Color.White
         Me.MontoSolicitadoTxt.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MontoSolicitadoTxt.Location = New System.Drawing.Point(378, 74)
+        Me.MontoSolicitadoTxt.Location = New System.Drawing.Point(378, 85)
         Me.MontoSolicitadoTxt.Name = "MontoSolicitadoTxt"
         Me.MontoSolicitadoTxt.Size = New System.Drawing.Size(100, 20)
         Me.MontoSolicitadoTxt.TabIndex = 11
@@ -483,7 +553,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label5.Location = New System.Drawing.Point(292, 101)
+        Me.Label5.Location = New System.Drawing.Point(292, 112)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(74, 13)
         Me.Label5.TabIndex = 12
@@ -492,7 +562,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         '
         'SeguroTxt
         '
-        Me.SeguroTxt.Location = New System.Drawing.Point(378, 98)
+        Me.SeguroTxt.Location = New System.Drawing.Point(378, 109)
         Me.SeguroTxt.Name = "SeguroTxt"
         Me.SeguroTxt.Size = New System.Drawing.Size(100, 20)
         Me.SeguroTxt.TabIndex = 12
@@ -503,7 +573,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label2.Location = New System.Drawing.Point(286, 125)
+        Me.Label2.Location = New System.Drawing.Point(286, 136)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(80, 13)
         Me.Label2.TabIndex = 10
@@ -512,7 +582,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         '
         'GastoLegalTxt
         '
-        Me.GastoLegalTxt.Location = New System.Drawing.Point(378, 122)
+        Me.GastoLegalTxt.Location = New System.Drawing.Point(378, 133)
         Me.GastoLegalTxt.Name = "GastoLegalTxt"
         Me.GastoLegalTxt.Size = New System.Drawing.Size(100, 20)
         Me.GastoLegalTxt.TabIndex = 13
@@ -524,7 +594,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         Me.gbAgregarCuotas.Controls.Add(Me.Label4)
         Me.gbAgregarCuotas.Controls.Add(Me.txtCuotasAgregar)
         Me.gbAgregarCuotas.Controls.Add(Me.btnAgregarCuotas)
-        Me.gbAgregarCuotas.Location = New System.Drawing.Point(696, 368)
+        Me.gbAgregarCuotas.Location = New System.Drawing.Point(696, 374)
         Me.gbAgregarCuotas.Name = "gbAgregarCuotas"
         Me.gbAgregarCuotas.Size = New System.Drawing.Size(184, 80)
         Me.gbAgregarCuotas.TabIndex = 29
@@ -582,7 +652,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         Me.lblTasaIntere.AutoEllipsis = True
         Me.lblTasaIntere.AutoSize = True
         Me.lblTasaIntere.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTasaIntere.Location = New System.Drawing.Point(584, 28)
+        Me.lblTasaIntere.Location = New System.Drawing.Point(584, 37)
         Me.lblTasaIntere.Name = "lblTasaIntere"
         Me.lblTasaIntere.Size = New System.Drawing.Size(135, 20)
         Me.lblTasaIntere.TabIndex = 14
@@ -593,7 +663,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         '
         Me.fld_porciento.BackColor = System.Drawing.Color.White
         Me.fld_porciento.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.fld_porciento.Location = New System.Drawing.Point(726, 25)
+        Me.fld_porciento.Location = New System.Drawing.Point(726, 34)
         Me.fld_porciento.Name = "fld_porciento"
         Me.fld_porciento.Size = New System.Drawing.Size(154, 26)
         Me.fld_porciento.TabIndex = 15
@@ -605,7 +675,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         Me.fld_monto_prestamo.BackColor = System.Drawing.Color.White
         Me.fld_monto_prestamo.Enabled = False
         Me.fld_monto_prestamo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.fld_monto_prestamo.Location = New System.Drawing.Point(726, 55)
+        Me.fld_monto_prestamo.Location = New System.Drawing.Point(726, 64)
         Me.fld_monto_prestamo.Name = "fld_monto_prestamo"
         Me.fld_monto_prestamo.Size = New System.Drawing.Size(154, 26)
         Me.fld_monto_prestamo.TabIndex = 17
@@ -617,7 +687,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         Me.Label7.AutoEllipsis = True
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(538, 61)
+        Me.Label7.Location = New System.Drawing.Point(538, 70)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(181, 20)
         Me.Label7.TabIndex = 16
@@ -628,7 +698,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         '
         Me.fld_cantidad_cuotas.BackColor = System.Drawing.Color.White
         Me.fld_cantidad_cuotas.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.fld_cantidad_cuotas.Location = New System.Drawing.Point(726, 84)
+        Me.fld_cantidad_cuotas.Location = New System.Drawing.Point(726, 93)
         Me.fld_cantidad_cuotas.Name = "fld_cantidad_cuotas"
         Me.fld_cantidad_cuotas.Size = New System.Drawing.Size(154, 26)
         Me.fld_cantidad_cuotas.TabIndex = 19
@@ -640,7 +710,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         Me.Label8.AutoEllipsis = True
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(576, 87)
+        Me.Label8.Location = New System.Drawing.Point(576, 96)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(143, 20)
         Me.Label8.TabIndex = 18
@@ -650,7 +720,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         'txtMontoCuota
         '
         Me.txtMontoCuota.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtMontoCuota.Location = New System.Drawing.Point(726, 112)
+        Me.txtMontoCuota.Location = New System.Drawing.Point(726, 121)
         Me.txtMontoCuota.Name = "txtMontoCuota"
         Me.txtMontoCuota.Size = New System.Drawing.Size(154, 26)
         Me.txtMontoCuota.TabIndex = 21
@@ -662,7 +732,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         Me.Label27.AutoEllipsis = True
         Me.Label27.AutoSize = True
         Me.Label27.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label27.Location = New System.Drawing.Point(566, 115)
+        Me.Label27.Location = New System.Drawing.Point(566, 124)
         Me.Label27.Name = "Label27"
         Me.Label27.Size = New System.Drawing.Size(153, 20)
         Me.Label27.TabIndex = 20
@@ -676,7 +746,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         Me.btnListaPrestamos.ForeColor = System.Drawing.Color.Black
         Me.btnListaPrestamos.Image = CType(resources.GetObject("btnListaPrestamos.Image"), System.Drawing.Image)
         Me.btnListaPrestamos.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnListaPrestamos.Location = New System.Drawing.Point(736, 200)
+        Me.btnListaPrestamos.Location = New System.Drawing.Point(736, 207)
         Me.btnListaPrestamos.Name = "btnListaPrestamos"
         Me.btnListaPrestamos.Size = New System.Drawing.Size(144, 56)
         Me.btnListaPrestamos.TabIndex = 24
@@ -691,7 +761,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         Me.btnBorrar.ForeColor = System.Drawing.Color.Black
         Me.btnBorrar.Image = CType(resources.GetObject("btnBorrar.Image"), System.Drawing.Image)
         Me.btnBorrar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnBorrar.Location = New System.Drawing.Point(736, 312)
+        Me.btnBorrar.Location = New System.Drawing.Point(736, 319)
         Me.btnBorrar.Name = "btnBorrar"
         Me.btnBorrar.Size = New System.Drawing.Size(72, 56)
         Me.btnBorrar.TabIndex = 26
@@ -706,7 +776,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         Me.btnCerrar.ForeColor = System.Drawing.Color.Black
         Me.btnCerrar.Image = CType(resources.GetObject("btnCerrar.Image"), System.Drawing.Image)
         Me.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnCerrar.Location = New System.Drawing.Point(808, 312)
+        Me.btnCerrar.Location = New System.Drawing.Point(808, 319)
         Me.btnCerrar.Name = "btnCerrar"
         Me.btnCerrar.Size = New System.Drawing.Size(72, 56)
         Me.btnCerrar.TabIndex = 27
@@ -721,7 +791,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         Me.btnProcesar.ForeColor = System.Drawing.Color.Black
         Me.btnProcesar.Image = CType(resources.GetObject("btnProcesar.Image"), System.Drawing.Image)
         Me.btnProcesar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnProcesar.Location = New System.Drawing.Point(808, 144)
+        Me.btnProcesar.Location = New System.Drawing.Point(808, 151)
         Me.btnProcesar.Name = "btnProcesar"
         Me.btnProcesar.Size = New System.Drawing.Size(72, 56)
         Me.btnProcesar.TabIndex = 23
@@ -736,7 +806,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         Me.btnNuevo.ForeColor = System.Drawing.Color.Black
         Me.btnNuevo.Image = CType(resources.GetObject("btnNuevo.Image"), System.Drawing.Image)
         Me.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnNuevo.Location = New System.Drawing.Point(736, 144)
+        Me.btnNuevo.Location = New System.Drawing.Point(736, 151)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(72, 56)
         Me.btnNuevo.TabIndex = 22
@@ -752,7 +822,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         Me.btnImprime.Image = CType(resources.GetObject("btnImprime.Image"), System.Drawing.Image)
         Me.btnImprime.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnImprime.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.btnImprime.Location = New System.Drawing.Point(736, 256)
+        Me.btnImprime.Location = New System.Drawing.Point(736, 263)
         Me.btnImprime.Name = "btnImprime"
         Me.btnImprime.Size = New System.Drawing.Size(144, 56)
         Me.btnImprime.TabIndex = 25
@@ -780,7 +850,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         '
         'IdSolicitudTxt
         '
-        Me.IdSolicitudTxt.Location = New System.Drawing.Point(190, 24)
+        Me.IdSolicitudTxt.Location = New System.Drawing.Point(190, 35)
         Me.IdSolicitudTxt.Name = "IdSolicitudTxt"
         Me.IdSolicitudTxt.Size = New System.Drawing.Size(56, 20)
         Me.IdSolicitudTxt.TabIndex = 30
@@ -792,7 +862,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         Me.fld_tipo_prestamo.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(116, Byte), Integer), CType(CType(179, Byte), Integer))
         Me.fld_tipo_prestamo.ForeColor = System.Drawing.Color.White
         Me.fld_tipo_prestamo.Items.AddRange(New Object() {"DIARIO", "SEMANAL", "QUINCENAL", "MENSUAL", "BIMESTRAL", "TRIMESTRAL", "SEMESTRAL", "ANUAL"})
-        Me.fld_tipo_prestamo.Location = New System.Drawing.Point(128, 72)
+        Me.fld_tipo_prestamo.Location = New System.Drawing.Point(128, 83)
         Me.fld_tipo_prestamo.Name = "fld_tipo_prestamo"
         Me.fld_tipo_prestamo.Size = New System.Drawing.Size(144, 21)
         Me.fld_tipo_prestamo.TabIndex = 5
@@ -803,7 +873,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         Me.fld_clasificacion.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(116, Byte), Integer), CType(CType(179, Byte), Integer))
         Me.fld_clasificacion.ForeColor = System.Drawing.Color.White
         Me.fld_clasificacion.Items.AddRange(New Object() {"Int. y Capital Amorizable", "Int. y Capital Fijos", "Int. Diario Sobre Saldo Insoluto", "Int. Diario Sobre Capital Inicial"})
-        Me.fld_clasificacion.Location = New System.Drawing.Point(128, 48)
+        Me.fld_clasificacion.Location = New System.Drawing.Point(128, 59)
         Me.fld_clasificacion.Name = "fld_clasificacion"
         Me.fld_clasificacion.Size = New System.Drawing.Size(144, 21)
         Me.fld_clasificacion.TabIndex = 3
@@ -812,7 +882,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         'Label3
         '
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label3.Location = New System.Drawing.Point(0, 72)
+        Me.Label3.Location = New System.Drawing.Point(0, 83)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(120, 16)
         Me.Label3.TabIndex = 4
@@ -822,7 +892,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         'Label13
         '
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label13.Location = New System.Drawing.Point(0, 48)
+        Me.Label13.Location = New System.Drawing.Point(0, 59)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(120, 16)
         Me.Label13.TabIndex = 2
@@ -833,7 +903,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         '
         Me.fld_fecha_entrega.CustomFormat = "dd / MMM /yyyy"
         Me.fld_fecha_entrega.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.fld_fecha_entrega.Location = New System.Drawing.Point(128, 96)
+        Me.fld_fecha_entrega.Location = New System.Drawing.Point(128, 107)
         Me.fld_fecha_entrega.Name = "fld_fecha_entrega"
         Me.fld_fecha_entrega.Size = New System.Drawing.Size(144, 20)
         Me.fld_fecha_entrega.TabIndex = 7
@@ -841,7 +911,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         'fld_cod_prestamo
         '
         Me.fld_cod_prestamo.BackColor = System.Drawing.Color.White
-        Me.fld_cod_prestamo.Location = New System.Drawing.Point(128, 24)
+        Me.fld_cod_prestamo.Location = New System.Drawing.Point(128, 35)
         Me.fld_cod_prestamo.Name = "fld_cod_prestamo"
         Me.fld_cod_prestamo.Size = New System.Drawing.Size(56, 20)
         Me.fld_cod_prestamo.TabIndex = 1
@@ -850,7 +920,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         'Label1
         '
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label1.Location = New System.Drawing.Point(40, 24)
+        Me.Label1.Location = New System.Drawing.Point(40, 35)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(80, 16)
         Me.Label1.TabIndex = 0
@@ -860,7 +930,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         'Label6
         '
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label6.Location = New System.Drawing.Point(8, 96)
+        Me.Label6.Location = New System.Drawing.Point(8, 107)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(112, 16)
         Me.Label6.TabIndex = 6
@@ -870,7 +940,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         'btnCambiar
         '
         Me.btnCambiar.Enabled = False
-        Me.btnCambiar.Location = New System.Drawing.Point(192, 120)
+        Me.btnCambiar.Location = New System.Drawing.Point(192, 131)
         Me.btnCambiar.Name = "btnCambiar"
         Me.btnCambiar.Size = New System.Drawing.Size(75, 23)
         Me.btnCambiar.TabIndex = 28
@@ -880,7 +950,7 @@ Public Class FRM_PRESTAMO_MAESTRO
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(286, 76)
+        Me.Label9.Location = New System.Drawing.Point(286, 87)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(84, 13)
         Me.Label9.TabIndex = 35
@@ -1445,6 +1515,7 @@ Public Class FRM_PRESTAMO_MAESTRO
     Private Sub FRM_PRESTAMO_MAESTRO_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Me.Icon = appIcon
         LlenarZona()
+        LlenarTiposPrestamos()
         txtId.Focus()
         fld_porciento.Text = SCALAR_NUM("SELECT TasaInteres FROM parametrosgenerales WHERE ID=1")
         fldTazaMora.Text = SCALAR_NUM("SELECT Mora FROM parametrosgenerales WHERE ID=1")
@@ -1555,6 +1626,20 @@ sigue:
 
     End Sub
 
+    Private Sub LlenarTiposPrestamos()
+
+        Dim dt As New DataTable
+        Dim da As New MySqlDataAdapter("SELECT CuentaNo, Descripcion FROM tbl_catalogo WHERE CtaControl IN ('101-01-01','101-01-02')", conn)
+        da.Fill(dt)
+        cmbTipoPrestamos.DataSource = dt
+        cmbTipoPrestamos.DisplayMember = "Descripcion"
+        cmbTipoPrestamos.ValueMember = "CuentaNo"
+
+        da.Dispose()
+
+    End Sub
+
+
     Private Sub CLEAR_ALL_DATA()
         txtMontoCuota.Text = "0.00"
         txtId.Text = "0"
@@ -1593,6 +1678,16 @@ sigue:
         Dim nr As DataRow
         For Each nr In ds.Tables(0).Rows
             fld_cod_prestamo.Text = Format(IdPrestamo, "00000")
+
+            If nr("CtaIngreso").ToString = "" Then
+                cmbTipoPrestamos.Text = String.Empty
+                lblNoCtaIngresos.Text = "N/D"
+                btnCambiarTipoPrestamo.Visible = True
+            Else
+                cmbTipoPrestamos.SelectedValue = nr("CtaIngreso")
+                btnCambiarTipoPrestamo.Visible = False
+            End If
+
             fld_fecha_entrega.Value = nr("fld_fecha_entrega")
             fld_monto_prestamo.Text = Format(nr("fld_capital_prestamo"), "C2")
             txtMontoCuota.Text = Format(nr("fld_monto_cuotas_a"), "C2")
@@ -1731,7 +1826,7 @@ sigue:
         With cmd
             .Connection = conn
             .Connection.Open()
-            .CommandText = "INSERT INTO tbl_prestamos (fld_id_del_cliente,fld_fecha_entrega,fld_cantidad_cuotas,fld_monto_cuotas_a,fld_capital_prestamo,fld_monto,fld_abono,fld_balance,fld_usuario,fld_status_prestamos, fld_anos, fld_interes_p,fld_tipo_prestamo,fld_tipo_garantia, fld_garantia, fld_clasificacion,fld_ck_no, fldFinanciamiento, fldMontoFinan, fldMontoInicial, fldCodInm, fldDescInm, fldMetros, fldPrecioMetro, fldTazaMora,fldNota,GastosLegales,Seguro) VALUES(" & txtId.Text & ",'" & formatDate(fld_fecha_entrega.Value.Date) & "'," & fld_cantidad_cuotas.Text & "," & CDec(txtMontoCuota.Text) & "," & CDec(fld_monto_prestamo.Text) & ",0,0,0,'" & User(0) & "','Nuevo', 0, " & CDec(fld_porciento.Text) & ",'" & fld_tipo_prestamo.Text & "','N/A', 'N/A','" & fld_clasificacion.Text & "','','NO',0,0,0,'N/A',0,0," & CDec(fldTazaMora.Text) & ",'" & txtNotaGeneral.Text & "'," & CDec(GastoLegalTxt.Text) & "," & CDec(SeguroTxt.Text) & ")"
+            .CommandText = "INSERT INTO tbl_prestamos (fld_id_del_cliente,fld_fecha_entrega,fld_cantidad_cuotas,fld_monto_cuotas_a,fld_capital_prestamo,fld_monto,fld_abono,fld_balance,fld_usuario,fld_status_prestamos, fld_anos, fld_interes_p,fld_tipo_prestamo,fld_tipo_garantia, fld_garantia, fld_clasificacion,fld_ck_no, fldFinanciamiento, fldMontoFinan, fldMontoInicial, fldCodInm, fldDescInm, fldMetros, fldPrecioMetro, fldTazaMora,fldNota,GastosLegales,Seguro,CtaIngreso) VALUES(" & txtId.Text & ",'" & formatDate(fld_fecha_entrega.Value.Date) & "'," & fld_cantidad_cuotas.Text & "," & CDec(txtMontoCuota.Text) & "," & CDec(fld_monto_prestamo.Text) & ",0,0,0,'" & User(0) & "','Nuevo', 0, " & CDec(fld_porciento.Text) & ",'" & fld_tipo_prestamo.Text & "','N/A', 'N/A','" & fld_clasificacion.Text & "','','NO',0,0,0,'N/A',0,0," & CDec(fldTazaMora.Text) & ",'" & txtNotaGeneral.Text & "'," & CDec(GastoLegalTxt.Text) & "," & CDec(SeguroTxt.Text) & ",'" & cmbTipoPrestamos.SelectedValue.ToString & "')"
             .ExecuteNonQuery()
             .Connection.Close()
         End With
@@ -2467,7 +2562,7 @@ sigue:
 
     End Sub
 
-     
+
     Private Sub GastoLegalTxt_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles GastoLegalTxt.KeyDown
         If e.KeyCode = Keys.Enter Then
             Me.SelectNextControl(Me.ActiveControl, True, True, True, False) 'for Select Next Control
@@ -2483,7 +2578,7 @@ sigue:
 
     End Sub
 
-     
+
     Private Sub SeguroTxt_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles SeguroTxt.KeyDown
         If e.KeyCode = Keys.Enter Then
             Me.SelectNextControl(Me.ActiveControl, True, True, True, False) 'for Select Next Control
@@ -2502,7 +2597,7 @@ sigue:
 
     End Sub
 
-    
+
 
     Private Sub MontoSolicitadoTxt_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles MontoSolicitadoTxt.KeyDown
         If e.KeyCode = Keys.Enter Then
@@ -2540,5 +2635,26 @@ sigue:
 
     Private Sub GastoLegalTxt_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GastoLegalTxt.TextChanged
 
+    End Sub
+
+    Private Sub cmbTipoPrestamos_SelectedValueChanged(sender As Object, e As EventArgs) Handles cmbTipoPrestamos.SelectedValueChanged
+        If Not IsNothing(cmbTipoPrestamos.SelectedValue) Then
+            lblNoCtaIngresos.Text = cmbTipoPrestamos.SelectedValue.ToString
+            ''btnCambiarTipoPrestamo.Visible = False
+        Else
+            cmbTipoPrestamos.Text = String.Empty
+            lblNoCtaIngresos.Text = "N/D"
+            ''btnCambiarTipoPrestamo.Visible = True
+        End If
+    End Sub
+
+    Private Sub btnCambiarTipoPrestamo_Click(sender As Object, e As EventArgs) Handles btnCambiarTipoPrestamo.Click
+        If lblNoCtaIngresos.Text = "N/D" Then
+            Alerta("Favor Seleccionar Tipo Prestamos")
+        Else
+            NON_QUERY("UPDATE tbl_prestamos set CtaIngreso='" & cmbTipoPrestamos.SelectedValue & "' WHERE fld_id_prestamos=" & CInt(fld_cod_prestamo.Text) & "")
+            Alerta("Cuenta de ingresos agregada")
+            btnCambiarTipoPrestamo.Visible = False
+        End If
     End Sub
 End Class
