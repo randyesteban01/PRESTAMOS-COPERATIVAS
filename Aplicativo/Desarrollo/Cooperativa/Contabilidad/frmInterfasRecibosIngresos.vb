@@ -847,11 +847,11 @@ Public Class frmInterfasRecibosIngresos
     End Sub
 
     Private Sub Guardar()
-        NON_QUERY("INSERT INTO tbl_interfascontableingresos (Debito, Capital, Interes, Mora, Otros, Cliente, Proveedor, IdTipo, DescripcionTipo) VALUES('" & txt_cta_db_ingresos.Text & "','', '" & txt_cta_ing_interes.Text & "','" & txt_cta_ing_mora.Text & "','" & txt_cta_ing_otros.Text & "','',''," & cmbTipo.SelectedValue & ",'" & txtConcepto.Text & "'); INSERT INTO tbl_interfascontableotras(Utilidad,Cierre,Certificados,CertificadoInteres,CertificadoInteresGenerado) VALUES('" & txt_cta_utilidad.Text & "','" & txt_cta_cierre.Text & "','" & ctaCertificadosTxt.Text & "','" & txtRetiroInteresesCert.Text & "','" & txtInteresCertificados.Text & "')")
+        NON_QUERY("INSERT INTO tbl_interfascontableingresos (Debito, Capital, Interes, Mora, Otros, Cliente, Proveedor, IdTipo, DescripcionTipo) VALUES('" & txt_cta_db_ingresos.Text & "','', '" & txt_cta_ing_interes.Text & "','" & txt_cta_ing_mora.Text & "','" & txt_cta_ing_otros.Text & "','',''," & cmbTipo.SelectedValue & ",'" & txtConcepto.Text & "'); INSERT INTO tbl_interfascontableotras(Utilidad,Cierre,Certificados,CertificadoInteres,CertificadoInteresGenerado,CtaAportacionSocio) VALUES('" & txt_cta_utilidad.Text & "','" & txt_cta_cierre.Text & "','" & ctaCertificadosTxt.Text & "','" & txtRetiroInteresesCert.Text & "','" & txtInteresCertificados.Text & "','" & FldCta_Aportaciones.Text & "')")
     End Sub
 
     Private Sub Modificar()
-        NON_QUERY("UPDATE tbl_interfascontableingresos SET Debito='" & txt_cta_db_ingresos.Text & "', Capital='', Interes='" & txt_cta_ing_interes.Text & "', Mora='" & txt_cta_ing_mora.Text & "', Otros='" & txt_cta_ing_otros.Text & "', IdTipo=" & cmbTipo.SelectedValue & ", DescripcionTipo='" & txtConcepto.Text & "' WHERE ID=1; UPDATE tbl_interfascontableotras SET Utilidad='" & txt_cta_utilidad.Text & "',Cierre='" & txt_cta_cierre.Text & "',Certificados='" & ctaCertificadosTxt.Text & "',CertificadoInteres='" & txtRetiroInteresesCert.Text & "', CertificadoInteresGenerado='" & txtInteresCertificados.Text & "'  WHERE ID=1")
+        NON_QUERY("UPDATE tbl_interfascontableingresos SET Debito='" & txt_cta_db_ingresos.Text & "', Capital='', Interes='" & txt_cta_ing_interes.Text & "', Mora='" & txt_cta_ing_mora.Text & "', Otros='" & txt_cta_ing_otros.Text & "', IdTipo=" & cmbTipo.SelectedValue & ", DescripcionTipo='" & txtConcepto.Text & "' WHERE ID=1; UPDATE tbl_interfascontableotras SET Utilidad='" & txt_cta_utilidad.Text & "',Cierre='" & txt_cta_cierre.Text & "',Certificados='" & ctaCertificadosTxt.Text & "',CertificadoInteres='" & txtRetiroInteresesCert.Text & "', CertificadoInteresGenerado='" & txtInteresCertificados.Text & "', CtaAportacionSocio='" & FldCta_Aportaciones.Text & "'  WHERE ID=1")
     End Sub
 
     Private Sub Buscar()
@@ -880,7 +880,7 @@ Public Class frmInterfasRecibosIngresos
 
 
         Dim ds1 As New DataSet
-        Dim da1 As New MySqlDataAdapter("SELECT Utilidad, Cierre, Certificados,CertificadoInteres,CertificadoInteresGenerado FROM tbl_interfascontableotras WHERE ID=1", conn)
+        Dim da1 As New MySqlDataAdapter("SELECT Utilidad, Cierre, Certificados,CertificadoInteres,CertificadoInteresGenerado,CtaAportacionSocio FROM tbl_interfascontableotras WHERE ID=1", conn)
         da1.Fill(ds1, "tbl_interfascontableotras")
 
         Dim dr1 As DataRow
@@ -890,7 +890,7 @@ Public Class frmInterfasRecibosIngresos
             ctaCertificadosTxt.Text = dr1("Certificados")
             txtRetiroInteresesCert.Text = dr1("CertificadoInteres")
             txtInteresCertificados.Text = dr1("CertificadoInteresGenerado")
-
+            FldCta_Aportaciones.Text = dr1("CtaAportacionSocio")
         Next
         da1.Dispose()
         ds1.Dispose()

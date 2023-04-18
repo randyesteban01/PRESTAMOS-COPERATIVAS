@@ -91,6 +91,8 @@ Public Class frmDepositos
     Friend WithEvents resUnoTxt As System.Windows.Forms.TextBox
     Friend WithEvents unoTxt As System.Windows.Forms.TextBox
     Friend WithEvents Fld_ConceptoDeposito As RichTextBox
+    Friend WithEvents dtpFechaInicia As DateTimePicker
+    Friend WithEvents lblFechaDeposito As Label
     Friend WithEvents Label17 As System.Windows.Forms.Label
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmDepositos))
@@ -153,12 +155,14 @@ Public Class frmDepositos
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Fld_ConceptoDeposito = New System.Windows.Forms.RichTextBox()
+        Me.dtpFechaInicia = New System.Windows.Forms.DateTimePicker()
+        Me.lblFechaDeposito = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnBuscarCta
         '
-        Me.btnBuscarCta.Location = New System.Drawing.Point(288, 32)
+        Me.btnBuscarCta.Location = New System.Drawing.Point(297, 32)
         Me.btnBuscarCta.Name = "btnBuscarCta"
         Me.btnBuscarCta.Size = New System.Drawing.Size(104, 23)
         Me.btnBuscarCta.TabIndex = 1
@@ -168,7 +172,7 @@ Public Class frmDepositos
         '
         Me.txtCedula.BackColor = System.Drawing.Color.WhiteSmoke
         Me.txtCedula.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtCedula.Location = New System.Drawing.Point(88, 80)
+        Me.txtCedula.Location = New System.Drawing.Point(97, 80)
         Me.txtCedula.Name = "txtCedula"
         Me.txtCedula.ReadOnly = True
         Me.txtCedula.Size = New System.Drawing.Size(304, 20)
@@ -178,7 +182,7 @@ Public Class frmDepositos
         '
         Me.txtCliente.BackColor = System.Drawing.Color.WhiteSmoke
         Me.txtCliente.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtCliente.Location = New System.Drawing.Point(88, 56)
+        Me.txtCliente.Location = New System.Drawing.Point(97, 56)
         Me.txtCliente.Name = "txtCliente"
         Me.txtCliente.ReadOnly = True
         Me.txtCliente.Size = New System.Drawing.Size(304, 20)
@@ -187,7 +191,7 @@ Public Class frmDepositos
         'txtCuentaNo
         '
         Me.txtCuentaNo.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.txtCuentaNo.Location = New System.Drawing.Point(88, 32)
+        Me.txtCuentaNo.Location = New System.Drawing.Point(97, 32)
         Me.txtCuentaNo.Name = "txtCuentaNo"
         Me.txtCuentaNo.ReadOnly = True
         Me.txtCuentaNo.Size = New System.Drawing.Size(200, 20)
@@ -197,31 +201,31 @@ Public Class frmDepositos
         'lblNombre
         '
         Me.lblNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.lblNombre.Location = New System.Drawing.Point(16, 56)
+        Me.lblNombre.Location = New System.Drawing.Point(25, 56)
         Me.lblNombre.Name = "lblNombre"
         Me.lblNombre.Size = New System.Drawing.Size(64, 16)
         Me.lblNombre.TabIndex = 11
-        Me.lblNombre.Text = "Socio"
+        Me.lblNombre.Text = "Socio:"
         Me.lblNombre.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lblId
         '
         Me.lblId.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.lblId.Location = New System.Drawing.Point(16, 32)
+        Me.lblId.Location = New System.Drawing.Point(25, 32)
         Me.lblId.Name = "lblId"
         Me.lblId.Size = New System.Drawing.Size(64, 16)
         Me.lblId.TabIndex = 10
-        Me.lblId.Text = "Cuenta No."
+        Me.lblId.Text = "Cuenta No.:"
         Me.lblId.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lblCedula
         '
         Me.lblCedula.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.lblCedula.Location = New System.Drawing.Point(16, 80)
+        Me.lblCedula.Location = New System.Drawing.Point(25, 80)
         Me.lblCedula.Name = "lblCedula"
         Me.lblCedula.Size = New System.Drawing.Size(64, 16)
         Me.lblCedula.TabIndex = 12
-        Me.lblCedula.Text = "Cédula"
+        Me.lblCedula.Text = "Cédula:"
         Me.lblCedula.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'txtIDCliente
@@ -249,17 +253,17 @@ Public Class frmDepositos
         'Label7
         '
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label7.Location = New System.Drawing.Point(16, 181)
+        Me.Label7.Location = New System.Drawing.Point(25, 204)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(64, 16)
         Me.Label7.TabIndex = 20
-        Me.Label7.Text = "Monto"
+        Me.Label7.Text = "Monto:"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'txtMonto
         '
         Me.txtMonto.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtMonto.Location = New System.Drawing.Point(88, 176)
+        Me.txtMonto.Location = New System.Drawing.Point(97, 199)
         Me.txtMonto.Name = "txtMonto"
         Me.txtMonto.Size = New System.Drawing.Size(304, 26)
         Me.txtMonto.TabIndex = 3
@@ -269,16 +273,16 @@ Public Class frmDepositos
         'Label5
         '
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label5.Location = New System.Drawing.Point(16, 104)
+        Me.Label5.Location = New System.Drawing.Point(25, 104)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(64, 16)
         Me.Label5.TabIndex = 18
-        Me.Label5.Text = "Nota"
+        Me.Label5.Text = "Nota:"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'txtConcepto
         '
-        Me.txtConcepto.Location = New System.Drawing.Point(88, 104)
+        Me.txtConcepto.Location = New System.Drawing.Point(97, 104)
         Me.txtConcepto.MaxLength = 150
         Me.txtConcepto.Multiline = True
         Me.txtConcepto.Name = "txtConcepto"
@@ -292,7 +296,7 @@ Public Class frmDepositos
         Me.btnCerrar.ForeColor = System.Drawing.Color.Black
         Me.btnCerrar.Image = CType(resources.GetObject("btnCerrar.Image"), System.Drawing.Image)
         Me.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnCerrar.Location = New System.Drawing.Point(296, 291)
+        Me.btnCerrar.Location = New System.Drawing.Point(312, 314)
         Me.btnCerrar.Name = "btnCerrar"
         Me.btnCerrar.Size = New System.Drawing.Size(72, 56)
         Me.btnCerrar.TabIndex = 8
@@ -307,7 +311,7 @@ Public Class frmDepositos
         Me.btnGuardar.ForeColor = System.Drawing.Color.Black
         Me.btnGuardar.Image = CType(resources.GetObject("btnGuardar.Image"), System.Drawing.Image)
         Me.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnGuardar.Location = New System.Drawing.Point(152, 291)
+        Me.btnGuardar.Location = New System.Drawing.Point(168, 314)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(72, 56)
         Me.btnGuardar.TabIndex = 5
@@ -322,7 +326,7 @@ Public Class frmDepositos
         Me.btnNuevo.ForeColor = System.Drawing.Color.Black
         Me.btnNuevo.Image = CType(resources.GetObject("btnNuevo.Image"), System.Drawing.Image)
         Me.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnNuevo.Location = New System.Drawing.Point(80, 291)
+        Me.btnNuevo.Location = New System.Drawing.Point(96, 314)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(72, 56)
         Me.btnNuevo.TabIndex = 6
@@ -346,7 +350,7 @@ Public Class frmDepositos
         Me.btnImprime.Image = CType(resources.GetObject("btnImprime.Image"), System.Drawing.Image)
         Me.btnImprime.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnImprime.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.btnImprime.Location = New System.Drawing.Point(224, 291)
+        Me.btnImprime.Location = New System.Drawing.Point(240, 314)
         Me.btnImprime.Name = "btnImprime"
         Me.btnImprime.Size = New System.Drawing.Size(72, 56)
         Me.btnImprime.TabIndex = 7
@@ -359,7 +363,7 @@ Public Class frmDepositos
         Me.cmbCajas.BackColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(116, Byte), Integer), CType(CType(179, Byte), Integer))
         Me.cmbCajas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbCajas.ForeColor = System.Drawing.Color.White
-        Me.cmbCajas.Location = New System.Drawing.Point(88, 8)
+        Me.cmbCajas.Location = New System.Drawing.Point(97, 8)
         Me.cmbCajas.Name = "cmbCajas"
         Me.cmbCajas.Size = New System.Drawing.Size(304, 21)
         Me.cmbCajas.TabIndex = 0
@@ -367,7 +371,7 @@ Public Class frmDepositos
         'Label6
         '
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.Label6.Location = New System.Drawing.Point(16, 10)
+        Me.Label6.Location = New System.Drawing.Point(17, 10)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(72, 16)
         Me.Label6.TabIndex = 9
@@ -414,7 +418,7 @@ Public Class frmDepositos
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Location = New System.Drawing.Point(408, 0)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(320, 344)
+        Me.GroupBox1.Size = New System.Drawing.Size(320, 373)
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Denominación de Dinero"
@@ -772,16 +776,37 @@ Public Class frmDepositos
         'Fld_ConceptoDeposito
         '
         Me.Fld_ConceptoDeposito.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Fld_ConceptoDeposito.Location = New System.Drawing.Point(88, 205)
+        Me.Fld_ConceptoDeposito.Location = New System.Drawing.Point(97, 228)
         Me.Fld_ConceptoDeposito.Name = "Fld_ConceptoDeposito"
         Me.Fld_ConceptoDeposito.Size = New System.Drawing.Size(303, 82)
         Me.Fld_ConceptoDeposito.TabIndex = 21
         Me.Fld_ConceptoDeposito.Text = ""
         '
+        'dtpFechaInicia
+        '
+        Me.dtpFechaInicia.CustomFormat = "dd / MMM /yyyy"
+        Me.dtpFechaInicia.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpFechaInicia.Location = New System.Drawing.Point(96, 174)
+        Me.dtpFechaInicia.Name = "dtpFechaInicia"
+        Me.dtpFechaInicia.Size = New System.Drawing.Size(104, 20)
+        Me.dtpFechaInicia.TabIndex = 28
+        '
+        'lblFechaDeposito
+        '
+        Me.lblFechaDeposito.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.lblFechaDeposito.Location = New System.Drawing.Point(1, 175)
+        Me.lblFechaDeposito.Name = "lblFechaDeposito"
+        Me.lblFechaDeposito.Size = New System.Drawing.Size(98, 16)
+        Me.lblFechaDeposito.TabIndex = 29
+        Me.lblFechaDeposito.Text = "Fecha Deposito :"
+        Me.lblFechaDeposito.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
         'frmDepositos
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
-        Me.ClientSize = New System.Drawing.Size(738, 356)
+        Me.ClientSize = New System.Drawing.Size(738, 385)
+        Me.Controls.Add(Me.dtpFechaInicia)
+        Me.Controls.Add(Me.lblFechaDeposito)
         Me.Controls.Add(Me.Fld_ConceptoDeposito)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.cmbCajas)
@@ -831,7 +856,7 @@ Public Class frmDepositos
 
         Dim idTipoTrans = SCALAR_NUM("SELECT IdTipo FROM  tbl_interfascontabletipotrans_conf WHERE Frm='" & Me.Text & "'")
 
-        NON_QUERY("CALL cont_insert_trans(Now(),'" & txtConcepto.Text & "'," & idTipoTrans & ",'" & User(0) & "'," & idDocAfectado & ",'DEPOSITO DE AHORRO','" & " Depósito de ahorro a cta. no. " & txtCuentaNo.Text & "')")
+        NON_QUERY("CALL cont_insert_trans('" & Format(dtpFechaInicia.Value, "yyyy-MM-dd") & "','" & txtConcepto.Text & "'," & idTipoTrans & ",'" & User(0) & "'," & idDocAfectado & ",'DEPOSITO DE AHORRO','" & " Depósito de ahorro a cta. no. " & txtCuentaNo.Text & "')")
 
         Dim idTras = UltimoID("tbl_interfascontabletransacciones", "TransID")
 
@@ -968,6 +993,7 @@ Public Class frmDepositos
     Private Sub btnNuevo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNuevo.Click
         txtCuentaNo.ReadOnly = False
         txtIDCliente.ReadOnly = False
+        dtpFechaInicia.Value = DateTime.Now()
 
         cmbCajas.SelectedValue = -1
         txtCliente.Text = String.Empty
@@ -1038,7 +1064,7 @@ Public Class frmDepositos
             End If
             If Alerta("¿Seguro que desea guardar el documento?") = False Then Return
 
-            NON_QUERY("INSERT INTO tbl_ahorros_depositos (Fecha, IDCuenta, IDCliente, Monto, Notas, Usuario, IdCaja, Dosmil, Mil, Quiniento, DosCiento, Cien, Cincuenta, Veinticinco, Diez, Cinco, Cheque, Uno) VALUES(Now()," & IDCuenta.Text & "," & CInt(txtIDCliente.Text) & "," & CDbl(txtMonto.Text) & ",'" & txtConcepto.Text & "','" & User(0) & "'," & cmbCajas.SelectedValue & "," & CDbl(dosmilTxt.Text) & "," & CDbl(milTxt.Text) & "," & CDbl(quinientoTxt.Text) & "," & CDbl(docientoTxt.Text) & "," & CDbl(cienTxt.Text) & "," & CDbl(cincuentaTxt.Text) & "," & CDbl(venticincoTxt.Text) & "," & CDbl(diezTxt.Text) & ", " & CDbl(cincoTxt.Text) & "," & CDbl(cheque.Text) & "," & CDbl(unoTxt.Text) & ");")
+            NON_QUERY("INSERT INTO tbl_ahorros_depositos (Fecha, IDCuenta, IDCliente, Monto, Notas, Usuario, IdCaja, Dosmil, Mil, Quiniento, DosCiento, Cien, Cincuenta, Veinticinco, Diez, Cinco, Cheque, Uno) VALUES('" & Format(dtpFechaInicia.Value, "yyyy-MM-dd") & "'," & IDCuenta.Text & "," & CInt(txtIDCliente.Text) & "," & CDbl(txtMonto.Text) & ",'" & txtConcepto.Text & "','" & User(0) & "'," & cmbCajas.SelectedValue & "," & CDbl(dosmilTxt.Text) & "," & CDbl(milTxt.Text) & "," & CDbl(quinientoTxt.Text) & "," & CDbl(docientoTxt.Text) & "," & CDbl(cienTxt.Text) & "," & CDbl(cincuentaTxt.Text) & "," & CDbl(venticincoTxt.Text) & "," & CDbl(diezTxt.Text) & ", " & CDbl(cincoTxt.Text) & "," & CDbl(cheque.Text) & "," & CDbl(unoTxt.Text) & ");")
 
             Dim SaldoCapital As Decimal = SCALAR_NUM("SELECT SUM(Monto) FROM tbl_ahorros_depositos WHERE IDCuenta=" & IDCuenta.Text & "")
             NON_QUERY("UPDATE tbl_ahorros_cuentas SET SaldoCapital=" & SaldoCapital & " WHERE ID=" & IDCuenta.Text & "")
@@ -1084,6 +1110,15 @@ Public Class frmDepositos
 
     Private Sub frmDepositos_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Me.Icon = appIcon
+
+        '' Verificar permiso de usuario
+        If SCALAR_STRING("SELECT CambiarFechadeposito FROM tbl_userahorros WHERE IDUsuario=" & CInt(User(5)) & "") <> "" Then
+            Dim CambiarFechaDeposito As Boolean = SCALAR_STRING("SELECT CambiarFechadeposito FROM tbl_userahorros WHERE IDUsuario=" & CInt(User(5)) & "")
+            dtpFechaInicia.Enabled = CambiarFechaDeposito
+        Else
+            dtpFechaInicia.Enabled = False
+        End If
+
         LlenarCajas()
     End Sub
 

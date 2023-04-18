@@ -4088,7 +4088,8 @@ Public Class FRM_CLIENTES
 
         '//// APORTACIONES
         Dim aportacion As Decimal = SCALAR_NUM("SELECT IFNULL(SUM(Monto),0) AS monto FROM tbl_ahorros_aportacion WHERE IDSocio=" & idCliente & ";")
-        aportacionMontoTxt.Text = Format(aportacion, "N2")
+        Dim retiroaportacion As Decimal = SCALAR_NUM("SELECT IFNULL(SUM(Monto),0) AS monto FROM tbl_retiro_ahorros_aportacion WHERE IDSocio=" & idCliente & ";")
+        aportacionMontoTxt.Text = Format(aportacion - retiroaportacion, "N2")
 
         '//// CERTIFICADOS
         Dim depositoCertificado As Decimal = SCALAR_NUM("SELECT IFNULL(SUM(SaldoCapital),0) AS monto FROM tbl_ahorros_certificado WHERE IDCliente=" & idCliente & " AND Estado = 'Activa';")

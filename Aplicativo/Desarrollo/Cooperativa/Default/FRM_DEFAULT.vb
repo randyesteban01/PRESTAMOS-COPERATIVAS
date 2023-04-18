@@ -34,6 +34,11 @@ Public Class FRM_DEFAULT
     Friend WithEvents MenuItem53 As MenuItem
     Friend WithEvents MenuItem54 As MenuItem
     Friend WithEvents MnuActualiarLibretas As MenuItem
+    Friend WithEvents mnuRetiroAporteSocio As MenuItem
+    Friend WithEvents mnuRetiroAhorrosListadoAportes As MenuItem
+    Friend WithEvents mnuRetiroAhorrosListadoAportesUnSocio As MenuItem
+    Friend WithEvents MenuItem56 As MenuItem
+    Friend WithEvents mnuRetiroAhorrosListadoAportesTodosLosSocios As MenuItem
     Friend WithEvents MenuItem11 As MenuItem
     '/INI FILE
 
@@ -351,6 +356,7 @@ Public Class FRM_DEFAULT
         Me.MenuItem13 = New System.Windows.Forms.MenuItem()
         Me.mnuAhorrosRealizarRetiros = New System.Windows.Forms.MenuItem()
         Me.mnuAhorroAporteSocio = New System.Windows.Forms.MenuItem()
+        Me.mnuRetiroAporteSocio = New System.Windows.Forms.MenuItem()
         Me.MenuItem19 = New System.Windows.Forms.MenuItem()
         Me.mnuAhorrosCertificados = New System.Windows.Forms.MenuItem()
         Me.mnuAhorrosCertificadosApertura = New System.Windows.Forms.MenuItem()
@@ -430,6 +436,10 @@ Public Class FRM_DEFAULT
         Me.b_salir = New System.Windows.Forms.ToolBarButton()
         Me.ToolBarButton7 = New System.Windows.Forms.ToolBarButton()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.mnuRetiroAhorrosListadoAportes = New System.Windows.Forms.MenuItem()
+        Me.mnuRetiroAhorrosListadoAportesUnSocio = New System.Windows.Forms.MenuItem()
+        Me.MenuItem56 = New System.Windows.Forms.MenuItem()
+        Me.mnuRetiroAhorrosListadoAportesTodosLosSocios = New System.Windows.Forms.MenuItem()
         CType(Me.User1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Puesto, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.fecha, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -981,7 +991,7 @@ Public Class FRM_DEFAULT
         'mnuAhorros
         '
         Me.mnuAhorros.Index = 5
-        Me.mnuAhorros.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.mnuAhorrosNuevo, Me.MenuItem13, Me.mnuAhorrosRealizarRetiros, Me.mnuAhorroAporteSocio, Me.MenuItem19, Me.mnuAhorrosCertificados, Me.MenuItem14, Me.MenuItem15, Me.MenuItem10, Me.mnuAhorrosEstadoCuenta, Me.MenuItem16, Me.mnuAhorrosRetiros, Me.mnuAhorrosSaldos, Me.mnuAhorrosListadoAportes})
+        Me.mnuAhorros.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.mnuAhorrosNuevo, Me.MenuItem13, Me.mnuAhorrosRealizarRetiros, Me.mnuAhorroAporteSocio, Me.mnuRetiroAporteSocio, Me.MenuItem19, Me.mnuAhorrosCertificados, Me.MenuItem14, Me.MenuItem15, Me.MenuItem10, Me.mnuAhorrosEstadoCuenta, Me.MenuItem16, Me.mnuAhorrosRetiros, Me.mnuAhorrosSaldos, Me.mnuAhorrosListadoAportes, Me.mnuRetiroAhorrosListadoAportes})
         Me.mnuAhorros.Text = "A&horro"
         '
         'mnuAhorrosNuevo
@@ -1004,14 +1014,19 @@ Public Class FRM_DEFAULT
         Me.mnuAhorroAporteSocio.Index = 3
         Me.mnuAhorroAporteSocio.Text = "Aporte de Socio"
         '
+        'mnuRetiroAporteSocio
+        '
+        Me.mnuRetiroAporteSocio.Index = 4
+        Me.mnuRetiroAporteSocio.Text = "Retiro Aporte Socio"
+        '
         'MenuItem19
         '
-        Me.MenuItem19.Index = 4
+        Me.MenuItem19.Index = 5
         Me.MenuItem19.Text = "-"
         '
         'mnuAhorrosCertificados
         '
-        Me.mnuAhorrosCertificados.Index = 5
+        Me.mnuAhorrosCertificados.Index = 6
         Me.mnuAhorrosCertificados.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.mnuAhorrosCertificadosApertura, Me.mnuAhorrosCertificadosCancelacion, Me.MenuItem18, Me.mnuAhorrosCertificadosListado})
         Me.mnuAhorrosCertificados.Text = "Certificados"
         '
@@ -1037,38 +1052,38 @@ Public Class FRM_DEFAULT
         '
         'MenuItem14
         '
-        Me.MenuItem14.Index = 6
+        Me.MenuItem14.Index = 7
         Me.MenuItem14.Text = "-"
         '
         'MenuItem15
         '
         Me.MenuItem15.Checked = True
-        Me.MenuItem15.Index = 7
+        Me.MenuItem15.Index = 8
         Me.MenuItem15.Text = "<< Reportes Generales >>"
         '
         'MenuItem10
         '
-        Me.MenuItem10.Index = 8
+        Me.MenuItem10.Index = 9
         Me.MenuItem10.Text = "-"
         '
         'mnuAhorrosEstadoCuenta
         '
-        Me.mnuAhorrosEstadoCuenta.Index = 9
+        Me.mnuAhorrosEstadoCuenta.Index = 10
         Me.mnuAhorrosEstadoCuenta.Text = "Estado de Cuenta"
         '
         'MenuItem16
         '
-        Me.MenuItem16.Index = 10
+        Me.MenuItem16.Index = 11
         Me.MenuItem16.Text = "Listado de Depósitos"
         '
         'mnuAhorrosRetiros
         '
-        Me.mnuAhorrosRetiros.Index = 11
+        Me.mnuAhorrosRetiros.Index = 12
         Me.mnuAhorrosRetiros.Text = "Listado de Retiros"
         '
         'mnuAhorrosSaldos
         '
-        Me.mnuAhorrosSaldos.Index = 12
+        Me.mnuAhorrosSaldos.Index = 13
         Me.mnuAhorrosSaldos.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.MnTipoDeCuentaSaldos, Me.MenuItem22, Me.MnTodosLosSaldos})
         Me.mnuAhorrosSaldos.Text = "Listado de Saldos"
         '
@@ -1089,7 +1104,7 @@ Public Class FRM_DEFAULT
         '
         'mnuAhorrosListadoAportes
         '
-        Me.mnuAhorrosListadoAportes.Index = 13
+        Me.mnuAhorrosListadoAportes.Index = 14
         Me.mnuAhorrosListadoAportes.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.mnuAhorrosListadoAportesUnSocio, Me.MenuItem11, Me.mnuAhorrosListadoAportesTodosLosSocios})
         Me.mnuAhorrosListadoAportes.Text = "Listado de Aportes"
         '
@@ -1461,6 +1476,27 @@ Public Class FRM_DEFAULT
         Me.Label1.Size = New System.Drawing.Size(909, 32)
         Me.Label1.TabIndex = 19
         Me.Label1.Text = "COMPAÑIA"
+        '
+        'mnuRetiroAhorrosListadoAportes
+        '
+        Me.mnuRetiroAhorrosListadoAportes.Index = 15
+        Me.mnuRetiroAhorrosListadoAportes.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.mnuRetiroAhorrosListadoAportesUnSocio, Me.MenuItem56, Me.mnuRetiroAhorrosListadoAportesTodosLosSocios})
+        Me.mnuRetiroAhorrosListadoAportes.Text = "Listado Retiro de Aportes"
+        '
+        'mnuRetiroAhorrosListadoAportesUnSocio
+        '
+        Me.mnuRetiroAhorrosListadoAportesUnSocio.Index = 0
+        Me.mnuRetiroAhorrosListadoAportesUnSocio.Text = "Un socio"
+        '
+        'MenuItem56
+        '
+        Me.MenuItem56.Index = 1
+        Me.MenuItem56.Text = "-"
+        '
+        'mnuRetiroAhorrosListadoAportesTodosLosSocios
+        '
+        Me.mnuRetiroAhorrosListadoAportesTodosLosSocios.Index = 2
+        Me.mnuRetiroAhorrosListadoAportesTodosLosSocios.Text = "Todos"
         '
         'FRM_DEFAULT
         '
@@ -2644,6 +2680,22 @@ siguiente:
 
     Private Sub MnuActualiarLibretas_Click(sender As Object, e As EventArgs) Handles MnuActualiarLibretas.Click
         FrmActualiarLibrera.ShowDialog()
+    End Sub
+
+    Private Sub mnuRetiroAporteSocio_Click(sender As Object, e As EventArgs) Handles mnuRetiroAporteSocio.Click
+        Dim f As New frmRetiroAporteSocio
+        f.MdiParent = FRM_DEFAULT.GlobalForm
+        f.Show()
+    End Sub
+
+    Private Sub mnuRetiroAhorrosListadoAportesUnSocio_Click(sender As Object, e As EventArgs) Handles mnuRetiroAhorrosListadoAportesUnSocio.Click
+        If FRMS_POPUP_CLIENTES("TODOS") = True Then
+            AllReportSinFecha("Listado Retiro de Aportes de un Socio")
+        End If
+    End Sub
+
+    Private Sub mnuRetiroAhorrosListadoAportesTodosLosSocios_Click(sender As Object, e As EventArgs) Handles mnuRetiroAhorrosListadoAportesTodosLosSocios.Click
+        AllReportSinFecha("Listado Retiro de Aportes de Socios")
     End Sub
 
     Private Sub mnuAhorrosListadoAportesUnSocio_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles mnuAhorrosListadoAportesUnSocio.Click

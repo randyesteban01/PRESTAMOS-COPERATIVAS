@@ -142,6 +142,52 @@ Module CONTABILIDAD
     End Function
 
 
+    Friend Function InterfarContableRecibosIngresosCxC(ByVal FechaTransaccion As String, ByVal montoCapital As Decimal, ByVal montoInteres As Decimal, ByVal montoMora As Decimal, ByVal montoOtros As Decimal, ByVal idDocAfectado As Integer, ByVal TransDocDetalle As String, ByVal ctaContableCliente As String, ByVal ctaContableCaja As String) As Boolean
+
+
+        Dim IdTras As Integer, DescripcionCuenta As String
+        If SCALAR_NUM("SELECT  IFNULL(1,0) FROM tbl_interfascontableingresos ") = 0 Then Exit Function
+
+        Dim monto As Decimal = montoCapital + montoInteres + montoMora + montoOtros
+        READER("SELECT Interes, Mora, Otros, IdTipo, DescripcionTipo  FROM tbl_interfascontableingresos")
+
+        If reader_values.Length > 0 Then
+
+            NON_QUERY("CALL cont_insert_trans('" & FechaTransaccion & "','" & reader_values(4) & "'," & reader_values(3) & ",'" & User(0) & "'," & idDocAfectado & ",'RECIBO DE INGRESO CXC','" & TransDocDetalle & "')")
+
+            IdTras = UltimoID("tbl_interfascontabletransacciones", "TransID")
+
+            'Guardar detalle débito
+            DescripcionCuenta = ReturnDescripcion(ctaContableCaja)
+            ' GuardarTransaccionDetalle(IdTras, reader_values(0), DescripcionCuenta, monto, 0)
+            ' EESCOBAR
+            GuardarTransaccionDetalle(IdTras, ctaContableCaja, DescripcionCuenta, monto, 0)
+
+            'Guardar detalle crédito montoCapital
+            If montoCapital > 0 Then
+                DescripcionCuenta = ReturnDescripcion(ctaContableCliente)
+                GuardarTransaccionDetalle(IdTras, ctaContableCliente, DescripcionCuenta, 0, montoCapital)
+            End If
+            'Guardar detalle crédito montoInteres
+            If montoInteres > 0 Then
+                DescripcionCuenta = ReturnDescripcion(reader_values(0))
+                GuardarTransaccionDetalle(IdTras, reader_values(0), DescripcionCuenta, 0, montoInteres)
+            End If
+            'Guardar detalle crédito montoMora
+            If montoMora > 0 Then
+                DescripcionCuenta = ReturnDescripcion(reader_values(1))
+                GuardarTransaccionDetalle(IdTras, reader_values(1), DescripcionCuenta, 0, montoMora)
+            End If
+            'Guardar detalle crédito montoOtros
+            If montoOtros > 0 Then
+                DescripcionCuenta = ReturnDescripcion(reader_values(2))
+                GuardarTransaccionDetalle(IdTras, reader_values(2), DescripcionCuenta, 0, montoOtros)
+            End If
+
+        End If
+    End Function
+
+
 
     Friend Function InterfarContableRecibosIngresosCxC(ByVal montoCapital As Decimal, ByVal montoInteres As Decimal, ByVal montoMora As Decimal, ByVal montoOtros As Decimal, ByVal idDocAfectado As Integer, ByVal TransDocDetalle As String, ByVal ctaContableCliente As String, ByVal ctaContableCaja As String) As Boolean
 

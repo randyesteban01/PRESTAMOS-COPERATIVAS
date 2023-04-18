@@ -428,6 +428,29 @@ Public Class FRM_REPORTS
             CrystalReportViewer.ShowGroupTreeButton = True
 
             Me.Text = ReportName
+
+        ElseIf ReportName = "Listado Retiro de Aportes de Socios" Then
+            Dim ds As New DataSet
+
+            Dim Report1 As New rptRetiroAporteSocioListado
+
+
+            Dim daProf As New MySqlDataAdapter("SELECT * FROM tbl_profiledocument", conn)
+            daProf.Fill(ds, "tbl_profiledocument")
+
+            Dim daInv As New MySqlDataAdapter("SELECT aa.ID AS ahoid, aa.Fecha AS ahofecha, cl.fld_Identity AS clicedula, cl.fld_FullName AS clinombre, SUM(aa.Monto) AS ahomonto, cl.fld_id AS clicod, cl.fld_apodo AS cliapodo, cl.fld_Address AS clidireccion, cl.fld_City AS cliciudad, aa.Concepto AS ahoconcepto, mc.CtaContable AS cajactacontable, mc.Descripcion AS cajanombre FROM tbl_clientes AS cl INNER JOIN tbl_retiro_ahorros_aportacion AS aa ON aa.IDSocio = cl.fld_id INNER JOIN cajamantenimiento AS mc ON aa.IDCaja = mc.ID GROUP BY cl.fld_id", conn)
+            daInv.Fill(ds, "ahorroAportacion")
+
+
+            Report1.Database.Tables(0).SetDataSource(ds)
+            Report1.PrintOptions.PaperSize = PaperSize.PaperLetter
+            CrystalReportViewer.ReportSource = Report1
+            CrystalReportViewer.DisplayGroupTree = True
+            CrystalReportViewer.ShowGroupTreeButton = True
+
+            Me.Text = ReportName
+
+
         ElseIf ReportName = "Listado de Aportes de un Socio" Then
             Dim ds As New DataSet
 
@@ -448,6 +471,29 @@ Public Class FRM_REPORTS
             CrystalReportViewer.ShowGroupTreeButton = True
 
             Me.Text = ReportName
+
+        ElseIf ReportName = "Listado Retiro de Aportes de un Socio" Then
+            Dim ds As New DataSet
+
+            Dim Report1 As New rptRetiroAporteUnSocioListado
+
+
+            Dim daProf As New MySqlDataAdapter("SELECT * FROM tbl_profiledocument", conn)
+            daProf.Fill(ds, "tbl_profiledocument")
+
+            Dim daInv As New MySqlDataAdapter("SELECT aa.ID AS ahoid, aa.Fecha AS ahofecha, cl.fld_Identity AS clicedula, cl.fld_FullName AS clinombre, aa.Monto AS ahomonto, cl.fld_id AS clicod, cl.fld_apodo AS cliapodo, cl.fld_Address AS clidireccion, cl.fld_City AS cliciudad, aa.Concepto AS ahoconcepto, mc.CtaContable AS cajactacontable, mc.Descripcion AS cajanombre FROM tbl_clientes AS cl INNER JOIN tbl_retiro_ahorros_aportacion AS aa ON aa.IDSocio = cl.fld_id INNER JOIN cajamantenimiento AS mc ON aa.IDCaja = mc.ID WHERE cl.fld_id=" & Id & "", conn)
+            daInv.Fill(ds, "ahorroAportacion")
+
+
+            Report1.Database.Tables(0).SetDataSource(ds)
+            Report1.PrintOptions.PaperSize = PaperSize.PaperLetter
+            CrystalReportViewer.ReportSource = Report1
+            CrystalReportViewer.DisplayGroupTree = True
+            CrystalReportViewer.ShowGroupTreeButton = True
+
+            Me.Text = ReportName
+
+
         ElseIf ReportName = "Listado de Certificados de Socios" Then
             Dim ds As New DataSet
 
@@ -1776,8 +1822,39 @@ Public Class FRM_REPORTS
                 Me.Text = ReportName
             End If
 
+        ElseIf ReportName = "Retiro Recibo Aporte" Then
+            Dim ds As New DataSet
+
+            Dim daProf As New MySqlDataAdapter("SELECT * FROM tbl_profiledocument", conn)
+            daProf.Fill(ds, "tbl_profiledocument")
+
+            Dim daInv As New MySqlDataAdapter("SELECT aa.ID AS ahoid, aa.Fecha AS ahofecha, cl.fld_Identity AS clicedula, cl.fld_FullName AS clinombre, aa.Monto AS ahomonto, cl.fld_id AS clicod, cl.fld_apodo AS cliapodo, cl.fld_Address AS clidireccion, cl.fld_City AS cliciudad, aa.Concepto AS ahoconcepto, mc.CtaContable AS cajactacontable, mc.Descripcion AS cajanombre FROM tbl_clientes AS cl INNER JOIN tbl_retiro_ahorros_aportacion AS aa ON aa.IDSocio = cl.fld_id INNER JOIN cajamantenimiento AS mc ON aa.IDCaja = mc.ID WHERE aa.ID=" & Id & " ", conn)
+            daInv.Fill(ds, "ahorroAportacion")
+
+
+            If objIniFile.GetString("COMPANY", "Tipo Impresora RI", "Normal") = "Normal" Then
+                Dim Report As New rptAporteSocioRecibo
+                Report.Database.Tables(0).SetDataSource(ds)
+                Report.PrintOptions.PaperSize = PaperSize.PaperLetter
+                CrystalReportViewer.ReportSource = Report
+                CrystalReportViewer.DisplayGroupTree = False
+                CrystalReportViewer.ShowGroupTreeButton = False
+                Me.Text = ReportName
+            Else
+                Dim Report As New rptRetiroAporteSocioReciboSP
+                Report.Database.Tables(0).SetDataSource(ds)
+                Report.PrintOptions.PaperSize = PaperSize.PaperLetter
+                CrystalReportViewer.ReportSource = Report
+                CrystalReportViewer.DisplayGroupTree = False
+                CrystalReportViewer.ShowGroupTreeButton = False
+                Me.Text = ReportName
+            End If
+
 
         End If
+
+
+
 VOLAR:
         Me.WindowState = FormWindowState.Maximized
         show.Close()

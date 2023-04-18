@@ -125,113 +125,119 @@ Public Class FRM_PERMISO_ROLES
     Friend WithEvents mnuAhorrosRealizarRetiros As System.Windows.Forms.CheckBox
     Friend WithEvents mnuAhorrosEstadoCuenta As System.Windows.Forms.CheckBox
     Friend WithEvents mnuAhorrosRetiros As System.Windows.Forms.CheckBox
+    Friend WithEvents chkFechaDeposito As CheckBox
+    Friend WithEvents chkFechaRecibo As CheckBox
+    Friend WithEvents chkFechaRetiroAporte As CheckBox
     Friend WithEvents mnuAhorrosSaldos As System.Windows.Forms.CheckBox
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
-        Dim resources As System.Resources.ResourceManager = New System.Resources.ResourceManager(GetType(FRM_PERMISO_ROLES))
-        Me.TabControl = New System.Windows.Forms.TabControl
-        Me.tpArchivo = New System.Windows.Forms.TabPage
-        Me.mnuConfiguracionContabilidad = New System.Windows.Forms.CheckBox
-        Me.mnuActualizarInteres = New System.Windows.Forms.CheckBox
-        Me.mnuPermisosUsuarios = New System.Windows.Forms.CheckBox
-        Me.mnuTimbrado = New System.Windows.Forms.CheckBox
-        Me.mnuFormatoCheque = New System.Windows.Forms.CheckBox
-        Me.mnuCambiarUsuario = New System.Windows.Forms.CheckBox
-        Me.mnuCambiarMiClave = New System.Windows.Forms.CheckBox
-        Me.mnuArchivo = New System.Windows.Forms.CheckBox
-        Me.tpMantenimiento = New System.Windows.Forms.TabPage
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox
-        Me.mnuCategoriaAhorro = New System.Windows.Forms.CheckBox
-        Me.mnuProvincias = New System.Windows.Forms.CheckBox
-        Me.mnuCiudad = New System.Windows.Forms.CheckBox
-        Me.mnuUrbanizaciones = New System.Windows.Forms.CheckBox
-        Me.mnuZonas = New System.Windows.Forms.CheckBox
-        Me.mnuCobradores = New System.Windows.Forms.CheckBox
-        Me.mnuUsuarioNuevo = New System.Windows.Forms.CheckBox
-        Me.mnuInmuebles = New System.Windows.Forms.CheckBox
-        Me.mnuCliente = New System.Windows.Forms.CheckBox
-        Me.mnuMantenimiento = New System.Windows.Forms.CheckBox
-        Me.tpBanco = New System.Windows.Forms.TabPage
-        Me.mnuDiarioBancoCargosComisiones = New System.Windows.Forms.CheckBox
-        Me.repNDBanco = New System.Windows.Forms.CheckBox
-        Me.repNCBanco = New System.Windows.Forms.CheckBox
-        Me.repCheques = New System.Windows.Forms.CheckBox
-        Me.repDepositos = New System.Windows.Forms.CheckBox
-        Me.repEstadoBanco = New System.Windows.Forms.CheckBox
-        Me.mnuConciliacion = New System.Windows.Forms.CheckBox
-        Me.mnuDiarioBancoNC = New System.Windows.Forms.CheckBox
-        Me.mnuDiarioBancoND = New System.Windows.Forms.CheckBox
-        Me.mnuDiarioBancoDeposito = New System.Windows.Forms.CheckBox
-        Me.mnuDiarioBancoCheque = New System.Windows.Forms.CheckBox
-        Me.mnuDiarioBancoSolicitud = New System.Windows.Forms.CheckBox
-        Me.mnuDiarioBanco = New System.Windows.Forms.CheckBox
-        Me.mnuMaestroBanco = New System.Windows.Forms.CheckBox
-        Me.mnuBanco = New System.Windows.Forms.CheckBox
-        Me.tpCaja = New System.Windows.Forms.TabPage
-        Me.mnuIngresosDevengados = New System.Windows.Forms.CheckBox
-        Me.repEgresosCaja = New System.Windows.Forms.CheckBox
-        Me.repRecibosIngresosNulos = New System.Windows.Forms.CheckBox
-        Me.repRecibosIngresos = New System.Windows.Forms.CheckBox
-        Me.mnuCuadreCaja = New System.Windows.Forms.CheckBox
-        Me.mnuEgresos = New System.Windows.Forms.CheckBox
-        Me.mnuConsultaIngresos = New System.Windows.Forms.CheckBox
-        Me.mnuOtrosIngresos = New System.Windows.Forms.CheckBox
-        Me.mnuRecibosIngresos = New System.Windows.Forms.CheckBox
-        Me.mnuCaja = New System.Windows.Forms.CheckBox
-        Me.tpAhorro = New System.Windows.Forms.TabPage
-        Me.mnuAhorrosSaldos = New System.Windows.Forms.CheckBox
-        Me.mnuAhorrosRetiros = New System.Windows.Forms.CheckBox
-        Me.mnuAhorrosEstadoCuenta = New System.Windows.Forms.CheckBox
-        Me.mnuAhorrosRealizarRetiros = New System.Windows.Forms.CheckBox
-        Me.mnuAhorrosNuevo = New System.Windows.Forms.CheckBox
-        Me.mnuAhorros = New System.Windows.Forms.CheckBox
-        Me.tpCxC = New System.Windows.Forms.TabPage
-        Me.repCuentaPorCobrar = New System.Windows.Forms.CheckBox
-        Me.repTodosClientes = New System.Windows.Forms.CheckBox
-        Me.repCuentaPorCobrarIntes = New System.Windows.Forms.CheckBox
-        Me.repCuentaPorCobrarCapital = New System.Windows.Forms.CheckBox
-        Me.repCuentaPorCobrarCuotasFechas = New System.Windows.Forms.CheckBox
-        Me.repNCCxC = New System.Windows.Forms.CheckBox
-        Me.repNDCxC = New System.Windows.Forms.CheckBox
-        Me.repEstadoCliente = New System.Windows.Forms.CheckBox
-        Me.mnuConsultaCxCNC = New System.Windows.Forms.CheckBox
-        Me.mnuCxCNC = New System.Windows.Forms.CheckBox
-        Me.mnuCxCND = New System.Windows.Forms.CheckBox
-        Me.mnuGeneraRecibos = New System.Windows.Forms.CheckBox
-        Me.mnuCuentaPorCobrar = New System.Windows.Forms.CheckBox
-        Me.repPrestamosSaldados = New System.Windows.Forms.CheckBox
-        Me.repPrestamosPendientes = New System.Windows.Forms.CheckBox
-        Me.repPrestamosEntregados = New System.Windows.Forms.CheckBox
-        Me.mnuPrestamosNuevo = New System.Windows.Forms.CheckBox
-        Me.tpCxP = New System.Windows.Forms.TabPage
-        Me.repNCCuentaPorPagar = New System.Windows.Forms.CheckBox
-        Me.repTodoProveedores = New System.Windows.Forms.CheckBox
-        Me.repNDCuentaPorPagar = New System.Windows.Forms.CheckBox
-        Me.repCuentaPorPagar = New System.Windows.Forms.CheckBox
-        Me.repEstadoProveedor = New System.Windows.Forms.CheckBox
-        Me.mnuCxPNC = New System.Windows.Forms.CheckBox
-        Me.mnuCxPND = New System.Windows.Forms.CheckBox
-        Me.mnuIngresosCajaCxP = New System.Windows.Forms.CheckBox
-        Me.mnuProveedores = New System.Windows.Forms.CheckBox
-        Me.mnuCuentaPorPagar = New System.Windows.Forms.CheckBox
-        Me.tpBarra = New System.Windows.Forms.TabPage
-        Me.b_nc_cxc = New System.Windows.Forms.CheckBox
-        Me.b_ri = New System.Windows.Forms.CheckBox
-        Me.b_nd_cxc = New System.Windows.Forms.CheckBox
-        Me.b_prestasmos = New System.Windows.Forms.CheckBox
-        Me.b_clientes = New System.Windows.Forms.CheckBox
-        Me.ToolBar = New System.Windows.Forms.CheckBox
-        Me.cmbUsuarios = New System.Windows.Forms.ComboBox
-        Me.btnGuardar = New System.Windows.Forms.Button
-        Me.btnVerPermisos = New System.Windows.Forms.Button
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FRM_PERMISO_ROLES))
+        Me.TabControl = New System.Windows.Forms.TabControl()
+        Me.tpArchivo = New System.Windows.Forms.TabPage()
+        Me.mnuConfiguracionContabilidad = New System.Windows.Forms.CheckBox()
+        Me.mnuActualizarInteres = New System.Windows.Forms.CheckBox()
+        Me.mnuPermisosUsuarios = New System.Windows.Forms.CheckBox()
+        Me.mnuTimbrado = New System.Windows.Forms.CheckBox()
+        Me.mnuFormatoCheque = New System.Windows.Forms.CheckBox()
+        Me.mnuCambiarUsuario = New System.Windows.Forms.CheckBox()
+        Me.mnuCambiarMiClave = New System.Windows.Forms.CheckBox()
+        Me.mnuArchivo = New System.Windows.Forms.CheckBox()
+        Me.tpMantenimiento = New System.Windows.Forms.TabPage()
+        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.mnuCategoriaAhorro = New System.Windows.Forms.CheckBox()
+        Me.mnuProvincias = New System.Windows.Forms.CheckBox()
+        Me.mnuCiudad = New System.Windows.Forms.CheckBox()
+        Me.mnuUrbanizaciones = New System.Windows.Forms.CheckBox()
+        Me.mnuZonas = New System.Windows.Forms.CheckBox()
+        Me.mnuCobradores = New System.Windows.Forms.CheckBox()
+        Me.mnuUsuarioNuevo = New System.Windows.Forms.CheckBox()
+        Me.mnuInmuebles = New System.Windows.Forms.CheckBox()
+        Me.mnuCliente = New System.Windows.Forms.CheckBox()
+        Me.mnuMantenimiento = New System.Windows.Forms.CheckBox()
+        Me.mnuProveedores = New System.Windows.Forms.CheckBox()
+        Me.tpBanco = New System.Windows.Forms.TabPage()
+        Me.mnuDiarioBancoCargosComisiones = New System.Windows.Forms.CheckBox()
+        Me.repNDBanco = New System.Windows.Forms.CheckBox()
+        Me.repNCBanco = New System.Windows.Forms.CheckBox()
+        Me.repCheques = New System.Windows.Forms.CheckBox()
+        Me.repDepositos = New System.Windows.Forms.CheckBox()
+        Me.repEstadoBanco = New System.Windows.Forms.CheckBox()
+        Me.mnuConciliacion = New System.Windows.Forms.CheckBox()
+        Me.mnuDiarioBancoNC = New System.Windows.Forms.CheckBox()
+        Me.mnuDiarioBancoND = New System.Windows.Forms.CheckBox()
+        Me.mnuDiarioBancoDeposito = New System.Windows.Forms.CheckBox()
+        Me.mnuDiarioBancoCheque = New System.Windows.Forms.CheckBox()
+        Me.mnuDiarioBancoSolicitud = New System.Windows.Forms.CheckBox()
+        Me.mnuDiarioBanco = New System.Windows.Forms.CheckBox()
+        Me.mnuMaestroBanco = New System.Windows.Forms.CheckBox()
+        Me.mnuBanco = New System.Windows.Forms.CheckBox()
+        Me.tpAhorro = New System.Windows.Forms.TabPage()
+        Me.chkFechaDeposito = New System.Windows.Forms.CheckBox()
+        Me.mnuAhorrosSaldos = New System.Windows.Forms.CheckBox()
+        Me.mnuAhorrosRetiros = New System.Windows.Forms.CheckBox()
+        Me.mnuAhorrosEstadoCuenta = New System.Windows.Forms.CheckBox()
+        Me.mnuAhorrosRealizarRetiros = New System.Windows.Forms.CheckBox()
+        Me.mnuAhorrosNuevo = New System.Windows.Forms.CheckBox()
+        Me.mnuAhorros = New System.Windows.Forms.CheckBox()
+        Me.tpCxC = New System.Windows.Forms.TabPage()
+        Me.repCuentaPorCobrar = New System.Windows.Forms.CheckBox()
+        Me.repTodosClientes = New System.Windows.Forms.CheckBox()
+        Me.repCuentaPorCobrarIntes = New System.Windows.Forms.CheckBox()
+        Me.repCuentaPorCobrarCapital = New System.Windows.Forms.CheckBox()
+        Me.repCuentaPorCobrarCuotasFechas = New System.Windows.Forms.CheckBox()
+        Me.repNCCxC = New System.Windows.Forms.CheckBox()
+        Me.repNDCxC = New System.Windows.Forms.CheckBox()
+        Me.repEstadoCliente = New System.Windows.Forms.CheckBox()
+        Me.mnuConsultaCxCNC = New System.Windows.Forms.CheckBox()
+        Me.mnuCxCNC = New System.Windows.Forms.CheckBox()
+        Me.mnuCxCND = New System.Windows.Forms.CheckBox()
+        Me.mnuGeneraRecibos = New System.Windows.Forms.CheckBox()
+        Me.mnuCuentaPorCobrar = New System.Windows.Forms.CheckBox()
+        Me.repPrestamosSaldados = New System.Windows.Forms.CheckBox()
+        Me.repPrestamosPendientes = New System.Windows.Forms.CheckBox()
+        Me.repPrestamosEntregados = New System.Windows.Forms.CheckBox()
+        Me.mnuPrestamosNuevo = New System.Windows.Forms.CheckBox()
+        Me.tpCxP = New System.Windows.Forms.TabPage()
+        Me.repNCCuentaPorPagar = New System.Windows.Forms.CheckBox()
+        Me.repTodoProveedores = New System.Windows.Forms.CheckBox()
+        Me.repNDCuentaPorPagar = New System.Windows.Forms.CheckBox()
+        Me.repCuentaPorPagar = New System.Windows.Forms.CheckBox()
+        Me.repEstadoProveedor = New System.Windows.Forms.CheckBox()
+        Me.mnuCxPNC = New System.Windows.Forms.CheckBox()
+        Me.mnuCxPND = New System.Windows.Forms.CheckBox()
+        Me.mnuIngresosCajaCxP = New System.Windows.Forms.CheckBox()
+        Me.mnuCuentaPorPagar = New System.Windows.Forms.CheckBox()
+        Me.tpCaja = New System.Windows.Forms.TabPage()
+        Me.chkFechaRecibo = New System.Windows.Forms.CheckBox()
+        Me.mnuIngresosDevengados = New System.Windows.Forms.CheckBox()
+        Me.repEgresosCaja = New System.Windows.Forms.CheckBox()
+        Me.repRecibosIngresosNulos = New System.Windows.Forms.CheckBox()
+        Me.repRecibosIngresos = New System.Windows.Forms.CheckBox()
+        Me.mnuCuadreCaja = New System.Windows.Forms.CheckBox()
+        Me.mnuEgresos = New System.Windows.Forms.CheckBox()
+        Me.mnuConsultaIngresos = New System.Windows.Forms.CheckBox()
+        Me.mnuOtrosIngresos = New System.Windows.Forms.CheckBox()
+        Me.mnuRecibosIngresos = New System.Windows.Forms.CheckBox()
+        Me.mnuCaja = New System.Windows.Forms.CheckBox()
+        Me.tpBarra = New System.Windows.Forms.TabPage()
+        Me.b_nc_cxc = New System.Windows.Forms.CheckBox()
+        Me.b_ri = New System.Windows.Forms.CheckBox()
+        Me.b_nd_cxc = New System.Windows.Forms.CheckBox()
+        Me.b_prestasmos = New System.Windows.Forms.CheckBox()
+        Me.b_clientes = New System.Windows.Forms.CheckBox()
+        Me.ToolBar = New System.Windows.Forms.CheckBox()
+        Me.cmbUsuarios = New System.Windows.Forms.ComboBox()
+        Me.btnGuardar = New System.Windows.Forms.Button()
+        Me.btnVerPermisos = New System.Windows.Forms.Button()
+        Me.chkFechaRetiroAporte = New System.Windows.Forms.CheckBox()
         Me.TabControl.SuspendLayout()
         Me.tpArchivo.SuspendLayout()
         Me.tpMantenimiento.SuspendLayout()
         Me.tpBanco.SuspendLayout()
-        Me.tpCaja.SuspendLayout()
         Me.tpAhorro.SuspendLayout()
         Me.tpCxC.SuspendLayout()
         Me.tpCxP.SuspendLayout()
+        Me.tpCaja.SuspendLayout()
         Me.tpBarra.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -452,6 +458,14 @@ Public Class FRM_PERMISO_ROLES
         Me.mnuMantenimiento.TabIndex = 1
         Me.mnuMantenimiento.Text = "Mantenimiento"
         '
+        'mnuProveedores
+        '
+        Me.mnuProveedores.Location = New System.Drawing.Point(32, 64)
+        Me.mnuProveedores.Name = "mnuProveedores"
+        Me.mnuProveedores.Size = New System.Drawing.Size(200, 16)
+        Me.mnuProveedores.TabIndex = 28
+        Me.mnuProveedores.Text = "Proveedores"
+        '
         'tpBanco
         '
         Me.tpBanco.Controls.Add(Me.mnuDiarioBancoCargosComisiones)
@@ -596,106 +610,10 @@ Public Class FRM_PERMISO_ROLES
         Me.mnuBanco.TabIndex = 0
         Me.mnuBanco.Text = "Banco"
         '
-        'tpCaja
-        '
-        Me.tpCaja.Controls.Add(Me.mnuIngresosDevengados)
-        Me.tpCaja.Controls.Add(Me.repEgresosCaja)
-        Me.tpCaja.Controls.Add(Me.repRecibosIngresosNulos)
-        Me.tpCaja.Controls.Add(Me.repRecibosIngresos)
-        Me.tpCaja.Controls.Add(Me.mnuCuadreCaja)
-        Me.tpCaja.Controls.Add(Me.mnuEgresos)
-        Me.tpCaja.Controls.Add(Me.mnuConsultaIngresos)
-        Me.tpCaja.Controls.Add(Me.mnuOtrosIngresos)
-        Me.tpCaja.Controls.Add(Me.mnuRecibosIngresos)
-        Me.tpCaja.Controls.Add(Me.mnuCaja)
-        Me.tpCaja.Location = New System.Drawing.Point(4, 22)
-        Me.tpCaja.Name = "tpCaja"
-        Me.tpCaja.Size = New System.Drawing.Size(730, 398)
-        Me.tpCaja.TabIndex = 3
-        Me.tpCaja.Text = "Caja"
-        '
-        'mnuIngresosDevengados
-        '
-        Me.mnuIngresosDevengados.Location = New System.Drawing.Point(32, 170)
-        Me.mnuIngresosDevengados.Name = "mnuIngresosDevengados"
-        Me.mnuIngresosDevengados.Size = New System.Drawing.Size(200, 16)
-        Me.mnuIngresosDevengados.TabIndex = 7
-        Me.mnuIngresosDevengados.Text = "Ingresos Devengados"
-        '
-        'repEgresosCaja
-        '
-        Me.repEgresosCaja.Location = New System.Drawing.Point(32, 214)
-        Me.repEgresosCaja.Name = "repEgresosCaja"
-        Me.repEgresosCaja.Size = New System.Drawing.Size(200, 16)
-        Me.repEgresosCaja.TabIndex = 9
-        Me.repEgresosCaja.Text = "Egresos de Caja"
-        '
-        'repRecibosIngresosNulos
-        '
-        Me.repRecibosIngresosNulos.Location = New System.Drawing.Point(32, 192)
-        Me.repRecibosIngresosNulos.Name = "repRecibosIngresosNulos"
-        Me.repRecibosIngresosNulos.Size = New System.Drawing.Size(200, 16)
-        Me.repRecibosIngresosNulos.TabIndex = 8
-        Me.repRecibosIngresosNulos.Text = "Ingresos Nulos"
-        '
-        'repRecibosIngresos
-        '
-        Me.repRecibosIngresos.Location = New System.Drawing.Point(32, 148)
-        Me.repRecibosIngresos.Name = "repRecibosIngresos"
-        Me.repRecibosIngresos.Size = New System.Drawing.Size(200, 16)
-        Me.repRecibosIngresos.TabIndex = 6
-        Me.repRecibosIngresos.Text = "Ingresos Percibidos"
-        '
-        'mnuCuadreCaja
-        '
-        Me.mnuCuadreCaja.Location = New System.Drawing.Point(32, 126)
-        Me.mnuCuadreCaja.Name = "mnuCuadreCaja"
-        Me.mnuCuadreCaja.Size = New System.Drawing.Size(200, 16)
-        Me.mnuCuadreCaja.TabIndex = 5
-        Me.mnuCuadreCaja.Text = "Cuadre General"
-        '
-        'mnuEgresos
-        '
-        Me.mnuEgresos.Location = New System.Drawing.Point(32, 104)
-        Me.mnuEgresos.Name = "mnuEgresos"
-        Me.mnuEgresos.Size = New System.Drawing.Size(200, 16)
-        Me.mnuEgresos.TabIndex = 4
-        Me.mnuEgresos.Text = "Egresos"
-        '
-        'mnuConsultaIngresos
-        '
-        Me.mnuConsultaIngresos.Location = New System.Drawing.Point(32, 82)
-        Me.mnuConsultaIngresos.Name = "mnuConsultaIngresos"
-        Me.mnuConsultaIngresos.Size = New System.Drawing.Size(200, 16)
-        Me.mnuConsultaIngresos.TabIndex = 3
-        Me.mnuConsultaIngresos.Text = "Consultal Ingresos"
-        '
-        'mnuOtrosIngresos
-        '
-        Me.mnuOtrosIngresos.Location = New System.Drawing.Point(32, 60)
-        Me.mnuOtrosIngresos.Name = "mnuOtrosIngresos"
-        Me.mnuOtrosIngresos.Size = New System.Drawing.Size(200, 16)
-        Me.mnuOtrosIngresos.TabIndex = 2
-        Me.mnuOtrosIngresos.Text = "Otro Ingreso"
-        '
-        'mnuRecibosIngresos
-        '
-        Me.mnuRecibosIngresos.Location = New System.Drawing.Point(32, 38)
-        Me.mnuRecibosIngresos.Name = "mnuRecibosIngresos"
-        Me.mnuRecibosIngresos.Size = New System.Drawing.Size(200, 16)
-        Me.mnuRecibosIngresos.TabIndex = 1
-        Me.mnuRecibosIngresos.Text = "Recibos de Ingresos"
-        '
-        'mnuCaja
-        '
-        Me.mnuCaja.Location = New System.Drawing.Point(16, 16)
-        Me.mnuCaja.Name = "mnuCaja"
-        Me.mnuCaja.Size = New System.Drawing.Size(200, 16)
-        Me.mnuCaja.TabIndex = 0
-        Me.mnuCaja.Text = "Caja"
-        '
         'tpAhorro
         '
+        Me.tpAhorro.Controls.Add(Me.chkFechaRetiroAporte)
+        Me.tpAhorro.Controls.Add(Me.chkFechaDeposito)
         Me.tpAhorro.Controls.Add(Me.mnuAhorrosSaldos)
         Me.tpAhorro.Controls.Add(Me.mnuAhorrosRetiros)
         Me.tpAhorro.Controls.Add(Me.mnuAhorrosEstadoCuenta)
@@ -707,6 +625,14 @@ Public Class FRM_PERMISO_ROLES
         Me.tpAhorro.Size = New System.Drawing.Size(730, 398)
         Me.tpAhorro.TabIndex = 8
         Me.tpAhorro.Text = "Ahorro"
+        '
+        'chkFechaDeposito
+        '
+        Me.chkFechaDeposito.Location = New System.Drawing.Point(40, 166)
+        Me.chkFechaDeposito.Name = "chkFechaDeposito"
+        Me.chkFechaDeposito.Size = New System.Drawing.Size(296, 16)
+        Me.chkFechaDeposito.TabIndex = 6
+        Me.chkFechaDeposito.Text = "Cambiar Fecha Deposito"
         '
         'mnuAhorrosSaldos
         '
@@ -1000,14 +926,6 @@ Public Class FRM_PERMISO_ROLES
         Me.mnuIngresosCajaCxP.Text = "Ingreso a Caja CxP"
         Me.mnuIngresosCajaCxP.Visible = False
         '
-        'mnuProveedores
-        '
-        Me.mnuProveedores.Location = New System.Drawing.Point(32, 64)
-        Me.mnuProveedores.Name = "mnuProveedores"
-        Me.mnuProveedores.Size = New System.Drawing.Size(200, 16)
-        Me.mnuProveedores.TabIndex = 28
-        Me.mnuProveedores.Text = "Proveedores"
-        '
         'mnuCuentaPorPagar
         '
         Me.mnuCuentaPorPagar.Location = New System.Drawing.Point(16, 16)
@@ -1015,6 +933,113 @@ Public Class FRM_PERMISO_ROLES
         Me.mnuCuentaPorPagar.Size = New System.Drawing.Size(200, 16)
         Me.mnuCuentaPorPagar.TabIndex = 27
         Me.mnuCuentaPorPagar.Text = "Cuenta por Pagar"
+        '
+        'tpCaja
+        '
+        Me.tpCaja.Controls.Add(Me.chkFechaRecibo)
+        Me.tpCaja.Controls.Add(Me.mnuIngresosDevengados)
+        Me.tpCaja.Controls.Add(Me.repEgresosCaja)
+        Me.tpCaja.Controls.Add(Me.repRecibosIngresosNulos)
+        Me.tpCaja.Controls.Add(Me.repRecibosIngresos)
+        Me.tpCaja.Controls.Add(Me.mnuCuadreCaja)
+        Me.tpCaja.Controls.Add(Me.mnuEgresos)
+        Me.tpCaja.Controls.Add(Me.mnuConsultaIngresos)
+        Me.tpCaja.Controls.Add(Me.mnuOtrosIngresos)
+        Me.tpCaja.Controls.Add(Me.mnuRecibosIngresos)
+        Me.tpCaja.Controls.Add(Me.mnuCaja)
+        Me.tpCaja.Location = New System.Drawing.Point(4, 22)
+        Me.tpCaja.Name = "tpCaja"
+        Me.tpCaja.Size = New System.Drawing.Size(730, 398)
+        Me.tpCaja.TabIndex = 3
+        Me.tpCaja.Text = "Caja"
+        '
+        'chkFechaRecibo
+        '
+        Me.chkFechaRecibo.Location = New System.Drawing.Point(32, 236)
+        Me.chkFechaRecibo.Name = "chkFechaRecibo"
+        Me.chkFechaRecibo.Size = New System.Drawing.Size(200, 16)
+        Me.chkFechaRecibo.TabIndex = 10
+        Me.chkFechaRecibo.Text = "Cambiar Fecha Recibo"
+        '
+        'mnuIngresosDevengados
+        '
+        Me.mnuIngresosDevengados.Location = New System.Drawing.Point(32, 170)
+        Me.mnuIngresosDevengados.Name = "mnuIngresosDevengados"
+        Me.mnuIngresosDevengados.Size = New System.Drawing.Size(200, 16)
+        Me.mnuIngresosDevengados.TabIndex = 7
+        Me.mnuIngresosDevengados.Text = "Ingresos Devengados"
+        '
+        'repEgresosCaja
+        '
+        Me.repEgresosCaja.Location = New System.Drawing.Point(32, 214)
+        Me.repEgresosCaja.Name = "repEgresosCaja"
+        Me.repEgresosCaja.Size = New System.Drawing.Size(200, 16)
+        Me.repEgresosCaja.TabIndex = 9
+        Me.repEgresosCaja.Text = "Egresos de Caja"
+        '
+        'repRecibosIngresosNulos
+        '
+        Me.repRecibosIngresosNulos.Location = New System.Drawing.Point(32, 192)
+        Me.repRecibosIngresosNulos.Name = "repRecibosIngresosNulos"
+        Me.repRecibosIngresosNulos.Size = New System.Drawing.Size(200, 16)
+        Me.repRecibosIngresosNulos.TabIndex = 8
+        Me.repRecibosIngresosNulos.Text = "Ingresos Nulos"
+        '
+        'repRecibosIngresos
+        '
+        Me.repRecibosIngresos.Location = New System.Drawing.Point(32, 148)
+        Me.repRecibosIngresos.Name = "repRecibosIngresos"
+        Me.repRecibosIngresos.Size = New System.Drawing.Size(200, 16)
+        Me.repRecibosIngresos.TabIndex = 6
+        Me.repRecibosIngresos.Text = "Ingresos Percibidos"
+        '
+        'mnuCuadreCaja
+        '
+        Me.mnuCuadreCaja.Location = New System.Drawing.Point(32, 126)
+        Me.mnuCuadreCaja.Name = "mnuCuadreCaja"
+        Me.mnuCuadreCaja.Size = New System.Drawing.Size(200, 16)
+        Me.mnuCuadreCaja.TabIndex = 5
+        Me.mnuCuadreCaja.Text = "Cuadre General"
+        '
+        'mnuEgresos
+        '
+        Me.mnuEgresos.Location = New System.Drawing.Point(32, 104)
+        Me.mnuEgresos.Name = "mnuEgresos"
+        Me.mnuEgresos.Size = New System.Drawing.Size(200, 16)
+        Me.mnuEgresos.TabIndex = 4
+        Me.mnuEgresos.Text = "Egresos"
+        '
+        'mnuConsultaIngresos
+        '
+        Me.mnuConsultaIngresos.Location = New System.Drawing.Point(32, 82)
+        Me.mnuConsultaIngresos.Name = "mnuConsultaIngresos"
+        Me.mnuConsultaIngresos.Size = New System.Drawing.Size(200, 16)
+        Me.mnuConsultaIngresos.TabIndex = 3
+        Me.mnuConsultaIngresos.Text = "Consultal Ingresos"
+        '
+        'mnuOtrosIngresos
+        '
+        Me.mnuOtrosIngresos.Location = New System.Drawing.Point(32, 60)
+        Me.mnuOtrosIngresos.Name = "mnuOtrosIngresos"
+        Me.mnuOtrosIngresos.Size = New System.Drawing.Size(200, 16)
+        Me.mnuOtrosIngresos.TabIndex = 2
+        Me.mnuOtrosIngresos.Text = "Otro Ingreso"
+        '
+        'mnuRecibosIngresos
+        '
+        Me.mnuRecibosIngresos.Location = New System.Drawing.Point(32, 38)
+        Me.mnuRecibosIngresos.Name = "mnuRecibosIngresos"
+        Me.mnuRecibosIngresos.Size = New System.Drawing.Size(200, 16)
+        Me.mnuRecibosIngresos.TabIndex = 1
+        Me.mnuRecibosIngresos.Text = "Recibos de Ingresos"
+        '
+        'mnuCaja
+        '
+        Me.mnuCaja.Location = New System.Drawing.Point(16, 16)
+        Me.mnuCaja.Name = "mnuCaja"
+        Me.mnuCaja.Size = New System.Drawing.Size(200, 16)
+        Me.mnuCaja.TabIndex = 0
+        Me.mnuCaja.Text = "Caja"
         '
         'tpBarra
         '
@@ -1108,6 +1133,14 @@ Public Class FRM_PERMISO_ROLES
         Me.btnVerPermisos.Text = "&Ver permisos"
         Me.btnVerPermisos.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         '
+        'chkFechaRetiroAporte
+        '
+        Me.chkFechaRetiroAporte.Location = New System.Drawing.Point(40, 188)
+        Me.chkFechaRetiroAporte.Name = "chkFechaRetiroAporte"
+        Me.chkFechaRetiroAporte.Size = New System.Drawing.Size(296, 16)
+        Me.chkFechaRetiroAporte.TabIndex = 7
+        Me.chkFechaRetiroAporte.Text = "Cambiar Fecha Retiro Aporte"
+        '
         'FRM_PERMISO_ROLES
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
@@ -1129,10 +1162,10 @@ Public Class FRM_PERMISO_ROLES
         Me.tpArchivo.ResumeLayout(False)
         Me.tpMantenimiento.ResumeLayout(False)
         Me.tpBanco.ResumeLayout(False)
-        Me.tpCaja.ResumeLayout(False)
         Me.tpAhorro.ResumeLayout(False)
         Me.tpCxC.ResumeLayout(False)
         Me.tpCxP.ResumeLayout(False)
+        Me.tpCaja.ResumeLayout(False)
         Me.tpBarra.ResumeLayout(False)
         Me.ResumeLayout(False)
 
@@ -1178,9 +1211,29 @@ Public Class FRM_PERMISO_ROLES
 
     '//---------------------------------------------------------------------------//
     Private Sub ActualizaPermisoArchivo()
-        NON_QUERY("UPDATE tbl_userarchivo SET mnuPermisosUsuarios='" & mnuPermisosUsuarios.Checked & "', mnuArchivo = '" & mnuArchivo.Checked & "'  , mnuCambiarMiClave = '" & mnuCambiarMiClave.Checked & "'  , mnuCambiarUsuario = '" & mnuCambiarUsuario.Checked & "'  , mnuFormatoCheque = '" & mnuFormatoCheque.Checked & "' , mnuTimbrado = '" & mnuTimbrado.Checked & "' WHERE IDUsuario=" & cmbUsuarios.SelectedValue & "")
+
+        Dim intPermisoUsuario As Integer = SCALAR_STRING("SELECT COUNT(*) FROM tbl_userarchivo WHERE IDUsuario=" & cmbUsuarios.SelectedValue & "")
+
+        If (intPermisoUsuario > 0) Then
+            NON_QUERY("UPDATE tbl_userarchivo SET mnuPermisosUsuarios='" & mnuPermisosUsuarios.Checked & "', mnuArchivo = '" & mnuArchivo.Checked & "'  , mnuCambiarMiClave = '" & mnuCambiarMiClave.Checked & "'  , mnuCambiarUsuario = '" & mnuCambiarUsuario.Checked & "'  , mnuFormatoCheque = '" & mnuFormatoCheque.Checked & "' , mnuTimbrado = '" & mnuTimbrado.Checked & "' WHERE IDUsuario=" & cmbUsuarios.SelectedValue & "")
+
+        Else
+            NON_QUERY("INSERT INTO tbl_userarchivo (IDUsuario,mnuPermisosUsuarios,mnuArchivo,mnuCambiarMiClave,mnuCambiarUsuario,mnuFormatoCheque,mnuTimbrado) VALUES (" & cmbUsuarios.SelectedValue & ",'" & mnuPermisosUsuarios.Checked & "', '" & mnuArchivo.Checked & "','" & mnuCambiarMiClave.Checked & "','" & mnuCambiarUsuario.Checked & "','" & mnuFormatoCheque.Checked & "','" & mnuTimbrado.Checked & "')")
+        End If
+
+
     End Sub
     Private Sub BuscarPermisoArchivo()
+
+        ''Limpiar Checks Seleccionados de consulta anterior
+        mnuPermisosUsuarios.Checked = False
+        mnuArchivo.Checked = False
+        mnuCambiarMiClave.Checked = False
+        mnuCambiarUsuario.Checked = False
+        mnuFormatoCheque.Checked = False
+        mnuTimbrado.Checked = False
+
+
         Dim dr As DataRow
         Dim ds As New DataSet
         Dim da As New MySqlDataAdapter("SELECT mnuPermisosUsuarios, mnuArchivo, mnuCambiarMiClave, mnuCambiarUsuario, mnuFormatoCheque, mnuTimbrado FROM tbl_userarchivo  WHERE IDUsuario=" & cmbUsuarios.SelectedValue & "", conn)
@@ -1256,12 +1309,12 @@ Public Class FRM_PERMISO_ROLES
     End Sub
 
     Private Sub ActualizaPermisoCaja()
-        NON_QUERY("UPDATE tbl_usercaja SET mnuCaja = '" & mnuCaja.Checked & "', mnuRecibosIngresos = '" & mnuRecibosIngresos.Checked & "', mnuOtrosIngresos = '" & mnuOtrosIngresos.Checked & "', mnuConsultaIngresos = '" & mnuConsultaIngresos.Checked & "', mnuEgresos = '" & mnuEgresos.Checked & "', mnuCuadreCaja = '" & mnuCuadreCaja.Checked & "', repRecibosIngresos = '" & repRecibosIngresos.Checked & "', repRecibosIngresosNulos = '" & repRecibosIngresosNulos.Checked & "', repEgresosCaja='" & repEgresosCaja.Checked & "' WHERE IDUsuario=" & cmbUsuarios.SelectedValue & "")
+        NON_QUERY("UPDATE tbl_usercaja SET mnuCaja = '" & mnuCaja.Checked & "', mnuRecibosIngresos = '" & mnuRecibosIngresos.Checked & "', mnuOtrosIngresos = '" & mnuOtrosIngresos.Checked & "', mnuConsultaIngresos = '" & mnuConsultaIngresos.Checked & "', mnuEgresos = '" & mnuEgresos.Checked & "', mnuCuadreCaja = '" & mnuCuadreCaja.Checked & "', repRecibosIngresos = '" & repRecibosIngresos.Checked & "', repRecibosIngresosNulos = '" & repRecibosIngresosNulos.Checked & "', repEgresosCaja='" & repEgresosCaja.Checked & "', CambiarFechaRecibo='" & chkFechaRecibo.Checked & "' WHERE IDUsuario=" & cmbUsuarios.SelectedValue & "")
     End Sub
     Private Sub BuscarPermisoCaja()
         Dim dr As DataRow
         Dim ds As New DataSet
-        Dim da As New MySqlDataAdapter("SELECT mnuCaja, mnuRecibosIngresos, mnuOtrosIngresos, mnuConsultaIngresos, mnuEgresos, mnuCuadreCaja, repRecibosIngresos, repRecibosIngresosNulos, repEgresosCaja FROM tbl_usercaja WHERE IDUsuario=" & cmbUsuarios.SelectedValue & "", conn)
+        Dim da As New MySqlDataAdapter("SELECT mnuCaja, mnuRecibosIngresos, mnuOtrosIngresos, mnuConsultaIngresos, mnuEgresos, mnuCuadreCaja, repRecibosIngresos, repRecibosIngresosNulos, repEgresosCaja, CambiarFechaRecibo FROM tbl_usercaja WHERE IDUsuario=" & cmbUsuarios.SelectedValue & "", conn)
         da.Fill(ds, "tbl_userbanco")
 
         For Each dr In ds.Tables(0).Rows
@@ -1274,6 +1327,7 @@ Public Class FRM_PERMISO_ROLES
             repRecibosIngresos.Checked = CBool(dr("repRecibosIngresos"))
             repRecibosIngresosNulos.Checked = CBool(dr("repRecibosIngresosNulos"))
             repEgresosCaja.Checked = CBool(dr("repEgresosCaja"))
+            chkFechaRecibo.Checked = CBool(dr("CambiarFechaRecibo"))
         Next
         ds.Dispose()
         da.Dispose()
@@ -1382,12 +1436,12 @@ Public Class FRM_PERMISO_ROLES
     End Sub
 
     Private Sub ActualizaPermisoAhorros()
-        NON_QUERY("UPDATE tbl_userahorros SET mnuAhorros = '" & mnuAhorros.Checked & "', mnuAhorrosNuevo = '" & mnuAhorrosNuevo.Checked & "', mnuAhorrosRealizarRetiros = '" & mnuAhorrosRealizarRetiros.Checked & "', mnuAhorrosEstadoCuenta = '" & mnuAhorrosEstadoCuenta.Checked & "', mnuAhorrosRetiros = '" & mnuAhorrosRetiros.Checked & "', mnuAhorrosSaldos = '" & mnuAhorrosSaldos.Checked & "' WHERE IDUsuario=" & cmbUsuarios.SelectedValue & "")
+        NON_QUERY("UPDATE tbl_userahorros SET mnuAhorros = '" & mnuAhorros.Checked & "', mnuAhorrosNuevo = '" & mnuAhorrosNuevo.Checked & "', mnuAhorrosRealizarRetiros = '" & mnuAhorrosRealizarRetiros.Checked & "', mnuAhorrosEstadoCuenta = '" & mnuAhorrosEstadoCuenta.Checked & "', mnuAhorrosRetiros = '" & mnuAhorrosRetiros.Checked & "', mnuAhorrosSaldos = '" & mnuAhorrosSaldos.Checked & "', CambiarFechadeposito = '" & chkFechaDeposito.Checked & "', CambiarFechaRetiroAporte = '" & chkFechaRetiroAporte.Checked & "' WHERE IDUsuario=" & cmbUsuarios.SelectedValue & "")
     End Sub
     Private Sub BuscarPermisoAhorros()
         Dim dr As DataRow
         Dim ds As New DataSet
-        Dim da As New MySqlDataAdapter("SELECT mnuAhorros, mnuAhorrosNuevo, mnuAhorrosRealizarRetiros, mnuAhorrosEstadoCuenta, mnuAhorrosRetiros, mnuAhorrosSaldos FROM tbl_userahorros WHERE IDUsuario=" & cmbUsuarios.SelectedValue & "", conn)
+        Dim da As New MySqlDataAdapter("SELECT mnuAhorros, mnuAhorrosNuevo, mnuAhorrosRealizarRetiros, mnuAhorrosEstadoCuenta, mnuAhorrosRetiros, mnuAhorrosSaldos,CambiarFechadeposito,CambiarFechaRetiroAporte FROM tbl_userahorros WHERE IDUsuario=" & cmbUsuarios.SelectedValue & "", conn)
         da.Fill(ds, "tbl_userahorros")
 
         For Each dr In ds.Tables(0).Rows
@@ -1397,7 +1451,8 @@ Public Class FRM_PERMISO_ROLES
             mnuAhorrosEstadoCuenta.Checked = CBool(dr("mnuAhorrosEstadoCuenta"))
             mnuAhorrosRetiros.Checked = CBool(dr("mnuAhorrosRetiros"))
             mnuAhorrosSaldos.Checked = CBool(dr("mnuAhorrosSaldos"))
-
+            chkFechaDeposito.Checked = CBool(dr("CambiarFechadeposito"))
+            chkFechaRetiroAporte.Checked = CBool(dr("CambiarFechaRetiroAporte"))
 
         Next
         ds.Dispose()

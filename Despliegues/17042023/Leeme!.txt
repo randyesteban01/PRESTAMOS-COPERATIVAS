@@ -1,0 +1,8 @@
+Esta nueva versión del sistema contiene los siguientes requerimientos:
+
+1.PERIODO CONTABLE. COOPEMPROF.
+2.Opcion pago capital y abono extra capital. (CREESCOOP, COOPEMPROF)
+3.Habilitar campo modificar fecha. COOPEMPROF, COOPSME
+4.CERTIFICADO FINANCIERO: RETIRO INTERES/CAPITAL.
+5.Opción rebajar balance aportación. CREESCOOP, COOPEMPROF
+6.Retiro ahorro mediante cheque. COOPEMPROF

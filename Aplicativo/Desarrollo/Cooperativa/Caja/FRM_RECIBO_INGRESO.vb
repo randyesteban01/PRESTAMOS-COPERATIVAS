@@ -140,6 +140,8 @@ Public Class FRM_RECIBO_INGRESO
     Friend WithEvents Label33 As Label
     Friend WithEvents Panel2 As Panel
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents dtpFechaRecibo As DateTimePicker
+    Friend WithEvents lblFechaRecibo As Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
@@ -248,6 +250,8 @@ Public Class FRM_RECIBO_INGRESO
         Me.Label31 = New System.Windows.Forms.Label()
         Me.Label32 = New System.Windows.Forms.Label()
         Me.Label33 = New System.Windows.Forms.Label()
+        Me.dtpFechaRecibo = New System.Windows.Forms.DateTimePicker()
+        Me.lblFechaRecibo = New System.Windows.Forms.Label()
         CType(Me.DG, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PaneNroCheque.SuspendLayout()
         Me.PaneTranferencia.SuspendLayout()
@@ -473,7 +477,7 @@ Public Class FRM_RECIBO_INGRESO
         '
         Me.btnBusca.BackColor = System.Drawing.SystemColors.Control
         Me.btnBusca.ForeColor = System.Drawing.Color.Black
-        Me.btnBusca.Location = New System.Drawing.Point(182, 11)
+        Me.btnBusca.Location = New System.Drawing.Point(233, 9)
         Me.btnBusca.Name = "btnBusca"
         Me.btnBusca.Size = New System.Drawing.Size(128, 24)
         Me.btnBusca.TabIndex = 0
@@ -1384,11 +1388,32 @@ Public Class FRM_RECIBO_INGRESO
         Me.Label33.Text = "2,000.00"
         Me.Label33.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
+        'dtpFechaRecibo
+        '
+        Me.dtpFechaRecibo.CustomFormat = "dd / MMM /yyyy"
+        Me.dtpFechaRecibo.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtpFechaRecibo.Location = New System.Drawing.Point(87, 12)
+        Me.dtpFechaRecibo.Name = "dtpFechaRecibo"
+        Me.dtpFechaRecibo.Size = New System.Drawing.Size(120, 20)
+        Me.dtpFechaRecibo.TabIndex = 75
+        '
+        'lblFechaRecibo
+        '
+        Me.lblFechaRecibo.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.lblFechaRecibo.Location = New System.Drawing.Point(-8, 13)
+        Me.lblFechaRecibo.Name = "lblFechaRecibo"
+        Me.lblFechaRecibo.Size = New System.Drawing.Size(98, 16)
+        Me.lblFechaRecibo.TabIndex = 76
+        Me.lblFechaRecibo.Text = "Fecha Recibo:"
+        Me.lblFechaRecibo.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
         'FRM_RECIBO_INGRESO
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(1072, 515)
+        Me.Controls.Add(Me.dtpFechaRecibo)
+        Me.Controls.Add(Me.lblFechaRecibo)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PaneTranferencia)
         Me.Controls.Add(Me.PaneTargeta)
@@ -1522,13 +1547,13 @@ Public Class FRM_RECIBO_INGRESO
     Private Sub aplicaInteres(ByVal idPrestamos As Integer)
 
         Dim ds As New DataSet
-        Dim da As New MySqlDataAdapter("SELECT c.fld_id_cuotas, c.fld_fecha_entrega_cuotas, c.fld_fecha_termina_cuotas, p.fld_fecha_calcula_interes, p.fld_clasificacion, p.fld_interes_p, p.fld_id_prestamos, p.fld_capital_prestamo, p.fld_tipo_prestamo FROM tbl_cuotas AS c INNER JOIN tbl_prestamos AS p ON c.fld_id_del_prestamo=p.fld_id_prestamos WHERE MONTH(fld_fecha_termina_cuotas)= MONTH(Now()) AND c.fld_balance_cuotas > 0 AND p.fld_id_prestamos=" & idPrestamos & "", conn)
+        Dim da As New MySqlDataAdapter("SELECT c.fld_id_cuotas, c.fld_fecha_entrega_cuotas, c.fld_fecha_termina_cuotas, p.fld_fecha_calcula_interes, p.fld_clasificacion, p.fld_interes_p, p.fld_id_prestamos, p.fld_capital_prestamo, p.fld_tipo_prestamo FROM tbl_cuotas AS c INNER JOIN tbl_prestamos AS p ON c.fld_id_del_prestamo=p.fld_id_prestamos WHERE MONTH(fld_fecha_termina_cuotas)= MONTH('" & Format(dtpFechaRecibo.Value, "yyyy-MM-dd") & "') AND c.fld_balance_cuotas > 0 AND p.fld_id_prestamos=" & idPrestamos & "", conn)
         da.Fill(ds)
 
         Dim nr As DataRow
         Dim doc_date As Date, sys_date As Date
 
-        sys_date = CDate(SCALAR_STRING("SELECT DATE(Now())"))
+        sys_date = Format(dtpFechaRecibo.Value, "yyyy-MM-dd")  ''CDate(SCALAR_STRING("SELECT DATE(Now())"))
 
         Dim bceCapital As Double = SCALAR_NUM("SELECT SUM(fld_capital_cuota_balance) FROM tbl_cuotas WHERE fld_id_del_prestamo=" & CInt(fld_id_prestamo.Text) & "")
 
@@ -1559,7 +1584,7 @@ Public Class FRM_RECIBO_INGRESO
                 End If
 
                 If dias > 0 Then
-                    NON_QUERY("UPDATE tbl_cuotas SET fld_interes_cuota=fld_interes_cuota + " & Interes & ", fld_interes_cuota_balance=fld_interes_cuota-fld_interes_cuota_abono, fld_balance_cuotas=fld_interes_cuota_balance+fld_capital_cuota_balance, fld_monto_cuotas=fld_interes_cuota_balance+fld_capital_cuota_balance WHERE fld_id_cuotas=" & nr("fld_id_cuotas") & "; UPDATE tbl_prestamos SET fld_fecha_calcula_interes=Now() WHERE fld_id_prestamos=" & nr("fld_id_prestamos") & "")
+                    NON_QUERY("UPDATE tbl_cuotas SET fld_interes_cuota=fld_interes_cuota + " & Interes & ", fld_interes_cuota_balance=fld_interes_cuota-fld_interes_cuota_abono, fld_balance_cuotas=fld_interes_cuota_balance+fld_capital_cuota_balance, fld_monto_cuotas=fld_interes_cuota_balance+fld_capital_cuota_balance WHERE fld_id_cuotas=" & nr("fld_id_cuotas") & "; UPDATE tbl_prestamos SET fld_fecha_calcula_interes='" & Format(dtpFechaRecibo.Value, "yyyy-MM-dd") & "' WHERE fld_id_prestamos=" & nr("fld_id_prestamos") & "")
                 End If
 
             End If
@@ -1578,13 +1603,21 @@ Public Class FRM_RECIBO_INGRESO
         Me.Icon = appIcon
         LlenarCajas()
 
-        fechaServidor = CDate(SCALAR_STRING("SELECT Now()"))
+        '' Verificar permiso de usuario
+        If SCALAR_STRING("SELECT CambiarFechaRecibo FROM tbl_usercaja WHERE IDUsuario=" & CInt(User(5)) & "") <> "" Then
+            Dim CambiarFechaRecibo As Boolean = SCALAR_STRING("SELECT CambiarFechaRecibo FROM tbl_usercaja WHERE IDUsuario=" & CInt(User(5)) & "")
+            dtpFechaRecibo.Enabled = CambiarFechaRecibo
+        Else
+            dtpFechaRecibo.Enabled = False
+        End If
+
+        fechaServidor = Format(dtpFechaRecibo.Value, "yyyy-MM-dd")  ''(SCALAR_STRING("SELECT Now()"))
     End Sub
 
     '/SUB PROGRAMAS
     Private Sub SAVE_CHAGER_CUOTAS(ByVal id_doc As String, ByVal abono_interes As Double, ByVal abono_capital As Double, ByVal abono_cuota As Double, ByVal abono_mora As Double)
 
-        NON_QUERY("UPDATE tbl_cuotas SET fld_interes_cuota_abono=fld_interes_cuota_abono + " & abono_interes & ",  fld_interes_cuota_balance=fld_interes_cuota-fld_interes_cuota_abono,  fld_capital_cuota_abono=fld_capital_cuota_abono+" & abono_capital & ",fld_capital_cuota_balance=fld_capital_cuota-fld_capital_cuota_abono, fld_fecha_ultimo_abono_cuotas=Now(), fld_abono_cuotas=fld_abono_cuotas + " & abono_capital + abono_interes & ", fld_balance_cuotas=fld_monto_cuotas-fld_abono_cuotas WHERE  fld_id_cuotas=" & id_doc & "")
+        NON_QUERY("UPDATE tbl_cuotas SET fld_interes_cuota_abono=fld_interes_cuota_abono + " & abono_interes & ",  fld_interes_cuota_balance=fld_interes_cuota-fld_interes_cuota_abono,  fld_capital_cuota_abono=fld_capital_cuota_abono+" & abono_capital & ",fld_capital_cuota_balance=fld_capital_cuota-fld_capital_cuota_abono, fld_fecha_ultimo_abono_cuotas='" & Format(dtpFechaRecibo.Value, "yyyy-MM-dd") & "', fld_abono_cuotas=fld_abono_cuotas + " & abono_capital + abono_interes & ", fld_balance_cuotas=fld_monto_cuotas-fld_abono_cuotas WHERE  fld_id_cuotas=" & id_doc & "")
 
     End Sub
 
@@ -1649,7 +1682,7 @@ Public Class FRM_RECIBO_INGRESO
         With CMD
             .Connection = conn
             .Connection.Open()
-            .CommandText = "UPDATE tbl_prestamos SET fld_fecha_ultimo_abono=Now() WHERE fld_id_prestamos=" & ID_P & ""
+            .CommandText = "UPDATE tbl_prestamos SET fld_fecha_ultimo_abono='" & Format(dtpFechaRecibo.Value, "yyyy-MM-dd") & "' WHERE fld_id_prestamos=" & ID_P & ""
             .ExecuteNonQuery()
             .Connection.Close()
         End With
@@ -1727,7 +1760,7 @@ Public Class FRM_RECIBO_INGRESO
         If cbOmitirMora.Checked = True Then Exit Sub
         Dim nr As DataRow
         Dim doc_date As Date, sys_date As Date
-        sys_date = Now.Date
+        sys_date = Format(dtpFechaRecibo.Value, "yyyy-MM-dd")
 
         Dim porciento As Double = SCALAR_NUM("SELECT fldTazaMora FROM tbl_prestamos WHERE fld_id_prestamos=" & CInt(fld_id_prestamo.Text) & "") / 30
 
@@ -1806,18 +1839,18 @@ vuela:
             With cmd
                 .Connection = conn
                 .Connection.Open()
-                .CommandText = "INSERT INTO tbl_recibo_ingresos_cxc (fld_forma_pago,fld_detalle_forma_pago,fld_id_cliente_ri,fld_date,fld_Description,fld_monto,fld_fact_afectado,fdl_nd_afectado,fld_User,fld_Estado,fld_id_prestamo, fld_concepto, fld_interes_cobrado, fld_capital_cobrado, fld_mora_cobrada, fld_socio,fld_adelanto, fld_bce_actual, fld_monto_recibido,IdCaja) VALUES('" & txtFormaDePago.Text & "','" & fld_detalle_forma_pago.Text & "'," & txtCustomerID.Text & ",Now(),'" & fld_concepto.Text & "'," & CDec(txtMontoCobrar.Text) & ",'0','0','" & User(0) & "','NEW'," & fld_id_prestamo.Text & ",'" & fld_concepto.Text & "'," & CDbl(fld_total_interes.Text) & ", " & capitalCobrado & ", " & CDbl(fld_total_mora.Text) & ",'" & txtFirstName.Text & "','" & adelanto & "', " & bceCapital & ",0," & cmbCajas.SelectedValue & ")"
+                .CommandText = "INSERT INTO tbl_recibo_ingresos_cxc (fld_forma_pago,fld_detalle_forma_pago,fld_id_cliente_ri,fld_date,fld_Description,fld_monto,fld_fact_afectado,fdl_nd_afectado,fld_User,fld_Estado,fld_id_prestamo, fld_concepto, fld_interes_cobrado, fld_capital_cobrado, fld_mora_cobrada, fld_socio,fld_adelanto, fld_bce_actual, fld_monto_recibido,IdCaja) VALUES('" & txtFormaDePago.Text & "','" & fld_detalle_forma_pago.Text & "'," & txtCustomerID.Text & ",'" & Format(dtpFechaRecibo.Value, "yyyy-MM-dd") & "','" & fld_concepto.Text & "'," & CDec(txtMontoCobrar.Text) & ",'0','0','" & User(0) & "','NEW'," & fld_id_prestamo.Text & ",'" & fld_concepto.Text & "'," & CDbl(fld_total_interes.Text) & ", " & capitalCobrado & ", " & CDbl(fld_total_mora.Text) & ",'" & txtFirstName.Text & "','" & adelanto & "', " & bceCapital & ",0," & cmbCajas.SelectedValue & ")"
                 .ExecuteNonQuery()
                 .Connection.Close()
             End With
             cmd.Dispose()
 
-            Dim Atraso As Double = SCALAR_NUM("SELECT IFNULL(SUM(fld_capital_cuota_balance) + SUM(fld_interes_cuota_balance),0) FROM tbl_cuotas WHERE fld_id_del_prestamo=" & fld_id_prestamo.Text & " AND DATE(fld_fecha_termina_cuotas) < DATE(NOW())")
+            Dim Atraso As Double = SCALAR_NUM("SELECT IFNULL(SUM(fld_capital_cuota_balance) + SUM(fld_interes_cuota_balance),0) FROM tbl_cuotas WHERE fld_id_del_prestamo=" & fld_id_prestamo.Text & " AND DATE(fld_fecha_termina_cuotas) < '" & Format(dtpFechaRecibo.Value, "yyyy-MM-dd") & "'")
 
             Dim RI As Integer = UltimoID("tbl_recibo_ingresos_cxc", "fld_Id_RI")
             Dim ctaContableCaja = SCALAR_STRING("SELECT CtaContable  FROM cajamantenimiento WHERE ID=" & cmbCajas.SelectedValue & "")
 
-            InterfarContableRecibosIngresosCxC(CDec(capitalCobrado), CDec(fld_total_interes.Text), CDec(fld_total_mora.Text), 0, RI, fld_concepto.Text, ctaContableTxt.Text, ctaContableCaja)
+            InterfarContableRecibosIngresosCxC(Format(dtpFechaRecibo.Value, "yyyy-MM-dd"), CDec(capitalCobrado), CDec(fld_total_interes.Text), CDec(fld_total_mora.Text), 0, RI, fld_concepto.Text, ctaContableTxt.Text, ctaContableCaja)
 
             Dim FechaVencePrestamos As Date = SCALAR_STRING("SELECT fld_fecha_termina FROM tbl_prestamos WHERE fld_id_prestamos=" & fld_id_prestamo.Text & "")
 
@@ -2188,7 +2221,7 @@ sigue:
                 If monto >= rows("fld_interes_cuota_balance") Then 'TRABAJA CON EL INTERES DE LA CUAOTA
                     rows("fld_interes_cuota_abono") = rows("fld_interes_cuota_abono") + rows("fld_interes_cuota_balance")
                     monto = monto - rows("fld_interes_cuota_balance")
-                    rows("fld_fecha_ultimo_abono_cuotas") = Now.Date
+                    rows("fld_fecha_ultimo_abono_cuotas") = Format(dtpFechaRecibo.Value, "yyyy-MM-dd")
                     rows("fld_ultimo_abono_interes") = rows("fld_interes_cuota_balance")
                     rows("fld_status_cuotas") = "Pagada"
                     interesCobrado = interesCobrado + rows("fld_interes_cuota_balance")
@@ -2202,7 +2235,7 @@ sigue:
 
                     rows("fld_interes_cuota_abono") = rows("fld_interes_cuota_abono") + monto
                     rows("fld_interes_cuota_balance") = rows("fld_interes_cuota_balance") - monto
-                    rows("fld_fecha_ultimo_abono_cuotas") = Now.Date
+                    rows("fld_fecha_ultimo_abono_cuotas") = Format(dtpFechaRecibo.Value, "yyyy-MM-dd")
                     rows("fld_ultimo_abono_interes") = monto
                     rows("fld_status_cuotas") = "Abono"
                     interesCobrado = interesCobrado + monto
@@ -2219,7 +2252,7 @@ sigue:
 
                     rows("fld_capital_cuota_abono") = rows("fld_capital_cuota_abono") + rows("fld_capital_cuota_balance")
                     monto = monto - rows("fld_capital_cuota_balance")
-                    rows("fld_fecha_ultimo_abono_cuotas") = Now.Date
+                    rows("fld_fecha_ultimo_abono_cuotas") = Format(dtpFechaRecibo.Value, "yyyy-MM-dd")
                     rows("fld_ultimo_abono_capital") = rows("fld_capital_cuota_balance")
                     rows("fld_status_cuotas") = "Pagada"
                     If rows("fld_tipo_cuotas") = "ND" Then
@@ -2239,7 +2272,7 @@ sigue:
 
                     rows("fld_capital_cuota_abono") = rows("fld_capital_cuota_abono") + monto
                     rows("fld_capital_cuota_balance") = rows("fld_capital_cuota_balance") - monto
-                    rows("fld_fecha_ultimo_abono_cuotas") = Now.Date
+                    rows("fld_fecha_ultimo_abono_cuotas") = Format(dtpFechaRecibo.Value, "yyyy-MM-dd")
                     rows("fld_ultimo_abono_capital") = monto
                     rows("fld_status_cuotas") = "Abono"
 
@@ -2344,7 +2377,7 @@ Salta:
         Else
 
             create_row_estado_cliente(txtCustomerID.Text, CDbl(txtMontoCobrar.Text), "RECIBOCOBROCXC", fld_id_prestamo.Text, fld_concepto.Text, formatDate(fechaServidor.Date))
-            NON_QUERY("INSERT INTO tbl_historia_delantos_cxc (IDCliente, IDRecibo, Fecha, Monto, Usuario) VALUES(" & txtCustomerID.Text & "," & IdRecibo & ",Now()," & CDbl(txtMontoCobrar.Text) & ",'" & User(0) & "')")
+            NON_QUERY("INSERT INTO tbl_historia_delantos_cxc (IDCliente, IDRecibo, Fecha, Monto, Usuario) VALUES(" & txtCustomerID.Text & "," & IdRecibo & ",'" & Format(dtpFechaRecibo.Value, "yyyy-MM-dd") & "'," & CDbl(txtMontoCobrar.Text) & ",'" & User(0) & "')")
 
         End If
 
@@ -2837,6 +2870,15 @@ Salta:
         End If
     End Sub
 
+    Private Sub dtpFechaRecibo_ValueChanged(sender As Object, e As EventArgs) Handles dtpFechaRecibo.ValueChanged
+        fechaServidor = Format(dtpFechaRecibo.Value, "yyyy-MM-dd")
+
+        CLEAR_FIELDS()
+        ENABLE_FIELDS()
+        If Not IsNothing(dsCuotas) Then
+            dsCuotas.Reset()
+        End If
+    End Sub
 
     Private Sub FRM_RECIBO_INGRESO_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles MyBase.KeyDown
         If e.KeyCode = Keys.Enter Then

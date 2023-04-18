@@ -152,6 +152,9 @@
     <Compile Include="Ahorros\FrmActualiarLibrera.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Ahorros\frmRetiroAporteSocio.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Ahorros\frmAporteSocio.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +177,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Ahorros\frmListaCuentaAhorro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ahorros\frmRetiroAporteSocioLista .vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Ahorros\frmRetirosLista.vb">
@@ -546,6 +552,12 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
     </Compile>
+    <Compile Include="Reportes\Ahorros\rptRetiroAporteSocioListado.vb">
+      <DependentUpon>rptRetiroAporteSocioListado.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Reportes\Ahorros\rptAporteSocioListado.vb">
       <DependentUpon>rptAporteSocioListado.rpt</DependentUpon>
       <SubType>Component</SubType>
@@ -557,6 +569,12 @@
       <SubType>Component</SubType>
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Ahorros\rptRetiroAporteUnSocioListado.vb">
+      <DependentUpon>rptRetiroAporteUnSocioListado.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="Reportes\Ahorros\rptAporteUnSocioListado.vb">
       <DependentUpon>rptAporteUnSocioListado.rpt</DependentUpon>
@@ -635,6 +653,12 @@
       <SubType>Component</SubType>
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Reportes\Ahorros\SP\rptRetiroAporteSocioReciboSP.vb">
+      <DependentUpon>rptRetiroAporteSocioReciboSP.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="Reportes\Ahorros\SP\rptAporteSocioReciboSP.vb">
       <DependentUpon>rptAporteSocioReciboSP.rpt</DependentUpon>
@@ -1119,6 +1143,9 @@
     <EmbeddedResource Include="Ahorros\FrmActualiarLibrera.resx">
       <DependentUpon>FrmActualiarLibrera.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ahorros\frmRetiroAporteSocio.resx">
+      <DependentUpon>frmRetiroAporteSocio.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ahorros\frmAporteSocio.resx">
       <DependentUpon>frmAporteSocio.vb</DependentUpon>
     </EmbeddedResource>
@@ -1142,6 +1169,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ahorros\frmListaCuentaAhorro.resx">
       <DependentUpon>frmListaCuentaAhorro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ahorros\frmRetiroAporteSocioLista .resx">
+      <DependentUpon>frmRetiroAporteSocioLista .vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ahorros\frmRetirosLista.resx">
       <DependentUpon>frmRetirosLista.vb</DependentUpon>
@@ -1459,6 +1489,10 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptAhorroRetiro.vb</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Ahorros\rptRetiroAporteSocioListado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptRetiroAporteSocioListado.vb</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Ahorros\rptAporteSocioListado.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptAporteSocioListado.vb</LastGenOutput>
@@ -1466,6 +1500,10 @@
     <EmbeddedResource Include="Reportes\Ahorros\rptAporteSocioRecibo.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptAporteSocioRecibo.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Ahorros\rptRetiroAporteUnSocioListado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptRetiroAporteUnSocioListado.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Ahorros\rptAporteUnSocioListado.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -1518,6 +1556,10 @@
     <EmbeddedResource Include="Reportes\Ahorros\SP\rptAhorroRetiroSP.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptAhorroRetiroSP.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Ahorros\SP\rptRetiroAporteSocioReciboSP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptRetiroAporteSocioReciboSP.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\Ahorros\SP\rptAporteSocioReciboSP.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

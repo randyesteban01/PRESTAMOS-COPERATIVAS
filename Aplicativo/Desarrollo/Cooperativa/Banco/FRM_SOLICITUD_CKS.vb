@@ -8,6 +8,19 @@ Public Class FRM_SOLICITUD_CKS
     Inherits System.Windows.Forms.Form
     Dim id_entrada As String
     Dim ds_facturas As DataSet, ds_nc As DataSet
+    Friend WithEvents gbTipoRetiro As GroupBox
+    Friend WithEvents rbNinguna As RadioButton
+    Friend WithEvents rbCtaAportacion As RadioButton
+    Friend WithEvents rbCtaAhorro As RadioButton
+    Friend WithEvents gbTipo As GroupBox
+    Friend WithEvents rbManual As RadioButton
+    Friend WithEvents rbProveedores As RadioButton
+    Friend WithEvents rbSocio As RadioButton
+    Friend WithEvents txtCuentaNo As TextBox
+    Friend WithEvents btnCta As Button
+    Friend WithEvents btnBuscarPersona As Button
+    Friend WithEvents txtBeneficiario As TextBox
+    Friend WithEvents txtIdAhorro As TextBox
     Dim ds_detalle As New DataSet
 #Region " Windows Form Designer generated code "
 
@@ -81,65 +94,88 @@ Public Class FRM_SOLICITUD_CKS
     Friend WithEvents fld_id_proveedor As System.Windows.Forms.TextBox
     Friend WithEvents fld_id_banco As System.Windows.Forms.TextBox
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
-        Dim resources As System.Resources.ResourceManager = New System.Resources.ResourceManager(GetType(FRM_SOLICITUD_CKS))
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FRM_SOLICITUD_CKS))
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
-        Me.fld_monto = New System.Windows.Forms.TextBox
-        Me.Label4 = New System.Windows.Forms.Label
-        Me.fld_descripcion = New System.Windows.Forms.TextBox
-        Me.fld_date = New System.Windows.Forms.DateTimePicker
-        Me.FLD_CTA_CONTABLE = New System.Windows.Forms.TextBox
-        Me.Label7 = New System.Windows.Forms.Label
-        Me.FLD_BALANCE = New System.Windows.Forms.TextBox
-        Me.Label6 = New System.Windows.Forms.Label
-        Me.FLD_CUENTA = New System.Windows.Forms.TextBox
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.FLD_NOMBRE = New System.Windows.Forms.TextBox
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.FLD_CODIGO = New System.Windows.Forms.TextBox
-        Me.Label8 = New System.Windows.Forms.Label
-        Me.fld_cantidad_letra = New System.Windows.Forms.TextBox
-        Me.fld_ck_no = New System.Windows.Forms.TextBox
-        Me.Label11 = New System.Windows.Forms.Label
-        Me.Label12 = New System.Windows.Forms.Label
-        Me.Label5 = New System.Windows.Forms.Label
-        Me.fld_codigo_transacion = New System.Windows.Forms.TextBox
-        Me.Label19 = New System.Windows.Forms.Label
-        Me.MainMenu1 = New System.Windows.Forms.MainMenu
-        Me.MenuItem1 = New System.Windows.Forms.MenuItem
-        Me.Label21 = New System.Windows.Forms.Label
-        Me.fld_id_ck = New System.Windows.Forms.TextBox
-        Me.fld_codigo_beneficiario = New System.Windows.Forms.TextBox
-        Me.fld_tipo_beneficiario = New System.Windows.Forms.ComboBox
-        Me.fld_bce_proveedor = New System.Windows.Forms.TextBox
-        Me.Label9 = New System.Windows.Forms.Label
-        Me.btnAnula = New System.Windows.Forms.Button
-        Me.btnCerrar = New System.Windows.Forms.Button
-        Me.btn_procesar = New System.Windows.Forms.Button
-        Me.btnNuevo = New System.Windows.Forms.Button
-        Me.btnImprime = New System.Windows.Forms.Button
-        Me.btnBuscar = New System.Windows.Forms.Button
-        Me.PrintDialog1 = New System.Windows.Forms.PrintDialog
-        Me.DataGrid1 = New System.Windows.Forms.DataGrid
-        Me.fld_beneficiario = New System.Windows.Forms.ComboBox
-        Me.Label15 = New System.Windows.Forms.Label
-        Me.fld_id_proveedor = New System.Windows.Forms.TextBox
-        Me.fld_id_banco = New System.Windows.Forms.TextBox
+        Me.fld_monto = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.fld_descripcion = New System.Windows.Forms.TextBox()
+        Me.fld_date = New System.Windows.Forms.DateTimePicker()
+        Me.FLD_CTA_CONTABLE = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.FLD_BALANCE = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.FLD_CUENTA = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.FLD_NOMBRE = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.FLD_CODIGO = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.fld_cantidad_letra = New System.Windows.Forms.TextBox()
+        Me.fld_ck_no = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.fld_codigo_transacion = New System.Windows.Forms.TextBox()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.MainMenu1 = New System.Windows.Forms.MainMenu(Me.components)
+        Me.MenuItem1 = New System.Windows.Forms.MenuItem()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.fld_id_ck = New System.Windows.Forms.TextBox()
+        Me.fld_codigo_beneficiario = New System.Windows.Forms.TextBox()
+        Me.fld_tipo_beneficiario = New System.Windows.Forms.ComboBox()
+        Me.fld_bce_proveedor = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.btnAnula = New System.Windows.Forms.Button()
+        Me.btnCerrar = New System.Windows.Forms.Button()
+        Me.btn_procesar = New System.Windows.Forms.Button()
+        Me.btnNuevo = New System.Windows.Forms.Button()
+        Me.btnImprime = New System.Windows.Forms.Button()
+        Me.btnBuscar = New System.Windows.Forms.Button()
+        Me.PrintDialog1 = New System.Windows.Forms.PrintDialog()
+        Me.DataGrid1 = New System.Windows.Forms.DataGrid()
+        Me.fld_beneficiario = New System.Windows.Forms.ComboBox()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.fld_id_proveedor = New System.Windows.Forms.TextBox()
+        Me.fld_id_banco = New System.Windows.Forms.TextBox()
+        Me.gbTipoRetiro = New System.Windows.Forms.GroupBox()
+        Me.rbNinguna = New System.Windows.Forms.RadioButton()
+        Me.rbCtaAportacion = New System.Windows.Forms.RadioButton()
+        Me.rbCtaAhorro = New System.Windows.Forms.RadioButton()
+        Me.gbTipo = New System.Windows.Forms.GroupBox()
+        Me.rbManual = New System.Windows.Forms.RadioButton()
+        Me.rbProveedores = New System.Windows.Forms.RadioButton()
+        Me.rbSocio = New System.Windows.Forms.RadioButton()
+        Me.txtCuentaNo = New System.Windows.Forms.TextBox()
+        Me.btnCta = New System.Windows.Forms.Button()
+        Me.btnBuscarPersona = New System.Windows.Forms.Button()
+        Me.txtBeneficiario = New System.Windows.Forms.TextBox()
+        Me.txtIdAhorro = New System.Windows.Forms.TextBox()
         CType(Me.DataGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.gbTipoRetiro.SuspendLayout()
+        Me.gbTipo.SuspendLayout()
         Me.SuspendLayout()
         '
         'ImageList1
         '
-        Me.ImageList1.ImageSize = New System.Drawing.Size(16, 16)
         Me.ImageList1.ImageStream = CType(resources.GetObject("ImageList1.ImageStream"), System.Windows.Forms.ImageListStreamer)
         Me.ImageList1.TransparentColor = System.Drawing.Color.Transparent
+        Me.ImageList1.Images.SetKeyName(0, "")
+        Me.ImageList1.Images.SetKeyName(1, "")
+        Me.ImageList1.Images.SetKeyName(2, "")
+        Me.ImageList1.Images.SetKeyName(3, "")
+        Me.ImageList1.Images.SetKeyName(4, "")
+        Me.ImageList1.Images.SetKeyName(5, "")
+        Me.ImageList1.Images.SetKeyName(6, "")
+        Me.ImageList1.Images.SetKeyName(7, "")
+        Me.ImageList1.Images.SetKeyName(8, "")
         '
         'fld_monto
         '
         Me.fld_monto.BackColor = System.Drawing.Color.White
         Me.fld_monto.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.fld_monto.Location = New System.Drawing.Point(482, 144)
+        Me.fld_monto.Location = New System.Drawing.Point(482, 157)
         Me.fld_monto.Name = "fld_monto"
         Me.fld_monto.Size = New System.Drawing.Size(136, 20)
         Me.fld_monto.TabIndex = 2
@@ -148,7 +184,7 @@ Public Class FRM_SOLICITUD_CKS
         '
         'Label4
         '
-        Me.Label4.Location = New System.Drawing.Point(6, 216)
+        Me.Label4.Location = New System.Drawing.Point(6, 229)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(64, 16)
         Me.Label4.TabIndex = 17
@@ -158,17 +194,16 @@ Public Class FRM_SOLICITUD_CKS
         '
         Me.fld_descripcion.BackColor = System.Drawing.Color.White
         Me.fld_descripcion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.fld_descripcion.Location = New System.Drawing.Point(80, 216)
+        Me.fld_descripcion.Location = New System.Drawing.Point(80, 229)
         Me.fld_descripcion.Name = "fld_descripcion"
         Me.fld_descripcion.Size = New System.Drawing.Size(536, 20)
         Me.fld_descripcion.TabIndex = 4
-        Me.fld_descripcion.Text = ""
         '
         'fld_date
         '
         Me.fld_date.CustomFormat = "dd / MMM / yyyy"
         Me.fld_date.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.fld_date.Location = New System.Drawing.Point(482, 96)
+        Me.fld_date.Location = New System.Drawing.Point(482, 109)
         Me.fld_date.Name = "fld_date"
         Me.fld_date.ShowUpDown = True
         Me.fld_date.Size = New System.Drawing.Size(136, 20)
@@ -178,16 +213,15 @@ Public Class FRM_SOLICITUD_CKS
         '
         Me.FLD_CTA_CONTABLE.BackColor = System.Drawing.SystemColors.Control
         Me.FLD_CTA_CONTABLE.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.FLD_CTA_CONTABLE.Location = New System.Drawing.Point(482, 120)
+        Me.FLD_CTA_CONTABLE.Location = New System.Drawing.Point(482, 133)
         Me.FLD_CTA_CONTABLE.Name = "FLD_CTA_CONTABLE"
         Me.FLD_CTA_CONTABLE.ReadOnly = True
         Me.FLD_CTA_CONTABLE.Size = New System.Drawing.Size(136, 20)
         Me.FLD_CTA_CONTABLE.TabIndex = 38
-        Me.FLD_CTA_CONTABLE.Text = ""
         '
         'Label7
         '
-        Me.Label7.Location = New System.Drawing.Point(401, 120)
+        Me.Label7.Location = New System.Drawing.Point(401, 133)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(64, 16)
         Me.Label7.TabIndex = 32
@@ -198,7 +232,7 @@ Public Class FRM_SOLICITUD_CKS
         '
         Me.FLD_BALANCE.BackColor = System.Drawing.SystemColors.Control
         Me.FLD_BALANCE.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.FLD_BALANCE.Location = New System.Drawing.Point(288, 120)
+        Me.FLD_BALANCE.Location = New System.Drawing.Point(288, 133)
         Me.FLD_BALANCE.Name = "FLD_BALANCE"
         Me.FLD_BALANCE.ReadOnly = True
         Me.FLD_BALANCE.Size = New System.Drawing.Size(104, 20)
@@ -208,7 +242,7 @@ Public Class FRM_SOLICITUD_CKS
         '
         'Label6
         '
-        Me.Label6.Location = New System.Drawing.Point(241, 120)
+        Me.Label6.Location = New System.Drawing.Point(241, 133)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(88, 16)
         Me.Label6.TabIndex = 22
@@ -218,16 +252,15 @@ Public Class FRM_SOLICITUD_CKS
         '
         Me.FLD_CUENTA.BackColor = System.Drawing.SystemColors.Control
         Me.FLD_CUENTA.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.FLD_CUENTA.Location = New System.Drawing.Point(80, 120)
+        Me.FLD_CUENTA.Location = New System.Drawing.Point(80, 133)
         Me.FLD_CUENTA.Name = "FLD_CUENTA"
         Me.FLD_CUENTA.ReadOnly = True
         Me.FLD_CUENTA.Size = New System.Drawing.Size(136, 20)
         Me.FLD_CUENTA.TabIndex = 19
-        Me.FLD_CUENTA.Text = ""
         '
         'Label3
         '
-        Me.Label3.Location = New System.Drawing.Point(6, 120)
+        Me.Label3.Location = New System.Drawing.Point(6, 133)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(88, 16)
         Me.Label3.TabIndex = 13
@@ -237,16 +270,15 @@ Public Class FRM_SOLICITUD_CKS
         '
         Me.FLD_NOMBRE.BackColor = System.Drawing.SystemColors.Control
         Me.FLD_NOMBRE.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.FLD_NOMBRE.Location = New System.Drawing.Point(80, 96)
+        Me.FLD_NOMBRE.Location = New System.Drawing.Point(80, 109)
         Me.FLD_NOMBRE.Name = "FLD_NOMBRE"
         Me.FLD_NOMBRE.ReadOnly = True
         Me.FLD_NOMBRE.Size = New System.Drawing.Size(312, 20)
         Me.FLD_NOMBRE.TabIndex = 18
-        Me.FLD_NOMBRE.Text = ""
         '
         'Label2
         '
-        Me.Label2.Location = New System.Drawing.Point(6, 96)
+        Me.Label2.Location = New System.Drawing.Point(6, 109)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(88, 16)
         Me.Label2.TabIndex = 12
@@ -254,7 +286,7 @@ Public Class FRM_SOLICITUD_CKS
         '
         'Label1
         '
-        Me.Label1.Location = New System.Drawing.Point(401, 96)
+        Me.Label1.Location = New System.Drawing.Point(401, 109)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(88, 16)
         Me.Label1.TabIndex = 31
@@ -264,16 +296,15 @@ Public Class FRM_SOLICITUD_CKS
         '
         Me.FLD_CODIGO.BackColor = System.Drawing.Color.White
         Me.FLD_CODIGO.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.FLD_CODIGO.Location = New System.Drawing.Point(80, 72)
+        Me.FLD_CODIGO.Location = New System.Drawing.Point(80, 85)
         Me.FLD_CODIGO.Name = "FLD_CODIGO"
         Me.FLD_CODIGO.ReadOnly = True
         Me.FLD_CODIGO.Size = New System.Drawing.Size(95, 20)
         Me.FLD_CODIGO.TabIndex = 9
-        Me.FLD_CODIGO.Text = ""
         '
         'Label8
         '
-        Me.Label8.Location = New System.Drawing.Point(6, 192)
+        Me.Label8.Location = New System.Drawing.Point(6, 205)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(88, 16)
         Me.Label8.TabIndex = 16
@@ -282,18 +313,17 @@ Public Class FRM_SOLICITUD_CKS
         'fld_cantidad_letra
         '
         Me.fld_cantidad_letra.BackColor = System.Drawing.Color.White
-        Me.fld_cantidad_letra.Location = New System.Drawing.Point(80, 168)
+        Me.fld_cantidad_letra.Location = New System.Drawing.Point(80, 181)
         Me.fld_cantidad_letra.Name = "fld_cantidad_letra"
         Me.fld_cantidad_letra.ReadOnly = True
         Me.fld_cantidad_letra.Size = New System.Drawing.Size(536, 20)
         Me.fld_cantidad_letra.TabIndex = 21
-        Me.fld_cantidad_letra.Text = ""
         '
         'fld_ck_no
         '
         Me.fld_ck_no.BackColor = System.Drawing.Color.White
         Me.fld_ck_no.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.fld_ck_no.Location = New System.Drawing.Point(482, 72)
+        Me.fld_ck_no.Location = New System.Drawing.Point(482, 85)
         Me.fld_ck_no.Name = "fld_ck_no"
         Me.fld_ck_no.Size = New System.Drawing.Size(136, 20)
         Me.fld_ck_no.TabIndex = 29
@@ -303,7 +333,7 @@ Public Class FRM_SOLICITUD_CKS
         '
         'Label11
         '
-        Me.Label11.Location = New System.Drawing.Point(401, 72)
+        Me.Label11.Location = New System.Drawing.Point(401, 85)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(88, 16)
         Me.Label11.TabIndex = 30
@@ -312,7 +342,7 @@ Public Class FRM_SOLICITUD_CKS
         '
         'Label12
         '
-        Me.Label12.Location = New System.Drawing.Point(401, 144)
+        Me.Label12.Location = New System.Drawing.Point(401, 157)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(80, 16)
         Me.Label12.TabIndex = 33
@@ -320,7 +350,7 @@ Public Class FRM_SOLICITUD_CKS
         '
         'Label5
         '
-        Me.Label5.Location = New System.Drawing.Point(6, 72)
+        Me.Label5.Location = New System.Drawing.Point(6, 85)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(64, 16)
         Me.Label5.TabIndex = 11
@@ -330,16 +360,15 @@ Public Class FRM_SOLICITUD_CKS
         'fld_codigo_transacion
         '
         Me.fld_codigo_transacion.BackColor = System.Drawing.SystemColors.Control
-        Me.fld_codigo_transacion.Location = New System.Drawing.Point(80, 144)
+        Me.fld_codigo_transacion.Location = New System.Drawing.Point(80, 157)
         Me.fld_codigo_transacion.Name = "fld_codigo_transacion"
         Me.fld_codigo_transacion.ReadOnly = True
         Me.fld_codigo_transacion.Size = New System.Drawing.Size(136, 20)
         Me.fld_codigo_transacion.TabIndex = 20
-        Me.fld_codigo_transacion.Text = ""
         '
         'Label19
         '
-        Me.Label19.Location = New System.Drawing.Point(5, 144)
+        Me.Label19.Location = New System.Drawing.Point(5, 157)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(64, 16)
         Me.Label19.TabIndex = 14
@@ -356,7 +385,7 @@ Public Class FRM_SOLICITUD_CKS
         '
         'Label21
         '
-        Me.Label21.Location = New System.Drawing.Point(5, 168)
+        Me.Label21.Location = New System.Drawing.Point(5, 181)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(112, 16)
         Me.Label21.TabIndex = 15
@@ -366,7 +395,7 @@ Public Class FRM_SOLICITUD_CKS
         '
         Me.fld_id_ck.BackColor = System.Drawing.Color.White
         Me.fld_id_ck.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.fld_id_ck.Location = New System.Drawing.Point(288, 72)
+        Me.fld_id_ck.Location = New System.Drawing.Point(288, 85)
         Me.fld_id_ck.Name = "fld_id_ck"
         Me.fld_id_ck.Size = New System.Drawing.Size(104, 20)
         Me.fld_id_ck.TabIndex = 24
@@ -376,17 +405,17 @@ Public Class FRM_SOLICITUD_CKS
         '
         'fld_codigo_beneficiario
         '
-        Me.fld_codigo_beneficiario.Location = New System.Drawing.Point(624, 184)
+        Me.fld_codigo_beneficiario.Location = New System.Drawing.Point(624, 207)
         Me.fld_codigo_beneficiario.Name = "fld_codigo_beneficiario"
         Me.fld_codigo_beneficiario.ReadOnly = True
         Me.fld_codigo_beneficiario.Size = New System.Drawing.Size(72, 20)
         Me.fld_codigo_beneficiario.TabIndex = 36
-        Me.fld_codigo_beneficiario.Text = ""
+        Me.fld_codigo_beneficiario.Visible = False
         '
         'fld_tipo_beneficiario
         '
         Me.fld_tipo_beneficiario.Items.AddRange(New Object() {"General", "Proveedores"})
-        Me.fld_tipo_beneficiario.Location = New System.Drawing.Point(400, 192)
+        Me.fld_tipo_beneficiario.Location = New System.Drawing.Point(236, 409)
         Me.fld_tipo_beneficiario.Name = "fld_tipo_beneficiario"
         Me.fld_tipo_beneficiario.Size = New System.Drawing.Size(104, 21)
         Me.fld_tipo_beneficiario.TabIndex = 0
@@ -397,7 +426,7 @@ Public Class FRM_SOLICITUD_CKS
         '
         Me.fld_bce_proveedor.BackColor = System.Drawing.Color.White
         Me.fld_bce_proveedor.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.fld_bce_proveedor.Location = New System.Drawing.Point(528, 192)
+        Me.fld_bce_proveedor.Location = New System.Drawing.Point(364, 409)
         Me.fld_bce_proveedor.Name = "fld_bce_proveedor"
         Me.fld_bce_proveedor.ReadOnly = True
         Me.fld_bce_proveedor.Size = New System.Drawing.Size(90, 20)
@@ -408,7 +437,7 @@ Public Class FRM_SOLICITUD_CKS
         '
         'Label9
         '
-        Me.Label9.Location = New System.Drawing.Point(504, 192)
+        Me.Label9.Location = New System.Drawing.Point(340, 409)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(27, 16)
         Me.Label9.TabIndex = 34
@@ -423,12 +452,13 @@ Public Class FRM_SOLICITUD_CKS
         Me.btnAnula.ForeColor = System.Drawing.Color.Black
         Me.btnAnula.Image = CType(resources.GetObject("btnAnula.Image"), System.Drawing.Image)
         Me.btnAnula.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnAnula.Location = New System.Drawing.Point(536, 272)
+        Me.btnAnula.Location = New System.Drawing.Point(552, 387)
         Me.btnAnula.Name = "btnAnula"
         Me.btnAnula.Size = New System.Drawing.Size(88, 96)
         Me.btnAnula.TabIndex = 37
         Me.btnAnula.Text = "&Anular"
         Me.btnAnula.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnAnula.UseVisualStyleBackColor = False
         Me.btnAnula.Visible = False
         '
         'btnCerrar
@@ -437,12 +467,13 @@ Public Class FRM_SOLICITUD_CKS
         Me.btnCerrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCerrar.Image = CType(resources.GetObject("btnCerrar.Image"), System.Drawing.Image)
         Me.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnCerrar.Location = New System.Drawing.Point(704, 104)
+        Me.btnCerrar.Location = New System.Drawing.Point(546, 255)
         Me.btnCerrar.Name = "btnCerrar"
         Me.btnCerrar.Size = New System.Drawing.Size(72, 56)
         Me.btnCerrar.TabIndex = 8
         Me.btnCerrar.Text = "&Cerrar"
         Me.btnCerrar.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnCerrar.UseVisualStyleBackColor = False
         '
         'btn_procesar
         '
@@ -450,12 +481,13 @@ Public Class FRM_SOLICITUD_CKS
         Me.btn_procesar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_procesar.Image = CType(resources.GetObject("btn_procesar.Image"), System.Drawing.Image)
         Me.btn_procesar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btn_procesar.Location = New System.Drawing.Point(704, 48)
+        Me.btn_procesar.Location = New System.Drawing.Point(158, 255)
         Me.btn_procesar.Name = "btn_procesar"
         Me.btn_procesar.Size = New System.Drawing.Size(72, 56)
         Me.btn_procesar.TabIndex = 5
         Me.btn_procesar.Text = "&Guardar"
         Me.btn_procesar.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btn_procesar.UseVisualStyleBackColor = False
         '
         'btnNuevo
         '
@@ -463,12 +495,13 @@ Public Class FRM_SOLICITUD_CKS
         Me.btnNuevo.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnNuevo.Image = CType(resources.GetObject("btnNuevo.Image"), System.Drawing.Image)
         Me.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.btnNuevo.Location = New System.Drawing.Point(632, 48)
+        Me.btnNuevo.Location = New System.Drawing.Point(80, 255)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(72, 56)
         Me.btnNuevo.TabIndex = 6
         Me.btnNuevo.Text = "&Nuevo"
         Me.btnNuevo.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnNuevo.UseVisualStyleBackColor = False
         '
         'btnImprime
         '
@@ -478,12 +511,13 @@ Public Class FRM_SOLICITUD_CKS
         Me.btnImprime.Image = CType(resources.GetObject("btnImprime.Image"), System.Drawing.Image)
         Me.btnImprime.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnImprime.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.btnImprime.Location = New System.Drawing.Point(632, 104)
+        Me.btnImprime.Location = New System.Drawing.Point(236, 255)
         Me.btnImprime.Name = "btnImprime"
         Me.btnImprime.Size = New System.Drawing.Size(72, 56)
         Me.btnImprime.TabIndex = 7
         Me.btnImprime.Text = "&Imprimir "
         Me.btnImprime.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnImprime.UseVisualStyleBackColor = False
         '
         'btnBuscar
         '
@@ -491,27 +525,29 @@ Public Class FRM_SOLICITUD_CKS
         Me.btnBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!)
         Me.btnBuscar.Image = CType(resources.GetObject("btnBuscar.Image"), System.Drawing.Image)
         Me.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnBuscar.Location = New System.Drawing.Point(176, 68)
+        Me.btnBuscar.Location = New System.Drawing.Point(176, 81)
         Me.btnBuscar.Name = "btnBuscar"
         Me.btnBuscar.Size = New System.Drawing.Size(78, 24)
         Me.btnBuscar.TabIndex = 0
         Me.btnBuscar.Text = "&List. Banco"
         Me.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnBuscar.UseVisualStyleBackColor = False
         '
         'DataGrid1
         '
         Me.DataGrid1.DataMember = ""
         Me.DataGrid1.HeaderForeColor = System.Drawing.SystemColors.ControlText
-        Me.DataGrid1.Location = New System.Drawing.Point(264, 448)
+        Me.DataGrid1.Location = New System.Drawing.Point(225, 489)
         Me.DataGrid1.Name = "DataGrid1"
         Me.DataGrid1.Size = New System.Drawing.Size(336, 80)
         Me.DataGrid1.TabIndex = 146
         '
         'fld_beneficiario
         '
-        Me.fld_beneficiario.Location = New System.Drawing.Point(80, 192)
+        Me.fld_beneficiario.Enabled = False
+        Me.fld_beneficiario.Location = New System.Drawing.Point(80, 205)
         Me.fld_beneficiario.Name = "fld_beneficiario"
-        Me.fld_beneficiario.Size = New System.Drawing.Size(536, 21)
+        Me.fld_beneficiario.Size = New System.Drawing.Size(312, 21)
         Me.fld_beneficiario.TabIndex = 3
         '
         'Label15
@@ -527,7 +563,7 @@ Public Class FRM_SOLICITUD_CKS
         '
         Me.fld_id_proveedor.BackColor = System.Drawing.Color.White
         Me.fld_id_proveedor.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.fld_id_proveedor.Location = New System.Drawing.Point(288, 48)
+        Me.fld_id_proveedor.Location = New System.Drawing.Point(331, 264)
         Me.fld_id_proveedor.Name = "fld_id_proveedor"
         Me.fld_id_proveedor.Size = New System.Drawing.Size(104, 20)
         Me.fld_id_proveedor.TabIndex = 25
@@ -539,7 +575,7 @@ Public Class FRM_SOLICITUD_CKS
         '
         Me.fld_id_banco.BackColor = System.Drawing.Color.White
         Me.fld_id_banco.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.fld_id_banco.Location = New System.Drawing.Point(482, 48)
+        Me.fld_id_banco.Location = New System.Drawing.Point(331, 291)
         Me.fld_id_banco.Name = "fld_id_banco"
         Me.fld_id_banco.Size = New System.Drawing.Size(134, 20)
         Me.fld_id_banco.TabIndex = 28
@@ -547,11 +583,169 @@ Public Class FRM_SOLICITUD_CKS
         Me.fld_id_banco.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         Me.fld_id_banco.Visible = False
         '
+        'gbTipoRetiro
+        '
+        Me.gbTipoRetiro.Controls.Add(Me.rbNinguna)
+        Me.gbTipoRetiro.Controls.Add(Me.rbCtaAportacion)
+        Me.gbTipoRetiro.Controls.Add(Me.rbCtaAhorro)
+        Me.gbTipoRetiro.Location = New System.Drawing.Point(324, 38)
+        Me.gbTipoRetiro.Name = "gbTipoRetiro"
+        Me.gbTipoRetiro.Size = New System.Drawing.Size(283, 38)
+        Me.gbTipoRetiro.TabIndex = 156
+        Me.gbTipoRetiro.TabStop = False
+        Me.gbTipoRetiro.Text = "Retiro"
+        Me.gbTipoRetiro.Visible = False
+        '
+        'rbNinguna
+        '
+        Me.rbNinguna.AutoSize = True
+        Me.rbNinguna.Location = New System.Drawing.Point(196, 14)
+        Me.rbNinguna.Name = "rbNinguna"
+        Me.rbNinguna.Size = New System.Drawing.Size(65, 17)
+        Me.rbNinguna.TabIndex = 2
+        Me.rbNinguna.TabStop = True
+        Me.rbNinguna.Text = "Ninguno"
+        Me.rbNinguna.UseVisualStyleBackColor = True
+        '
+        'rbCtaAportacion
+        '
+        Me.rbCtaAportacion.AutoSize = True
+        Me.rbCtaAportacion.Location = New System.Drawing.Point(96, 14)
+        Me.rbCtaAportacion.Name = "rbCtaAportacion"
+        Me.rbCtaAportacion.Size = New System.Drawing.Size(98, 17)
+        Me.rbCtaAportacion.TabIndex = 1
+        Me.rbCtaAportacion.TabStop = True
+        Me.rbCtaAportacion.Text = "Cta. Aportacion"
+        Me.rbCtaAportacion.UseVisualStyleBackColor = True
+        '
+        'rbCtaAhorro
+        '
+        Me.rbCtaAhorro.AutoSize = True
+        Me.rbCtaAhorro.Location = New System.Drawing.Point(7, 14)
+        Me.rbCtaAhorro.Name = "rbCtaAhorro"
+        Me.rbCtaAhorro.Size = New System.Drawing.Size(75, 17)
+        Me.rbCtaAhorro.TabIndex = 0
+        Me.rbCtaAhorro.TabStop = True
+        Me.rbCtaAhorro.Text = "Cta Ahorro"
+        Me.rbCtaAhorro.UseVisualStyleBackColor = True
+        '
+        'gbTipo
+        '
+        Me.gbTipo.Controls.Add(Me.rbManual)
+        Me.gbTipo.Controls.Add(Me.rbProveedores)
+        Me.gbTipo.Controls.Add(Me.rbSocio)
+        Me.gbTipo.Location = New System.Drawing.Point(8, 38)
+        Me.gbTipo.Name = "gbTipo"
+        Me.gbTipo.Size = New System.Drawing.Size(310, 38)
+        Me.gbTipo.TabIndex = 155
+        Me.gbTipo.TabStop = False
+        Me.gbTipo.Text = "Tipo"
+        '
+        'rbManual
+        '
+        Me.rbManual.AutoSize = True
+        Me.rbManual.Location = New System.Drawing.Point(196, 14)
+        Me.rbManual.Name = "rbManual"
+        Me.rbManual.Size = New System.Drawing.Size(60, 17)
+        Me.rbManual.TabIndex = 2
+        Me.rbManual.TabStop = True
+        Me.rbManual.Text = "Manual"
+        Me.rbManual.UseVisualStyleBackColor = True
+        '
+        'rbProveedores
+        '
+        Me.rbProveedores.AutoSize = True
+        Me.rbProveedores.Location = New System.Drawing.Point(96, 14)
+        Me.rbProveedores.Name = "rbProveedores"
+        Me.rbProveedores.Size = New System.Drawing.Size(74, 17)
+        Me.rbProveedores.TabIndex = 1
+        Me.rbProveedores.TabStop = True
+        Me.rbProveedores.Text = "Proveedor"
+        Me.rbProveedores.UseVisualStyleBackColor = True
+        '
+        'rbSocio
+        '
+        Me.rbSocio.AutoSize = True
+        Me.rbSocio.Location = New System.Drawing.Point(7, 14)
+        Me.rbSocio.Name = "rbSocio"
+        Me.rbSocio.Size = New System.Drawing.Size(52, 17)
+        Me.rbSocio.TabIndex = 0
+        Me.rbSocio.TabStop = True
+        Me.rbSocio.Text = "Socio"
+        Me.rbSocio.UseVisualStyleBackColor = True
+        '
+        'txtCuentaNo
+        '
+        Me.txtCuentaNo.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.txtCuentaNo.Location = New System.Drawing.Point(552, 205)
+        Me.txtCuentaNo.Name = "txtCuentaNo"
+        Me.txtCuentaNo.Size = New System.Drawing.Size(64, 20)
+        Me.txtCuentaNo.TabIndex = 159
+        Me.txtCuentaNo.Text = "0"
+        Me.txtCuentaNo.Visible = False
+        '
+        'btnCta
+        '
+        Me.btnCta.BackColor = System.Drawing.SystemColors.Control
+        Me.btnCta.FlatAppearance.BorderSize = 0
+        Me.btnCta.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCta.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!)
+        Me.btnCta.ForeColor = System.Drawing.Color.Black
+        Me.btnCta.Location = New System.Drawing.Point(503, 205)
+        Me.btnCta.Name = "btnCta"
+        Me.btnCta.Size = New System.Drawing.Size(50, 22)
+        Me.btnCta.TabIndex = 158
+        Me.btnCta.Text = "Cuenta"
+        Me.btnCta.UseVisualStyleBackColor = False
+        Me.btnCta.Visible = False
+        '
+        'btnBuscarPersona
+        '
+        Me.btnBuscarPersona.BackColor = System.Drawing.SystemColors.Control
+        Me.btnBuscarPersona.FlatAppearance.BorderSize = 0
+        Me.btnBuscarPersona.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBuscarPersona.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!)
+        Me.btnBuscarPersona.ForeColor = System.Drawing.Color.Black
+        Me.btnBuscarPersona.Location = New System.Drawing.Point(393, 204)
+        Me.btnBuscarPersona.Name = "btnBuscarPersona"
+        Me.btnBuscarPersona.Size = New System.Drawing.Size(110, 22)
+        Me.btnBuscarPersona.TabIndex = 157
+        Me.btnBuscarPersona.Text = "B&uscar"
+        Me.btnBuscarPersona.UseVisualStyleBackColor = False
+        Me.btnBuscarPersona.Visible = False
+        '
+        'txtBeneficiario
+        '
+        Me.txtBeneficiario.Location = New System.Drawing.Point(624, 233)
+        Me.txtBeneficiario.Name = "txtBeneficiario"
+        Me.txtBeneficiario.ReadOnly = True
+        Me.txtBeneficiario.Size = New System.Drawing.Size(72, 20)
+        Me.txtBeneficiario.TabIndex = 160
+        Me.txtBeneficiario.Visible = False
+        '
+        'txtIdAhorro
+        '
+        Me.txtIdAhorro.Enabled = False
+        Me.txtIdAhorro.Location = New System.Drawing.Point(624, 255)
+        Me.txtIdAhorro.Name = "txtIdAhorro"
+        Me.txtIdAhorro.ReadOnly = True
+        Me.txtIdAhorro.Size = New System.Drawing.Size(32, 20)
+        Me.txtIdAhorro.TabIndex = 161
+        Me.txtIdAhorro.Text = "0"
+        Me.txtIdAhorro.Visible = False
+        '
         'FRM_SOLICITUD_CKS
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
         Me.BackColor = System.Drawing.SystemColors.Control
-        Me.ClientSize = New System.Drawing.Size(818, 278)
+        Me.ClientSize = New System.Drawing.Size(625, 316)
+        Me.Controls.Add(Me.txtIdAhorro)
+        Me.Controls.Add(Me.txtBeneficiario)
+        Me.Controls.Add(Me.txtCuentaNo)
+        Me.Controls.Add(Me.btnCta)
+        Me.Controls.Add(Me.btnBuscarPersona)
+        Me.Controls.Add(Me.gbTipoRetiro)
+        Me.Controls.Add(Me.gbTipo)
         Me.Controls.Add(Me.fld_id_banco)
         Me.Controls.Add(Me.fld_id_proveedor)
         Me.Controls.Add(Me.Label15)
@@ -603,7 +797,12 @@ Public Class FRM_SOLICITUD_CKS
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Solicitud de Cheque"
         CType(Me.DataGrid1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.gbTipoRetiro.ResumeLayout(False)
+        Me.gbTipoRetiro.PerformLayout()
+        Me.gbTipo.ResumeLayout(False)
+        Me.gbTipo.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -690,8 +889,17 @@ Public Class FRM_SOLICITUD_CKS
 
     Private Sub SAVE_DOC(ByVal TableName As String)
         Dim estado As String = "EMISION"
+        Dim strBeneficiario As String = String.Empty
 
-        NON_QUERY("INSERT INTO " & TableName & " (fld_ck_no, fld_id_banco, fld_fecha, fld_concepto, fld_monto, fld_estado, fld_cta_axu_id, fld_beneficiario, fld_monto_letras,  fld_id_entrada, fld_transito) VALUES(" & CInt(fld_ck_no.Text) & ",'" & FLD_CODIGO.Text & "','" & formatDate(fld_date.Value.Date) & "','" & fld_descripcion.Text & "'," & CDbl(fld_monto.Text) & ",'" & estado & "', " & fld_id_proveedor.Text & ",'" & fld_beneficiario.Text & "','" & fld_cantidad_letra.Text & "',0,'SI')")
+
+        If rbManual.Checked Then
+            strBeneficiario = fld_beneficiario.Text
+        Else
+            strBeneficiario = txtBeneficiario.Text
+        End If
+
+
+        NON_QUERY("INSERT INTO " & TableName & " (fld_ck_no, fld_id_banco, fld_fecha, fld_concepto, fld_monto, fld_estado, fld_cta_axu_id, fld_beneficiario, fld_monto_letras,  fld_id_entrada, fld_transito,CkSocio,CkProveedor,CkManual,RetCtaAhorro,RetCtaAportacion,RetCtaNinguno,NoCta,IDSocio,IDProveedor) VALUES(" & CInt(fld_ck_no.Text) & ",'" & FLD_CODIGO.Text & "','" & formatDate(fld_date.Value.Date) & "','" & fld_descripcion.Text & "'," & CDbl(fld_monto.Text) & ",'" & estado & "', " & fld_id_proveedor.Text & ",'" & strBeneficiario & "','" & fld_cantidad_letra.Text & "',0,'SI','" & rbSocio.Checked & "','" & rbProveedores.Checked & "','" & rbManual.Checked & "','" & rbCtaAhorro.Checked & "','" & rbCtaAportacion.Checked & "','" & rbNinguna.Checked & "','" & IIf(rbSocio.Checked And rbCtaAhorro.Checked, txtIdAhorro.Text, "0") & "','" & IIf(rbSocio.Checked, fld_codigo_beneficiario.Text, "0") & "','" & IIf(rbProveedores.Checked, fld_codigo_beneficiario.Text, "0") & "')")
 
     End Sub
 
@@ -741,7 +949,7 @@ exite:
             fld_beneficiario.Text = dr("fld_beneficiario")
             id_entrada = dr("fld_id_entrada")
             fld_descripcion.Focus()
-           
+
             If dr("fld_estado") = "EMISION" Then
                 btn_procesar.Enabled = False
             End If
@@ -1005,7 +1213,7 @@ exite:
 
         ElseIf fld_tipo_beneficiario.Text = "Proveedores" Then
 
-             
+
 
         Else
             fld_codigo_beneficiario.Text = 0
@@ -1082,6 +1290,143 @@ exite:
     Private Sub fld_date_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles fld_date.ValueChanged
 
     End Sub
+
+    Private Sub rbSocio_CheckedChanged(sender As Object, e As EventArgs) Handles rbSocio.CheckedChanged
+        If rbSocio.Checked Then
+            btnBuscarPersona.Visible = False
+            btnBuscarPersona.Text = "Buscar Socio"
+            fld_beneficiario.Text = String.Empty
+            fld_beneficiario.Enabled = False
+            btnCta.Visible = True
+            txtCuentaNo.Visible = True
+            txtCuentaNo.Text = String.Empty
+
+            gbTipoRetiro.Visible = True
+            rbCtaAhorro.Checked = True
+        End If
+    End Sub
+
+    Private Sub rbProveedores_CheckedChanged(sender As Object, e As EventArgs) Handles rbProveedores.CheckedChanged
+        If rbProveedores.Checked Then
+            btnBuscarPersona.Visible = True
+            btnBuscarPersona.Text = "Buscar Proveedor"
+            fld_beneficiario.Text = String.Empty
+            fld_beneficiario.Enabled = False
+            btnCta.Visible = False
+            txtCuentaNo.Visible = False
+            txtCuentaNo.Text = String.Empty
+
+            gbTipoRetiro.Visible = False
+        End If
+
+    End Sub
+
+    Private Sub rbManual_CheckedChanged(sender As Object, e As EventArgs) Handles rbManual.CheckedChanged
+        If rbManual.Checked Then
+            btnBuscarPersona.Visible = False
+            fld_beneficiario.Text = String.Empty
+            fld_beneficiario.Enabled = True
+            btnCta.Visible = False
+            txtCuentaNo.Visible = False
+            txtCuentaNo.Text = String.Empty
+
+            gbTipoRetiro.Visible = False
+        End If
+
+    End Sub
+
+    Private Sub rbCtaAhorro_CheckedChanged(sender As Object, e As EventArgs) Handles rbCtaAhorro.CheckedChanged
+        btnCta.Visible = True
+        txtCuentaNo.Visible = True
+        txtCuentaNo.Text = String.Empty
+        fld_beneficiario.Text = String.Empty
+
+        btnBuscarPersona.Visible = False
+
+    End Sub
+
+    Private Sub rbCtaAportacion_CheckedChanged(sender As Object, e As EventArgs) Handles rbCtaAportacion.CheckedChanged
+        btnCta.Visible = False
+        txtCuentaNo.Visible = False
+        txtCuentaNo.Text = String.Empty
+        fld_beneficiario.Text = String.Empty
+
+        btnBuscarPersona.Visible = True
+        btnBuscarPersona.Text = "Buscar Socio"
+
+    End Sub
+
+    Private Sub rbNinguna_CheckedChanged(sender As Object, e As EventArgs) Handles rbNinguna.CheckedChanged
+        btnCta.Visible = False
+        txtCuentaNo.Visible = False
+        txtCuentaNo.Text = String.Empty
+        fld_beneficiario.Text = String.Empty
+
+        btnBuscarPersona.Visible = True
+        btnBuscarPersona.Text = "Buscar Socio"
+
+    End Sub
+
+    Private Sub btnBuscarPersona_Click(sender As Object, e As EventArgs) Handles btnBuscarPersona.Click
+        If rbSocio.Checked Then
+            If FRMS_POPUP_CLIENTES("TODOS") = True Then
+                READER("SELECT fld_id, fld_FullName FROM tbl_clientes WHERE fld_id=" & Id & "")
+                If reader_values.Length > 0 Then
+                    fld_codigo_beneficiario.Text = reader_values(0)
+                    fld_beneficiario.Text = reader_values(1)
+                    txtBeneficiario.Text = reader_values(1)
+                End If
+            End If
+        End If
+
+        If rbProveedores.Checked Then
+            If FRMS_POPUP_PROVEEDORES() = True Then
+                READER("SELECT * FROM tbl_Supplier WHERE fldSupplierID=" & Id & "")
+                If reader_values.Length > 0 Then
+                    fld_codigo_beneficiario.Text = reader_values(0)
+                    fld_beneficiario.Text = reader_values(1)
+                    txtBeneficiario.Text = reader_values(1)
+                End If
+            End If
+        End If
+
+    End Sub
+
+    Private Sub btnCta_Click(sender As Object, e As EventArgs) Handles btnCta.Click
+        If frmsListaCuentaAhorro() = True Then
+            BuscarAhorro(Id)
+        End If
+    End Sub
+
+    Private Sub BuscarAhorro(ByVal CtaAhorro As Integer)
+        Dim ds As New DataSet
+        Dim da As New MySqlDataAdapter("SELECT *, (SELECT fld_FullName FROM tbl_clientes WHERE fld_id=IDCliente)NombreCliente FROM tbl_ahorros_cuentas WHERE ID=" & CtaAhorro & "", conn)
+        da.Fill(ds, "tbl_ahorros_cuentas")
+
+        Dim dr As DataRow
+
+
+
+        For Each dr In ds.Tables(0).Rows
+            txtCuentaNo.Text = dr("CuentaNo")
+            txtIdAhorro.Text = dr("ID")
+            fld_codigo_beneficiario.Text = dr("IDCliente")
+            fld_beneficiario.Text = dr("NombreCliente")
+            txtBeneficiario.Text = dr("NombreCliente")
+
+            'If SCALAR_NUM("SELECT COUNT(*) FROM tbl_beneficiarios WHERE fld_beneficiario='" & dr("NombreCliente") & "'") = 0 Then
+            '    NON_QUERY("INSERT INTO tbl_beneficiarios (fld_beneficiario) VALUES('" & dr("NombreCliente") & "')")
+            'End If
+
+
+        Next
+
+
+        Dim capitalAhorrado As Decimal = SCALAR_NUM("SELECT IFNULL(SUM(Monto),0) FROM tbl_ahorros_depositos WHERE IDCuenta=" & CInt(txtIdAhorro.Text) & " GROUP BY IDCliente")
+        Dim capitalRetirado As Decimal = SCALAR_STRING("SELECT IFNULL(SUM(Monto),0) FROM tbl_ahorros_retiros WHERE IDAhorro=" & CInt(txtIdAhorro.Text) & " AND Tipo <> 'Retiro de Interes'")
+
+    End Sub
+
 
     Private Sub fld_date_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles fld_date.KeyDown
         If e.KeyCode = Keys.Enter Then
