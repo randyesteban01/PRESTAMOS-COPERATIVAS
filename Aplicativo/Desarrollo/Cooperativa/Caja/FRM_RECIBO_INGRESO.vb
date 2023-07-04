@@ -1698,8 +1698,8 @@ Public Class FRM_RECIBO_INGRESO
         txtBceCuota.Visible = True
         Label12.Visible = True
         txtBceCapital.Visible = True
-        If txtClasificacion.Text = "Int. Diario Sobre Saldo Insoluto" Or txtClasificacion.Text = "Int. Diario Sobre Capital Inicial" Then
-
+        ''If txtClasificacion.Text = "Int. Diario Sobre Saldo Insoluto" Or txtClasificacion.Text = "Int. Diario Sobre Capital Inicial" Then
+        If txtClasificacion.Text = "Int. Diario Sobre Capital Inicial" Then
 
             SQLSTRING = "SELECT * FROM tbl_cuotas WHERE fld_balance_cuotas > 0 AND (fld_id_del_prestamo=" & IdPrest & " OR fld_id_del_prestamo=0) AND fld_id_del_cliente_cuotas=" & IdCliente & " ORDER BY fld_no_cuotas"
             StyleFactIntereses()
@@ -1722,7 +1722,8 @@ Public Class FRM_RECIBO_INGRESO
 
 
 
-        If txtClasificacion.Text = "Int. Diario Sobre Saldo Insoluto" Or txtClasificacion.Text = "Int. Diario Sobre Capital Inicial" Then
+        ''If txtClasificacion.Text = "Int. Diario Sobre Saldo Insoluto" Or txtClasificacion.Text = "Int. Diario Sobre Capital Inicial" Then
+        If txtClasificacion.Text = "Int. Diario Sobre Capital Inicial" Then
             Dim dr As DataRow
             Dim bceInteres As Double = 0
             Dim bceAcumulado As Double = 0
@@ -2243,7 +2244,9 @@ sigue:
 
                 End If
 
-                If txtClasificacion.Text = "Int. Diario Sobre Saldo Insoluto" Or txtClasificacion.Text = "Int. Diario Sobre Capital Inicial" Then
+                '' If txtClasificacion.Text = "Int. Diario Sobre Saldo Insoluto" Or txtClasificacion.Text = "Int. Diario Sobre Capital Inicial" Then
+                If txtClasificacion.Text = "Int. Diario Sobre Capital Inicial" Then
+
                     GoTo Salta
                     'Esto es para que solo descuente las moras y los intereses en estos tipos de préstamo
                 End If

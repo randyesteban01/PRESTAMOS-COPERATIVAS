@@ -1318,6 +1318,19 @@ Public Class FRM_PRESTAMO_MAESTRO
         Dim da As New MySqlDataAdapter("SELECT * FROM tbl_cuotas WHERE fld_id_del_prestamo=" & IdPrest & " ORDER BY fld_no_cuotas", conn)
         da.Fill(dsCuotas, "tbl_cuotas")
 
+        ''Cargar cuotas por defecto solamente cuando es interes diario sobre saldo insoluto
+        If fld_clasificacion.Text = "Int. Diario Sobre Saldo Insoluto" Then
+            For I As Integer = 0 To dsCuotas.Tables(0).Rows.Count - 1
+
+                If CDec(dsCuotas.Tables(0).Rows(I).Item("fld_balance_cuotas")) > 0 Then
+                    dsCuotas.Tables(0).Rows(I).Item("fld_interes_cuota_balance") = (CDec(fld_monto_prestamo.Text) * CDec(fld_porciento.Text)) / 100
+                    dsCuotas.Tables(0).Rows(I).Item("fld_balance_cuotas") = (CDec(fld_monto_prestamo.Text) / CDec(fld_cantidad_cuotas.Text)) + ((CDec(fld_monto_prestamo.Text) * CDec(fld_porciento.Text)) / 100)
+                End If
+
+                txtMontoCuota.Text = Format(dsCuotas.Tables(0).Rows(I).Item("fld_balance_cuotas"), "C2")
+            Next
+        End If
+
 
         DG.DataSource = dsCuotas.Tables(0)
         Dim dr As DataRow

@@ -2439,25 +2439,57 @@ Public Class FRM_DEFAULT
 
         For Each nr In ds.Tables(0).Rows
 
+            Dim ConstDias As Integer = 0
+
+            If nr("fld_tipo_prestamo") = "DIARIO" Then
+                ConstDias = 1
+            ElseIf nr("fld_tipo_prestamo") = "SEMANAL" Then
+                ConstDias = 7
+            ElseIf nr("fld_tipo_prestamo") = "QUINCENAL" Then
+                ConstDias = 15
+            ElseIf nr("fld_tipo_prestamo") = "MENSUAL" Then
+                ConstDias = 30
+            ElseIf nr("fld_tipo_prestamo") = "BIMESTRAL" Then
+                ConstDias = (30 * 2)
+            ElseIf nr("fld_tipo_prestamo") = "TRIMESTRAL" Then
+                ConstDias = (30 * 3)
+            ElseIf nr("fld_tipo_prestamo") = "SEMESTRAL" Then
+                ConstDias = (30 * 6)
+            ElseIf nr("fld_tipo_prestamo") = "ANUAL" Then
+                ConstDias = (30 * 12)
+            End If
+
+
+
             'Solo válidamos los préstamos que son con intereses diarios
             If nr("fld_clasificacion") = "Int. Diario Sobre Saldo Insoluto" Or nr("fld_clasificacion") = "Int. Diario Sobre Capital Inicial" Then
                 'Válidamos solo las que vence en el mes actual, esto es para controlar que no me le siga calculando a las cuotas que ya han sido calculada 
                 'en su totalidad "Meses anteriores"
                 bceCapital = SCALAR_NUM("SELECT SUM(fld_capital_cuota_balance) FROM tbl_cuotas WHERE fld_id_del_prestamo=" & nr("fld_id_prestamos") & "")
 
-                If nr("fld_fecha_calculo_interes") = nr("fld_fecha_entrega_cuotas") Then 'Nunca se ha cálculado el interes
+                ''If nr("fld_fecha_calculo_interes") = nr("fld_fecha_entrega_cuotas") Then 'Nunca se ha cálculado el interes
+                If (nr("fld_fecha_calculo_interes") = nr("fld_fecha_entrega_cuotas")) And nr("fld_tipo_prestamo") = "MENSUAL" Then 'Nunca se ha cálculado el interes
                     dias = DateDiff(DateInterval.Day, CDate(nr("fld_fecha_termina_cuotas")).AddMonths(-1), sys_date)
                 Else
-                    dias = DateDiff(DateInterval.Day, CDate(nr("fld_fecha_calculo_interes")), sys_date)
+
+                    If nr("fld_tipo_prestamo") = "QUINCENAL" Then
+                        dias = DateDiff(DateInterval.Day, CDate(nr("fld_fecha_termina_cuotas")).AddDays(-ConstDias), sys_date)
+
+                        If dias > ConstDias Then
+                            dias = ConstDias
+                        End If
+
+                    End If
+
                 End If
 
                 If dias < 1 Then 'Si el cálculo de los día arroja cero o menos entonces salta al siguiente registro
                     GoTo siguiente
                 End If
 
-                If dias >= 30 Then
+                If dias >= ConstDias Then
                     NON_QUERY("UPDATE tbl_cuotas SET fld_termina_calculo_interes='True' WHERE fld_id_cuotas=" & nr("fld_id_cuotas") & "")
-                    dias = 30
+                    dias = ConstDias
                 End If
 
                 Dim Interes As Double = 0
@@ -2487,8 +2519,10 @@ Public Class FRM_DEFAULT
                 End If
 
                 If dias > 0 Then
+                    '' NON_QUERY("UPDATE tbl_cuotas SET fld_interes_cuota=fld_interes_cuota + " & Interes & ", fld_interes_cuota_balance=fld_interes_cuota-fld_interes_cuota_abono, fld_balance_cuotas=fld_interes_cuota_balance+fld_capital_cuota_balance, fld_monto_cuotas=fld_interes_cuota_balance+fld_capital_cuota_balance, fld_abono_cuotas=(fld_monto_cuotas-fld_balance_cuotas) WHERE fld_id_cuotas=" & nr("fld_id_cuotas") & "; UPDATE tbl_prestamos SET fld_fecha_calcula_interes=Now() WHERE fld_id_prestamos=" & nr("fld_id_prestamos") & "")
 
-                    NON_QUERY("UPDATE tbl_cuotas SET fld_interes_cuota=fld_interes_cuota + " & Interes & ", fld_interes_cuota_balance=fld_interes_cuota-fld_interes_cuota_abono, fld_balance_cuotas=fld_interes_cuota_balance+fld_capital_cuota_balance, fld_monto_cuotas=fld_interes_cuota_balance+fld_capital_cuota_balance, fld_abono_cuotas=(fld_monto_cuotas-fld_balance_cuotas) WHERE fld_id_cuotas=" & nr("fld_id_cuotas") & "; UPDATE tbl_prestamos SET fld_fecha_calcula_interes=Now() WHERE fld_id_prestamos=" & nr("fld_id_prestamos") & "")
+                    NON_QUERY("UPDATE tbl_cuotas SET fld_interes_cuota=" & Interes & ", fld_interes_cuota_balance=fld_interes_cuota-fld_interes_cuota_abono, fld_balance_cuotas=fld_interes_cuota_balance+fld_capital_cuota_balance, fld_monto_cuotas=fld_interes_cuota_balance+fld_capital_cuota_balance, fld_abono_cuotas=(fld_monto_cuotas-fld_balance_cuotas) WHERE fld_id_cuotas=" & nr("fld_id_cuotas") & "; UPDATE tbl_prestamos SET fld_fecha_calcula_interes=Now() WHERE fld_id_prestamos=" & nr("fld_id_prestamos") & "")
+
                 End If
             End If
 siguiente:
